@@ -19,8 +19,7 @@ const Footer = ({ footerCities }) => {
   };
 
   // Ensure footerCities is an array
-  const cities = Array.isArray(footerCities) ? footerCities : [];
-
+  const cities = ["VIT Chennai","VIT Vellore","VIT Bhopal","VIT AP"];
   return (
     <>
       <div className="flex bg-[#110705] text-[#ffffff99] flex-col items-center justify-center p-10">
@@ -52,7 +51,7 @@ const Footer = ({ footerCities }) => {
           ))}
           <div className="col-start-4 row-start-1">
             <h1 className="font-BasisGrotesquePro font-bold text-base leading-10 tracking-tighter text-white">
-              We deliver to :
+              We are present in :
             </h1>
             {cities.slice(0, 6).map((x) => (
               <div key={x.text}>
@@ -64,7 +63,7 @@ const Footer = ({ footerCities }) => {
               onClick={handleCities}
             >
               <h1 className="p-1 h-fit truncate">
-                {cities.slice(6).length} cities
+                4 Colleges
               </h1>
               <div className="ml-2 pr-1">
                 <FontAwesomeIcon
@@ -86,13 +85,13 @@ const Footer = ({ footerCities }) => {
         <h2 className="pb-6 font-bold text-lg text-white tracking-tight">
           Other Cities that we deliver
         </h2>
-        <div className="grid grid-cols-4 gap-x-16 w-[80%]">
-          {cities.slice(6).map((x, idx) => (
-            <div key={idx} className="py-1">
-              <h4 className="cursor-pointer p-1">{x.text}</h4>
-            </div>
-          ))}
-        </div>
+          <div className="grid grid-cols-4 gap-x-16 w-[80%]">
+            {cities.map((x) => (
+              <div key={x} className="py-1">
+                <h4 className="cursor-pointer p-1 text-white">{x}</h4>
+              </div>
+            ))}
+          </div>
       </div>
       <div className="flex flex-col w-full items-center justify-center bg-[#110705] text-white ">
         <p className="py-2">
