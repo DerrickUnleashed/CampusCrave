@@ -1,0 +1,2 @@
+- [x] Replace dynamic images in "What's on your mind" section with static images from src/assets/: food1.jpg (biriyani), food2.jpeg (pizza), food3.jpeg (Chicken)
+- [x] Fix image loading by importing images properly in Home.js
