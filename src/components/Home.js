@@ -118,35 +118,7 @@ const Home = () => {
         </div>
       ) : (
         <div className="body xl:max-w-[80%] mx-auto min-h-screen pt-40 ">
-          {WOYM && (
-            <>
-              <div className="flex justify-between mx-12 px-4">
-                <h1 className="font-bold text-[1.7rem] leading-3 tracking-tight">
-                  What's on your mind?
-                </h1>
-                <Slider className="foodCategory" amount={350} />
-              </div>
-              <div className="foodCategory container-snap mx-12 flex p-4 overflow-x-auto">
-                {WOYM.map((img) => {
-                  return (
-                    <div
-                      className="cursor-pointer flex-shrink-0 pr-6 first:pl-4"
-                      key={img.id}
-                    >
-                      {/* this will take you to the swiggy website's food app */}
-                      {/* <a href={img.action.link}> */}
-                      <img
-                        className="h-[180px] w-[144px]"
-                        src={WOYM_CARD_IMG_CDN_URL + img.imageId}
-                        alt="what's on your mind restaurant"
-                      />
-                      {/* </a> */}
-                    </div>
-                  );
-                })}
-              </div>
-            </>
-          )}
+          
 
 
           {filteredResList && (

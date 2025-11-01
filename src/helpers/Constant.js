@@ -16,7 +16,7 @@ export const MENU_API =
 export const ITEM_API =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/";
 // export const LOGO_URL =
-//   'https://png.pngtree.com/png-vector/20230217/ourmid/pngtree-food-logo-design-for-restaurant-and-business-png-image_6604922.png';
+//   'https://png.pngtree.com/png-vector/20250217/ourmid/pngtree-food-logo-design-for-restaurant-and-business-png-image_6604922.png';
 export const WOYM_CARD_IMG_CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/";
 export const RES_CARD_IMG_CDN_URL =
@@ -38,18 +38,6 @@ export const MENU_OFFERS_CDN_URL =
 export const MENU_ITEM_CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/";
 export const footer_content = [
-  {
-    id: "100",
-    title: "Company",
-    data: [
-      "About",
-      "Careers",
-      "Team",
-      "Chef-2-Door One",
-      "Chef-2-Door Instamart",
-      "Chef-2-Door Genie",
-    ],
-  },
   {
     id: "101",
     title: "Contact Us",
@@ -75,7 +63,7 @@ export const support_data = [
     data: [
       {
         id: 11500,
-        title: "What is CHEF-2-DOOR Customer Care Number?",
+        title: "What is CampusCrave Customer Care Number?",
         description:
           "We value our customer’s time and hence moved away from a single customer care number to a comprehensive chat-based support system for quick and easy resolution. You no longer have to go through the maze of an IVRS call support. Just search for your issue in the help section on this page and initiate a chat with us. A customer care executive will be assigned to you shortly. ",
         conversationId: null,
@@ -112,7 +100,7 @@ export const support_data = [
       },
       {
         id: 212,
-        title: "I am unable to log in on CHEF-2-DOOR",
+        title: "I am unable to log in on CampusCrave",
         description: null,
         conversationId: null,
         layerConversationId: null,
@@ -207,7 +195,7 @@ export const support_data = [
       },
       {
         id: 228,
-        title: "I want to unsubscribe from CHEF-2-DOOR communications",
+        title: "I want to unsubscribe from CampusCrave communications",
         description:
           "Please drop us an email mentioning the channels you would like to be unsubscribed from. We will take an action and confirm within 24-48 hours",
         conversationId: null,
@@ -222,7 +210,7 @@ export const support_data = [
             phoneNumber: null,
             provider: null,
             waitTime: "We will revert within 24-48 hrs",
-            emailId: "support@CHEF-2-DOOR.in",
+            emailId: "support@CampusCrave.in",
           },
         ],
         hyperLinkText: null,
@@ -238,7 +226,7 @@ export const support_data = [
     data: [
       {
         id: 492,
-        title: "I want to partner my restaurant with CHEF-2-DOOR",
+        title: "I want to partner my restaurant with CampusCrave",
         description: null,
         conversationId: null,
         layerConversationId: null,
@@ -252,16 +240,16 @@ export const support_data = [
             phoneNumber: null,
             provider: null,
             waitTime: "We will revert within 24-48 hrs",
-            emailId: "partnersupport@CHEF-2-DOOR.in",
+            emailId: "partnersupport@CampusCrave.in",
           },
         ],
         hyperLinkText: "Partner with us",
-        hyperLink: "https://www.CHEF-2-DOOR.com/partner-with-us",
+        hyperLink: "https://www.CampusCrave.com/partner-with-us",
       },
       {
         id: 100175,
         title:
-          "What are the mandatory documents needed to list my restaurant on CHEF-2-DOOR?",
+          "What are the mandatory documents needed to list my restaurant on CampusCrave?",
         description:
           "- Copies of the below documents are mandatory\n- FSSAI Licence OR FSSAI Acknowledgement\n- Pan Card\n- GSTIN Certificate\n- Cancelled Cheque OR bank Passbook\n- Menu",
         conversationId: null,
@@ -277,7 +265,7 @@ export const support_data = [
       {
         id: 100176,
         title:
-          "After I submit all documents, how long will it take for my restaurant to go live on CHEF-2-DOOR?",
+          "After I submit all documents, how long will it take for my restaurant to go live on CampusCrave?",
         description:
           "After all mandatory documents have been received and verified it takes upto 7-10 working days for the onboarding to be completed and make your restaurant live on the platform.",
         conversationId: null,
@@ -295,7 +283,7 @@ export const support_data = [
         title:
           "What is this one time Onboarding fees? Do I have to pay for it while registering?",
         description:
-          "This is a one-time fee charged towards the system & admin costs incurred during the onboarding process. It is deducted from the weekly payouts after you start receiving orders from CHEF-2-DOOR.",
+          "This is a one-time fee charged towards the system & admin costs incurred during the onboarding process. It is deducted from the weekly payouts after you start receiving orders from CampusCrave.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -311,7 +299,7 @@ export const support_data = [
         title:
           "Who should I contact if I need help & support in getting onboarded?",
         description:
-          "You can connect with Partner Support on 080-67466777/68179777 or write to onboarding@CHEF-2-DOOR.in",
+          "You can connect with Partner Support on 080-67466777/68179777 or write to onboarding@CampusCrave.in",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -324,7 +312,7 @@ export const support_data = [
       },
       {
         id: 100179,
-        title: "How much commission will I be charged by CHEF-2-DOOR?",
+        title: "How much commission will I be charged by CampusCrave?",
         description:
           "The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.",
         conversationId: null,
@@ -365,7 +353,7 @@ export const support_data = [
         id: 100043,
         title: "Terms of Use",
         description:
-          'These terms of use (the "Terms of Use") govern your use of our website www.CHEF-2-DOOR.in (the "Website") and our "CHEF-2-DOOR" application for mobile and handheld devices (the "App"). The Website and the App are jointly referred to as the "Services"). Please read these Terms of Use carefully before you download, install or use the Services. If you do not agree to these Terms of Use, you may not install, download or use the Services. By installing, downloading or using the Services, you signify your acceptance to the Terms of Use and Privacy Policy (being hereby incorporated by reference herein) which takes effect on the date on which you download, install or use the Services, and create a legally binding arrangement to abide by the same.',
+          'These terms of use (the "Terms of Use") govern your use of our website www.CampusCrave.in (the "Website") and our "CampusCrave" application for mobile and handheld devices (the "App"). The Website and the App are jointly referred to as the "Services"). Please read these Terms of Use carefully before you download, install or use the Services. If you do not agree to these Terms of Use, you may not install, download or use the Services. By installing, downloading or using the Services, you signify your acceptance to the Terms of Use and Privacy Policy (being hereby incorporated by reference herein) which takes effect on the date on which you download, install or use the Services, and create a legally binding arrangement to abide by the same.',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -374,13 +362,13 @@ export const support_data = [
         isResolutionNode: false,
         options: [],
         hyperLinkText: "Read More",
-        hyperLink: "https://www.CHEF-2-DOOR.com/terms-and-conditions",
+        hyperLink: "https://www.CampusCrave.com/terms-and-conditions",
       },
       {
         id: 100044,
         title: "Privacy Policy",
         description:
-          'We ( Bundl Technologies Private Limited, alias "CHEF-2-DOOR" ) are fully committed to respecting your privacy and shall ensure that your personal information is safe with us. This privacy policy sets out the information practices of www.CHEF-2-DOOR.com ("Website") including the type of information is collected, how the information is collected, how the information is used and with whom it is shared. Reference to "you" in this Privacy Policy refers to the users of this Website whether or not you access the services available on the Website or consummate a transaction on the Website. By using or accessing this Website, you agree to the terms and conditions of this Privacy Policy. You also expressly consent to our use and disclosure of your Personal Information (as defined below) in any manner as described in this Privacy Policy and further signify your agreement to this Privacy Policy and the Terms of Use (being incorporated by reference herein). If you do not agree with the terms and conditions of this Privacy Policy, please do not proceed further or use or access this Website. ',
+          'We ( Bundl Technologies Private Limited, alias "CampusCrave" ) are fully committed to respecting your privacy and shall ensure that your personal information is safe with us. This privacy policy sets out the information practices of www.CampusCrave.com ("Website") including the type of information is collected, how the information is collected, how the information is used and with whom it is shared. Reference to "you" in this Privacy Policy refers to the users of this Website whether or not you access the services available on the Website or consummate a transaction on the Website. By using or accessing this Website, you agree to the terms and conditions of this Privacy Policy. You also expressly consent to our use and disclosure of your Personal Information (as defined below) in any manner as described in this Privacy Policy and further signify your agreement to this Privacy Policy and the Terms of Use (being incorporated by reference herein). If you do not agree with the terms and conditions of this Privacy Policy, please do not proceed further or use or access this Website. ',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -389,13 +377,13 @@ export const support_data = [
         isResolutionNode: false,
         options: [],
         hyperLinkText: "Read More",
-        hyperLink: "https://www.CHEF-2-DOOR.com/privacy-policy",
+        hyperLink: "https://www.CampusCrave.com/privacy-policy",
       },
       {
         id: 100045,
         title: "Cancellations and Refunds",
         description:
-          "a)As a general rule you shall not be entitled to cancel your order once placed. You may choose to cancel your order only within one-minute of the order being placed by you. However, subject to your previous cancellation history, CHEF-2-DOOR reserves the right to deny any refund to you pursuant to a cancellation initiated by you even if the same is within one-minute. b)If you cancel your order after one minute of placing it, CHEF-2-DOOR shall have a right to charge you 100% of the order amount as the cancellation fee , with a right to either not to refund the order value in case your order is prepaid or recover from your subsequent order in case your order is postpaid, to compensate our restaurant/merchants and delivery partners. c)CHEF-2-DOOR reserves the right to charge you cancellation fee for the orders constrained to be cancelled by CHEF-2-DOOR for reasons not attributable to CHEF-2-DOOR, including but not limited to: i)in the event if the address provided by you is either wrong or falls outside the delivery zone; ii) failure to contact you by phone or email at the time of delivering the order booking; iii) failure to deliver your order due to lack of information, direction or authorization from you at the time of delivery; or iv) unavailability of all the items ordered by you at the time of booking the order. However, in the unlikely event of an item on your order being unavailable, CHEF-2-DOOR will contact you on the phone number provided to us at the time of placing the order and inform you of such unavailability. In such an event you will be entitled to cancel the entire order and shall be entitled to a refund to an amount upto 100% of the order value. d)In case of cancellations for the reasons attributable to CHEF-2-DOOR or the restaurant partner or delivery partners, CHEF-2-DOOR shall not charge you any cancellation fee.",
+          "a)As a general rule you shall not be entitled to cancel your order once placed. You may choose to cancel your order only within one-minute of the order being placed by you. However, subject to your previous cancellation history, CampusCrave reserves the right to deny any refund to you pursuant to a cancellation initiated by you even if the same is within one-minute. b)If you cancel your order after one minute of placing it, CampusCrave shall have a right to charge you 100% of the order amount as the cancellation fee , with a right to either not to refund the order value in case your order is prepaid or recover from your subsequent order in case your order is postpaid, to compensate our restaurant/merchants and delivery partners. c)CampusCrave reserves the right to charge you cancellation fee for the orders constrained to be cancelled by CampusCrave for reasons not attributable to CampusCrave, including but not limited to: i)in the event if the address provided by you is either wrong or falls outside the delivery zone; ii) failure to contact you by phone or email at the time of delivering the order booking; iii) failure to deliver your order due to lack of information, direction or authorization from you at the time of delivery; or iv) unavailability of all the items ordered by you at the time of booking the order. However, in the unlikely event of an item on your order being unavailable, CampusCrave will contact you on the phone number provided to us at the time of placing the order and inform you of such unavailability. In such an event you will be entitled to cancel the entire order and shall be entitled to a refund to an amount upto 100% of the order value. d)In case of cancellations for the reasons attributable to CampusCrave or the restaurant partner or delivery partners, CampusCrave shall not charge you any cancellation fee.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -404,13 +392,13 @@ export const support_data = [
         isResolutionNode: false,
         options: [],
         hyperLinkText: "Read More",
-        hyperLink: "https://www.CHEF-2-DOOR.com/refund-policy",
+        hyperLink: "https://www.CampusCrave.com/refund-policy",
       },
       {
         id: 100046,
-        title: "Terms of Use for CHEF-2-DOOR ON-TIME / Assured",
+        title: "Terms of Use for CampusCrave ON-TIME / Assured",
         description:
-          'These terms of use (the "Terms of Use") that govern your use of our service CHEF-2-DOOR ON-TIME / Assured  ("ON-TIME" / "Assured") on our website www.CHEF-2-DOOR.in (the "Website") and our CHEF-2-DOOR application for mobile and handheld devices (the "App"). The services on ON-TIME / Assured  available on our Website and the App are jointly referred to as the "On-Time Delivery". Please read these Terms of Use carefully before you use the Services. If you do not agree to these Terms of Use, you may not use the Services. By using the Services, you signify your acceptance to the Terms of Use and Privacy Policy (incorporated by reference herein) and creates a legally binding arrangement to abide by the same. ',
+          'These terms of use (the "Terms of Use") that govern your use of our service CampusCrave ON-TIME / Assured  ("ON-TIME" / "Assured") on our website www.CampusCrave.in (the "Website") and our CampusCrave application for mobile and handheld devices (the "App"). The services on ON-TIME / Assured  available on our Website and the App are jointly referred to as the "On-Time Delivery". Please read these Terms of Use carefully before you use the Services. If you do not agree to these Terms of Use, you may not use the Services. By using the Services, you signify your acceptance to the Terms of Use and Privacy Policy (incorporated by reference herein) and creates a legally binding arrangement to abide by the same. ',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -419,13 +407,13 @@ export const support_data = [
         isResolutionNode: false,
         options: [],
         hyperLinkText: "Read More",
-        hyperLink: "https://www.CHEF-2-DOOR.com/terms-and-conditions",
+        hyperLink: "https://www.CampusCrave.com/terms-and-conditions",
       },
       {
         id: 100323,
         title: "T&C for TBC Matchday offer",
         description:
-          "By participating to avail this offer, all participant User(s)(defined below) agree to be bound by these terms and conditions (“T&Cs”), the Terms of Use, Privacy Policy and other relevant CHEF-2-DOOR policies and documentations that are available on www.CHEF-2-DOOR.com and on its mobile application (“Platform”) including any modifications, alterations or updates that We make (collectively referred to as “FoodVilla T&C’s”).",
+          "By participating to avail this offer, all participant User(s)(defined below) agree to be bound by these terms and conditions (“T&Cs”), the Terms of Use, Privacy Policy and other relevant CampusCrave policies and documentations that are available on www.CampusCrave.com and on its mobile application (“Platform”) including any modifications, alterations or updates that We make (collectively referred to as “FoodVilla T&C’s”).",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -435,13 +423,13 @@ export const support_data = [
         options: [],
         hyperLinkText: "Read More",
         hyperLink:
-          "https://promos.CHEF-2-DOOR.com/tnc-tbc-matchday/v3/index.html",
+          "https://promos.CampusCrave.com/tnc-tbc-matchday/v3/index.html",
       },
       {
         id: 100344,
         title: "Terms and Conditions for Gourmet Mother's Day Campaign",
         description:
-          'By participating to avail this Offer, all User(s) agree to be bound by the Terms of Use (https://www.CHEF-2-DOOR.com/terms-and-conditions), Privacy Policy (https://www.CHEF-2-DOOR.com/privacy-policy) and other relevant CHEF-2-DOOR policies and documentations that are available on the Platform  including any modifications, alterations or updates that CHEF-2-DOOR (hereinafter referred to as “We” “Us”, or “FoodVilla”)  make (collectively referred to as "CHEF-2-DOOR T&Cs")',
+          'By participating to avail this Offer, all User(s) agree to be bound by the Terms of Use (https://www.CampusCrave.com/terms-and-conditions), Privacy Policy (https://www.CampusCrave.com/privacy-policy) and other relevant CampusCrave policies and documentations that are available on the Platform  including any modifications, alterations or updates that CampusCrave (hereinafter referred to as “We” “Us”, or “FoodVilla”)  make (collectively referred to as "CampusCrave T&Cs")',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -451,13 +439,13 @@ export const support_data = [
         options: [],
         hyperLinkText: "READ MORE",
         hyperLink:
-          "https://webviews.CHEF-2-DOOR.com/portal-static-page/gourmet_mothers_day_campaign/",
+          "https://webviews.CampusCrave.com/portal-static-page/gourmet_mothers_day_campaign/",
       },
       {
         id: 100489,
         title: "Terms and Conditions for Guiltfree Monday",
         description:
-          'By participating to avail this Offer, all User(s) agree to be bound by the Terms of Use (https://www.CHEF-2-DOOR.com/terms-and-conditions), Privacy Policy (https://www.CHEF-2-DOOR.com/privacy-policy) and other relevant CHEF-2-DOOR policies and documentations that are available on the Platform including any modifications, alterations or updates that CHEF-2-DOOR (hereinafter referred to as “We” “Us”, or “FoodVilla”) make (collectively referred to as "CHEF-2-DOOR T&Cs")',
+          'By participating to avail this Offer, all User(s) agree to be bound by the Terms of Use (https://www.CampusCrave.com/terms-and-conditions), Privacy Policy (https://www.CampusCrave.com/privacy-policy) and other relevant CampusCrave policies and documentations that are available on the Platform including any modifications, alterations or updates that CampusCrave (hereinafter referred to as “We” “Us”, or “FoodVilla”) make (collectively referred to as "CampusCrave T&Cs")',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -467,13 +455,13 @@ export const support_data = [
         options: [],
         hyperLinkText: "READ MORE",
         hyperLink:
-          "https://webviews.CHEF-2-DOOR.com/portal-static-page/guiltfree_monday_campaign/",
+          "https://webviews.CampusCrave.com/portal-static-page/guiltfree_monday_campaign/",
       },
       {
         id: 100394,
         title: "T&C for Mega Savings Festival Order & Win Daily",
         description:
-          " By participating in this activity, all participant User(s)(defined below) agree to be bound by these terms and conditions (“T&Cs”), the Terms of Use, Privacy Policy and other relevant CHEF-2-DOOR policies and documentations that are available on www.CHEF-2-DOOR.com and on its mobile application (“Platform”) including any modifications, alterations or updates that We make (together “FoodVilla T&C’s”).",
+          " By participating in this activity, all participant User(s)(defined below) agree to be bound by these terms and conditions (“T&Cs”), the Terms of Use, Privacy Policy and other relevant CampusCrave policies and documentations that are available on www.CampusCrave.com and on its mobile application (“Platform”) including any modifications, alterations or updates that We make (together “FoodVilla T&C’s”).",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -482,13 +470,13 @@ export const support_data = [
         isResolutionNode: true,
         options: [],
         hyperLinkText: "READ MORE",
-        hyperLink: "https://promos.CHEF-2-DOOR.com/tnc-raffle/v1/index.html",
+        hyperLink: "https://promos.CampusCrave.com/tnc-raffle/v1/index.html",
       },
       {
         id: 100485,
         title: "T&C for Instamart Weekend Supermarket Dineout Vouchers",
         description:
-          'Details of the Offer:  \n\nThis offer (“Offer”) commences at 12:01 A.M on 15th of April 2023 and will remain live until 11:59 PM on 16th of April, 2023 (“Offer Period”) on the Platform . Eligibility of this Offer is only of Instamart users (hereinafter referred to as “You”, “Your” or “User”) subject to and in accordance with the T&Cs mentioned below -\n\nEligibility criteria:\n\nThe minimum order value (of one order) on Instamart shall be of INR 599/- (Rupees Five Hundred and Ninety Nine only) and the order must be successfully delivered (“Order”).\n\nEvery three hundredth User (300th, 600th, 900th……75000th) upto 250 such Users each day i.e. on 15th and 16th April, 2023, who successfully places the Order during the Offer Period, will be eligible to get a Dineout discount voucher* (of 20% upto INR 400 off) (“Voucher”) which they can avail exclusively on the restaurants listed on the Dineout application subject to the terms and conditions of the said Voucher (each a "Voucher Recipient”) . \nWe reserve the right to suspend the Offer for/on a particular day during the Offer Period, or if and when the Voucher Recipients for the day have been selected basis the terms herein.     \n\nRelevant terms and conditions:\n\nThe minimum order value of the Order shall be INR 599/- (Rupees Five Hundred and Ninety Nineonly) which shall be a sum of on the selling price of the products offered on Instamart without discounts, handling fee, delivery fee, any coupon application etc.\nThis Offer is valid in the following cities only: Ahmedabad, Bangalore, Goa, Chandigarh, Dehradun, Delhi, Hyderabad, Indore, Jaipur, Kochi, Kolkata, Lucknow, Ludhiana, Mumbai, Pune, Surat, Vadodara, Gurgaon and Noida.\n\nThe Voucher Recipients will be contacted via Our customer care team on their registered mobile numbers on Whatsapp or on their registered email id’s.  Notwithstanding anything contained herein, it shall be the sole responsibility of the Voucher Recipients to check their messages (including spam). \nNo responsibility is accepted for entries that are late, lost, misdirected or not received by Us during the Offer Period. Any operating or ancillary costs, if any, associated with the Vouchers is the sole responsibility of the Voucher Recipients.\n\nThe Users understand that We do not make any assurances as to the probability of winning in this Offer. \n\nThe User understands and agrees that a User can be a Voucher Recipient only once during this Offer.\nWe do not collect any participation fees for the Offer. \nParticipation in the Offer is entirely voluntary and participation will be construed as an acceptance of the CHEF-2-DOOR T&C’s.',
+          'Details of the Offer:  \n\nThis offer (“Offer”) commences at 12:01 A.M on 15th of April 2025 and will remain live until 11:59 PM on 16th of April, 2025 (“Offer Period”) on the Platform . Eligibility of this Offer is only of Instamart users (hereinafter referred to as “You”, “Your” or “User”) subject to and in accordance with the T&Cs mentioned below -\n\nEligibility criteria:\n\nThe minimum order value (of one order) on Instamart shall be of INR 599/- (Rupees Five Hundred and Ninety Nine only) and the order must be successfully delivered (“Order”).\n\nEvery three hundredth User (300th, 600th, 900th……75000th) upto 250 such Users each day i.e. on 15th and 16th April, 2025, who successfully places the Order during the Offer Period, will be eligible to get a Dineout discount voucher* (of 20% upto INR 400 off) (“Voucher”) which they can avail exclusively on the restaurants listed on the Dineout application subject to the terms and conditions of the said Voucher (each a "Voucher Recipient”) . \nWe reserve the right to suspend the Offer for/on a particular day during the Offer Period, or if and when the Voucher Recipients for the day have been selected basis the terms herein.     \n\nRelevant terms and conditions:\n\nThe minimum order value of the Order shall be INR 599/- (Rupees Five Hundred and Ninety Nineonly) which shall be a sum of on the selling price of the products offered on Instamart without discounts, handling fee, delivery fee, any coupon application etc.\nThis Offer is valid in the following cities only: Ahmedabad, Bangalore, Goa, Chandigarh, Dehradun, Delhi, Hyderabad, Indore, Jaipur, Kochi, Kolkata, Lucknow, Ludhiana, Mumbai, Pune, Surat, Vadodara, Gurgaon and Noida.\n\nThe Voucher Recipients will be contacted via Our customer care team on their registered mobile numbers on Whatsapp or on their registered email id’s.  Notwithstanding anything contained herein, it shall be the sole responsibility of the Voucher Recipients to check their messages (including spam). \nNo responsibility is accepted for entries that are late, lost, misdirected or not received by Us during the Offer Period. Any operating or ancillary costs, if any, associated with the Vouchers is the sole responsibility of the Voucher Recipients.\n\nThe Users understand that We do not make any assurances as to the probability of winning in this Offer. \n\nThe User understands and agrees that a User can be a Voucher Recipient only once during this Offer.\nWe do not collect any participation fees for the Offer. \nParticipation in the Offer is entirely voluntary and participation will be construed as an acceptance of the CampusCrave T&C’s.',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -509,7 +497,7 @@ export const support_data = [
     data: [
       {
         id: 11501,
-        title: "What is CHEF-2-DOOR Customer Care Number?",
+        title: "What is CampusCrave Customer Care Number?",
         description:
           "We value our customer’s time and hence moved away from a single customer care number to a comprehensive chat-based support system for quick and easy resolution. You no longer have to go through the maze of an IVRS call support. Just search for your issue in the help section on this page and initiate a chat with us. A customer care executive will be assigned to you shortly. ",
         conversationId: null,
@@ -527,7 +515,7 @@ export const support_data = [
         title:
           "I entered the wrong CVV, why did my transaction still go through?",
         description:
-          "The logic of validations of CVV resides with either payment gateways or banks. It is absolutely the choice of banks to have CVV as a mandatory input field or not. As per RBI guidelines, 2-Factor-Authentication is not mandatory for less than Rs 2000 rupees transaction. It is not in control of CHEF-2-DOOR. As an organization, we don't store any card information.",
+          "The logic of validations of CVV resides with either payment gateways or banks. It is absolutely the choice of banks to have CVV as a mandatory input field or not. As per RBI guidelines, 2-Factor-Authentication is not mandatory for less than Rs 2000 rupees transaction. It is not in control of CampusCrave. As an organization, we don't store any card information.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -540,7 +528,7 @@ export const support_data = [
       },
       {
         id: 494,
-        title: "I want to explore career opportunities with CHEF-2-DOOR",
+        title: "I want to explore career opportunities with CampusCrave",
         description: null,
         conversationId: null,
         layerConversationId: null,
@@ -554,11 +542,11 @@ export const support_data = [
             phoneNumber: null,
             provider: null,
             waitTime: "We will revert within 24 hrs",
-            emailId: "email-support@CHEF-2-DOOR.in",
+            emailId: "email-support@CampusCrave.in",
           },
         ],
         hyperLinkText: "Join our team",
-        hyperLink: "https://www.CHEF-2-DOOR.com/careers?hide_header=ios_android",
+        hyperLink: "https://www.CampusCrave.com/careers?hide_header=ios_android",
       },
       {
         id: 495,
@@ -576,7 +564,7 @@ export const support_data = [
             phoneNumber: null,
             provider: null,
             waitTime: "We will revert within 24 hrs",
-            emailId: "support@CHEF-2-DOOR.in",
+            emailId: "support@CampusCrave.in",
           },
         ],
         hyperLinkText: null,
@@ -628,7 +616,7 @@ export const support_data = [
             phoneNumber: null,
             provider: null,
             waitTime: "We will revert within 24 hrs",
-            emailId: "support@CHEF-2-DOOR.in",
+            emailId: "support@CampusCrave.in",
           },
         ],
         hyperLinkText: null,
@@ -636,7 +624,7 @@ export const support_data = [
       },
       {
         id: 100049,
-        title: "Will CHEF-2-DOOR be accountable for quality/quantity? ",
+        title: "Will CampusCrave be accountable for quality/quantity? ",
         description:
           "Quantity and quality of the food is the restaurants' responsibility. However in case of issues with the quality or quantity, kindly submit your feedback and we will pass it on to the restaurant.",
         conversationId: null,
@@ -788,7 +776,7 @@ export const support_data = [
         id: 100059,
         title: "Unable to view the details in my profile",
         description:
-          "Please check if your app is due for an update. If not, please share the details via support@CHEF-2-DOOR.in",
+          "Please check if your app is due for an update. If not, please share the details via support@CampusCrave.in",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -803,7 +791,7 @@ export const support_data = [
         id: 100060,
         title: "Did not receive referral coupon?",
         description:
-          "Referral coupon is given upon the first successful transaction of the referred person. If you still have not received it, kindly send us your details at support@CHEF-2-DOOR.in. We will contact you within 48 hours.",
+          "Referral coupon is given upon the first successful transaction of the referred person. If you still have not received it, kindly send us your details at support@CampusCrave.in. We will contact you within 48 hours.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -818,7 +806,7 @@ export const support_data = [
         id: 100061,
         title: "Deactivate my account",
         description:
-          "Please write to us at support@CHEF-2-DOOR.in in the event that you want to deactivate your account.",
+          "Please write to us at support@CampusCrave.in in the event that you want to deactivate your account.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -833,7 +821,7 @@ export const support_data = [
         id: 100062,
         title: "Unable to view the details in my profile",
         description:
-          "Please check if your app is due for an update. If not, please share the details via support@CHEF-2-DOOR.in",
+          "Please check if your app is due for an update. If not, please share the details via support@CampusCrave.in",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -876,7 +864,7 @@ export const support_data = [
       },
       {
         id: 100095,
-        title: "My CHEF-2-DOOR Money wallet has been mis-used by someone else",
+        title: "My CampusCrave Money wallet has been mis-used by someone else",
         description:
           "Please block your wallet by reaching out to our customer care executives. We will work with ICICI to address your issue, if any.",
         conversationId: null,
@@ -892,17 +880,17 @@ export const support_data = [
     ],
   },
   {
-    type: "CHEF-2-DOOR-one-faq",
-    title: "CHEF-2-DOOR One FAQs",
+    type: "CampusCrave-one-faq",
+    title: "CampusCrave One FAQs",
     description:
-      "This issue type deals with CHEF-2-DOOR SUPER related issues or queries for the stake holders in the eco-system.",
+      "This issue type deals with CampusCrave SUPER related issues or queries for the stake holders in the eco-system.",
     data: [
       {
         id: 100333,
         title:
-          "Is there a limit on the number of devices I can use CHEF-2-DOOR One on?",
+          "Is there a limit on the number of devices I can use CampusCrave One on?",
         description:
-          "Yes. CHEF-2-DOOR One membership can be used only on 2 devices at a time from 8th Feb onwards.\n\nFoodVilla One memberships are priced for individual and personal usage. Having a 2 device limit helps us curb disproportionate usage of benefits and ensures the sustainability of the pricing we offer to all our consumers.",
+          "Yes. CampusCrave One membership can be used only on 2 devices at a time from 8th Feb onwards.\n\nFoodVilla One memberships are priced for individual and personal usage. Having a 2 device limit helps us curb disproportionate usage of benefits and ensures the sustainability of the pricing we offer to all our consumers.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -915,9 +903,9 @@ export const support_data = [
       },
       {
         id: 100229,
-        title: "Are CHEF-2-DOOR One benefits available at all restaurants?",
+        title: "Are CampusCrave One benefits available at all restaurants?",
         description:
-          "CHEF-2-DOOR One Free delivery is applicable on ALL food delivery restaurants within 10 kms from your location except Dominos. \nYou are also eligible for member-only extra discounts of up to 30% on select food delivery restaurants. Please note you get this discount over and above the regular offers that you can avail on CHEF-2-DOOR.  ",
+          "CampusCrave One Free delivery is applicable on ALL food delivery restaurants within 10 kms from your location except Dominos. \nYou are also eligible for member-only extra discounts of up to 30% on select food delivery restaurants. Please note you get this discount over and above the regular offers that you can avail on CampusCrave.  ",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -931,7 +919,7 @@ export const support_data = [
       {
         id: 100480,
         title:
-          "Is there a minimum order value to avail CHEF-2-DOOR One Flat ₹150 Off coupons on Dineout?",
+          "Is there a minimum order value to avail CampusCrave One Flat ₹150 Off coupons on Dineout?",
         description:
           'Yes, you can use code "ONE150" on your Dineout bills above Rs 1500 on all Dineout partner restaurants.',
         conversationId: null,
@@ -948,7 +936,7 @@ export const support_data = [
         id: 100228,
         title: "Is there a limit on free deliveries or extra discounts?",
         description:
-          "For our 3-month and 12-month duration plans, you can enjoy free delivery on ALL restaurants upto 10 km and free delivery on all Instamart orders above the minimum order value. You can also avail extra Discounts with CHEF-2-DOOR One on select delivery & Dineout restaurants, Instamart, and Genie.",
+          "For our 3-month and 12-month duration plans, you can enjoy free delivery on ALL restaurants upto 10 km and free delivery on all Instamart orders above the minimum order value. You can also avail extra Discounts with CampusCrave One on select delivery & Dineout restaurants, Instamart, and Genie.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -992,9 +980,9 @@ export const support_data = [
       {
         id: 100223,
         title:
-          "Can I club CHEF-2-DOOR One extra discount with other offers? Is there an upper limit?",
+          "Can I club CampusCrave One extra discount with other offers? Is there an upper limit?",
         description:
-          "As a CHEF-2-DOOR One member, you have exclusive access to member only extra discouts of up to 30% on select food delivery restaurants. \nYou also get 2 coupons worth Rs 150 each on Dineout bills, every month of your membership. This is over and above up to 40% flat off at 18,000+ Dineout restuarants.  \nYou also get exclusive item discounts on select Instamart items. Please note you get these discount over and above the regular offers that you can avail on CHEF-2-DOOR & there is no upper limit to this offer.",
+          "As a CampusCrave One member, you have exclusive access to member only extra discouts of up to 30% on select food delivery restaurants. \nYou also get 2 coupons worth Rs 150 each on Dineout bills, every month of your membership. This is over and above up to 40% flat off at 18,000+ Dineout restuarants.  \nYou also get exclusive item discounts on select Instamart items. Please note you get these discount over and above the regular offers that you can avail on CampusCrave & there is no upper limit to this offer.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1022,9 +1010,9 @@ export const support_data = [
       },
       {
         id: 100224,
-        title: "Are CHEF-2-DOOR One benefits applicable on far away restaurants?",
+        title: "Are CampusCrave One benefits applicable on far away restaurants?",
         description:
-          "CHEF-2-DOOR One Free delivery is applicable on ALL food delivery restaurants up to 10 kms. Any restaurants beyond 10 km will not be eligible for the free delivery benefit. When you order from a new location, you will enjoy benefits on many more restaurants within 10 km from your new location.",
+          "CampusCrave One Free delivery is applicable on ALL food delivery restaurants up to 10 kms. Any restaurants beyond 10 km will not be eligible for the free delivery benefit. When you order from a new location, you will enjoy benefits on many more restaurants within 10 km from your new location.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1037,9 +1025,9 @@ export const support_data = [
       },
       {
         id: 100265,
-        title: "Is CHEF-2-DOOR One available in all cities ?",
+        title: "Is CampusCrave One available in all cities ?",
         description:
-          "Currently CHEF-2-DOOR One is available in select cities only.",
+          "Currently CampusCrave One is available in select cities only.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1054,7 +1042,7 @@ export const support_data = [
         id: 100231,
         title: "Is there a minimum order value to avail free delivery?",
         description:
-          "CHEF-2-DOOR One members in all active cities will get free delivery from all restaurants within 10 km on all orders of value more than INR 149.",
+          "CampusCrave One members in all active cities will get free delivery from all restaurants within 10 km on all orders of value more than INR 149.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1069,7 +1057,7 @@ export const support_data = [
         id: 100232,
         title: "Is there a minimum order value to avail extra discount?",
         description:
-          "Extra discounts with CHEF-2-DOOR One are auto-applied when you meet the minimum order value criteria of the restaurant. The minimum order value of each restaurant may vary from one restaurant to another. Please note that extra discounts are flat discounts with no upper limit which are exclusively available only for One members.",
+          "Extra discounts with CampusCrave One are auto-applied when you meet the minimum order value criteria of the restaurant. The minimum order value of each restaurant may vary from one restaurant to another. Please note that extra discounts are flat discounts with no upper limit which are exclusively available only for One members.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1084,7 +1072,7 @@ export const support_data = [
         id: 100225,
         title: "Can I cancel, pause or transfer my membership?",
         description:
-          "Currently, there are no means of cancelling/pausing/transferring your CHEF-2-DOOR One membership. We are working on this and will ensure we are able to serve you better in the near future.",
+          "Currently, there are no means of cancelling/pausing/transferring your CampusCrave One membership. We are working on this and will ensure we are able to serve you better in the near future.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1097,9 +1085,9 @@ export const support_data = [
       },
       {
         id: 100233,
-        title: "On which platforms can I use my CHEF-2-DOOR One benefits?",
+        title: "On which platforms can I use my CampusCrave One benefits?",
         description:
-          "CHEF-2-DOOR One benefits can be availed when ordering through Android, iOS and mobile web but not on desktop.",
+          "CampusCrave One benefits can be availed when ordering through Android, iOS and mobile web but not on desktop.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1115,7 +1103,7 @@ export const support_data = [
         title:
           "Is there a minimum order value to avail free delivery on restaurants?",
         description:
-          "CHEF-2-DOOR One members in all active cities can avail free delivery on all restaurants within 8 km. This benefit is applicable on all food orders above INR 149.",
+          "CampusCrave One members in all active cities can avail free delivery on all restaurants within 8 km. This benefit is applicable on all food orders above INR 149.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1159,9 +1147,9 @@ export const support_data = [
       {
         id: 100397,
         title:
-          "Is there a limit on the number of CHEF-2-DOOR One extra discounts I can get on Genie?",
+          "Is there a limit on the number of CampusCrave One extra discounts I can get on Genie?",
         description:
-          "No, you can enjoy Unlimited Extra Discounts with CHEF-2-DOOR One on Genie. Flat 10% off on delivery fee is auto-applied on all Genie deliveries within your membership tenure/period.",
+          "No, you can enjoy Unlimited Extra Discounts with CampusCrave One on Genie. Flat 10% off on delivery fee is auto-applied on all Genie deliveries within your membership tenure/period.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1175,7 +1163,7 @@ export const support_data = [
       {
         id: 100269,
         title:
-          "Is there a limit on the number of CHEF-2-DOOR One extra discounts I can get on Instamart?",
+          "Is there a limit on the number of CampusCrave One extra discounts I can get on Instamart?",
         description:
           "No, you can enjoy Unlimited Extra Discounts on select Instamart Items. Extra discounts are auto applied on the eligible Instamart items, this discounts are over and above your regular offers.",
         conversationId: null,
@@ -1190,9 +1178,9 @@ export const support_data = [
       },
       {
         id: 100313,
-        title: "What is CHEF-2-DOOR Dineout ?",
+        title: "What is CampusCrave Dineout ?",
         description:
-          'CHEF-2-DOOR Dineout offers exciting offers to customers which can be availed while dining out across restaurants in 34 cities. CHEF-2-DOOR members get 2 coupons worth Rs 150 each, every month of their membership. This is over and above up to 40% flat off at 18,000+ restuarants. These coupons are applicable on all orders above Rs 1500. \nUse code "ONE150" to avail flat Rs 150 off on your Dineout bills.',
+          'CampusCrave Dineout offers exciting offers to customers which can be availed while dining out across restaurants in 34 cities. CampusCrave members get 2 coupons worth Rs 150 each, every month of their membership. This is over and above up to 40% flat off at 18,000+ restuarants. These coupons are applicable on all orders above Rs 1500. \nUse code "ONE150" to avail flat Rs 150 off on your Dineout bills.',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1206,9 +1194,9 @@ export const support_data = [
       {
         id: 100481,
         title:
-          "What is the CHEF-2-DOOR One Flat ₹150 Off coupon benefit on Dineout?",
+          "What is the CampusCrave One Flat ₹150 Off coupon benefit on Dineout?",
         description:
-          'CHEF-2-DOOR One members get 2 coupons worth flat Rs 150 off, per month of their CHEF-2-DOOR One membership. This is a recurring monthly benefit and is available over and above regular discounts of upto 40% off. \nMembers can avail this discount on all Dineout partner restaurants on dining out bills above Rs 1500.  \n\nUse code "ONE150" to avail the coupon.',
+          'CampusCrave One members get 2 coupons worth flat Rs 150 off, per month of their CampusCrave One membership. This is a recurring monthly benefit and is available over and above regular discounts of upto 40% off. \nMembers can avail this discount on all Dineout partner restaurants on dining out bills above Rs 1500.  \n\nUse code "ONE150" to avail the coupon.',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1222,7 +1210,7 @@ export const support_data = [
       {
         id: 100398,
         title:
-          "Is there a minimum order value to avail the CHEF-2-DOOR One extra discount on Genie?",
+          "Is there a minimum order value to avail the CampusCrave One extra discount on Genie?",
         description:
           "No there is no minimum order value to avail Dineout extra discounts.",
         conversationId: null,
@@ -1238,7 +1226,7 @@ export const support_data = [
       {
         id: 100482,
         title:
-          "How can I avail the CHEF-2-DOOR One Flat ₹150 Off coupon benefit on Dineout?",
+          "How can I avail the CampusCrave One Flat ₹150 Off coupon benefit on Dineout?",
         description:
           'While making a payment at a Dineout partner restaurant, use code "ONE150" at the time of checkout to avail coupon benefit. \nThis is applicable on all transactions above Rs 1500.',
         conversationId: null,
@@ -1254,7 +1242,7 @@ export const support_data = [
       {
         id: 100399,
         title:
-          "Are the CHEF-2-DOOR One extra discounts applicable on all Genie deliveries?",
+          "Are the CampusCrave One extra discounts applicable on all Genie deliveries?",
         description:
           "Yes, the extra discount of Flat 10% off is applicable on all types of Genie deliveries (including 'Pick up & drop' and 'Order anything from store')",
         conversationId: null,
@@ -1269,9 +1257,9 @@ export const support_data = [
       },
       {
         id: 100315,
-        title: "Have you increased the price of CHEF-2-DOOR One membership ?",
+        title: "Have you increased the price of CampusCrave One membership ?",
         description:
-          "Yes. We have increased the price of CHEF-2-DOOR One membership. Recently, CHEF-2-DOOR upgraded the One program by introducing 3 big changes in the membership offering, which include “Unlimited free delivery on ALL restaurants up to 10 km, on orders above Rs 149” and “Extra discounts on 1000+ popular items” on Instamart + Existing benefits. We will continue to invest in making CHEF-2-DOOR One more valuable for our members, through our upcoming offering in the dining out/in- restaurant space.",
+          "Yes. We have increased the price of CampusCrave One membership. Recently, CampusCrave upgraded the One program by introducing 3 big changes in the membership offering, which include “Unlimited free delivery on ALL restaurants up to 10 km, on orders above Rs 149” and “Extra discounts on 1000+ popular items” on Instamart + Existing benefits. We will continue to invest in making CampusCrave One more valuable for our members, through our upcoming offering in the dining out/in- restaurant space.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1286,7 +1274,7 @@ export const support_data = [
         id: 100483,
         title: 'Until when are my "ONE150 coupons" on Dineout valid?',
         description:
-          'The ONE150 coupons are an exclusive monthly benefit, given to all CHEF-2-DOOR members with an Active CHEF-2-DOOR One membership. \nFor every active month of the membership, users are provided two "ONE150 coupons" which they can redeem anytime in a span of 30 days. Once exhausted, the coupon benefit will be available the following month. This benefit cannot be carried forward.',
+          'The ONE150 coupons are an exclusive monthly benefit, given to all CampusCrave members with an Active CampusCrave One membership. \nFor every active month of the membership, users are provided two "ONE150 coupons" which they can redeem anytime in a span of 30 days. Once exhausted, the coupon benefit will be available the following month. This benefit cannot be carried forward.',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1300,7 +1288,7 @@ export const support_data = [
       {
         id: 100400,
         title:
-          "Are CHEF-2-DOOR One extra discounts on Genie applicable on the store bill?",
+          "Are CampusCrave One extra discounts on Genie applicable on the store bill?",
         description:
           "No, the extra discount of flat 10% off is applicable only on the delivery fee, not on the bill value of items purchased. ",
         conversationId: null,
@@ -1316,9 +1304,9 @@ export const support_data = [
       {
         id: 100317,
         title:
-          "I am a CHEF-2-DOOR One member. Do I need to pay extra now that prices have increased ?",
+          "I am a CampusCrave One member. Do I need to pay extra now that prices have increased ?",
         description:
-          "Existing One members can continue to enjoy their existing and new benefits for the duration of their current CHEF-2-DOOR One membership. There is no extra fees which need to be paid.",
+          "Existing One members can continue to enjoy their existing and new benefits for the duration of their current CampusCrave One membership. There is no extra fees which need to be paid.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1347,9 +1335,9 @@ export const support_data = [
       },
       {
         id: 100401,
-        title: "What are the benefits of CHEF-2-DOOR One membership?",
+        title: "What are the benefits of CampusCrave One membership?",
         description:
-          "CHEF-2-DOOR One membership offers benefits on Food, Instamart, Genie and Dineout categories on CHEF-2-DOOR. Please refer to the benefits listed on the CHEF-2-DOOR One page for complete details.",
+          "CampusCrave One membership offers benefits on Food, Instamart, Genie and Dineout categories on CampusCrave. Please refer to the benefits listed on the CampusCrave One page for complete details.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1363,9 +1351,9 @@ export const support_data = [
       {
         id: 100402,
         title:
-          "I am an existing member on CHEF-2-DOOR One, will I be able to redeem a coupon?",
+          "I am an existing member on CampusCrave One, will I be able to redeem a coupon?",
         description:
-          "As an existing CHEF-2-DOOR One member, you would be allowed to extend the membership on coupon application, at the partner’s discretion. This means, based on the partnership terms, you could get a coupon that allows for extension on top of your active CHEF-2-DOOR One membership. ",
+          "As an existing CampusCrave One member, you would be allowed to extend the membership on coupon application, at the partner’s discretion. This means, based on the partnership terms, you could get a coupon that allows for extension on top of your active CampusCrave One membership. ",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1379,9 +1367,9 @@ export const support_data = [
       {
         id: 100403,
         title:
-          "Will I be able to renew my expired plan through a CHEF-2-DOOR One coupon?",
+          "Will I be able to renew my expired plan through a CampusCrave One coupon?",
         description:
-          "Yes, if you are an expired customer, you can use the coupon received to renew onto a CHEF-2-DOOR One membership.",
+          "Yes, if you are an expired customer, you can use the coupon received to renew onto a CampusCrave One membership.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1394,7 +1382,7 @@ export const support_data = [
       },
       {
         id: 100404,
-        title: "What will be the validity of a CHEF-2-DOOR One coupon?",
+        title: "What will be the validity of a CampusCrave One coupon?",
         description:
           "Every coupon will have an expiry based on the agreement with the partner. If you apply an expired coupon, you will get an error message stating that your coupon is ineligible when you apply the coupon. ",
         conversationId: null,
@@ -1409,7 +1397,7 @@ export const support_data = [
       },
       {
         id: 100406,
-        title: "What will be the validity of the CHEF-2-DOOR One benefits?",
+        title: "What will be the validity of the CampusCrave One benefits?",
         description:
           "Please check with the terms of the coupon from the partner from whom you received this coupon.",
         conversationId: null,
@@ -1425,9 +1413,9 @@ export const support_data = [
       {
         id: 100407,
         title:
-          "After applying the coupon, I get a CHEF-2-DOOR One plan price same as the plan price visible to me on the CHEF-2-DOOR app?",
+          "After applying the coupon, I get a CampusCrave One plan price same as the plan price visible to me on the CampusCrave app?",
         description:
-          "You may see the same or even lower membership price only when we occasionally offer promotional discounts to select customers based on their usage patterns on the CHEF-2-DOOR app. Note that these promotional discounts are ephemeral in nature. ",
+          "You may see the same or even lower membership price only when we occasionally offer promotional discounts to select customers based on their usage patterns on the CampusCrave app. Note that these promotional discounts are ephemeral in nature. ",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1441,9 +1429,9 @@ export const support_data = [
       {
         id: 100408,
         title:
-          "I see only certain CHEF-2-DOOR One benefits are available in my city?",
+          "I see only certain CampusCrave One benefits are available in my city?",
         description:
-          "Each CHEF-2-DOOR One benefit has a city dependency. For example, Dining out benefits as on 1 January, 2023 are only available in 24 cities in India. You may or may not get a CHEF-2-DOOR One benefit based on the location you are in when you place an order. Similarly, Instamart and Food category benefits are available in select cities. ",
+          "Each CampusCrave One benefit has a city dependency. For example, Dining out benefits as on 1 January, 2025 are only available in 24 cities in India. You may or may not get a CampusCrave One benefit based on the location you are in when you place an order. Similarly, Instamart and Food category benefits are available in select cities. ",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1458,7 +1446,7 @@ export const support_data = [
         id: 100409,
         title: "I am unable to avail this coupon. What should I do?",
         description:
-          "Please check the terms and conditions on the partner’s website to check if you are eligible to avail the offer. Please email us at (support@CHEF-2-DOOR.in) - This is the email ID which we use for Customer support.",
+          "Please check the terms and conditions on the partner’s website to check if you are eligible to avail the offer. Please email us at (support@CampusCrave.in) - This is the email ID which we use for Customer support.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1473,7 +1461,7 @@ export const support_data = [
         id: 100498,
         title: "Am I eligible for money-back guarantee?",
         description:
-          "If you are eligible for money-back guarantee, you would get a communication on the CHEF-2-DOOR One page with the money-back guarantee offering. If you do not get the money-back guarantee communication on your CHEF-2-DOOR One page, you are not eligible for it. ",
+          "If you are eligible for money-back guarantee, you would get a communication on the CampusCrave One page with the money-back guarantee offering. If you do not get the money-back guarantee communication on your CampusCrave One page, you are not eligible for it. ",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1486,9 +1474,9 @@ export const support_data = [
       },
       {
         id: 100499,
-        title: "What does a money-back guarantee on CHEF-2-DOOR One mean?",
+        title: "What does a money-back guarantee on CampusCrave One mean?",
         description:
-          "A money-back guarantee is a no-loss proposition for you, wherein CHEF-2-DOOR will cover you in case you are not able to break even on your CHEF-2-DOOR One investment (subscription). After purchasing CHEF-2-DOOR One if a scenario occurs that you save less than the subscription price paid, after the membership expiry, CHEF-2-DOOR will credit back the difference amount back to the user. Credit amount = (Subscription price - Savings during membership period).",
+          "A money-back guarantee is a no-loss proposition for you, wherein CampusCrave will cover you in case you are not able to break even on your CampusCrave One investment (subscription). After purchasing CampusCrave One if a scenario occurs that you save less than the subscription price paid, after the membership expiry, CampusCrave will credit back the difference amount back to the user. Credit amount = (Subscription price - Savings during membership period).",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1504,7 +1492,7 @@ export const support_data = [
         title:
           "How do I know the savings breakup and how much I have saved during the membership period?",
         description:
-          "CHEF-2-DOOR One membership page (active page) will help you with the live & updated details of the total savings during the membership period to date.",
+          "CampusCrave One membership page (active page) will help you with the live & updated details of the total savings during the membership period to date.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1520,7 +1508,7 @@ export const support_data = [
         title:
           "How do I know if my money-back guarantee is activated post-purchase?",
         description:
-          "The money-back guarantee gets activated immediately after a user purchases it. For a cohort of users that moneyback is offered - CHEF-2-DOOR will inform the users about the money-back activation through an email post a CHEF-2-DOOR One purchase.",
+          "The money-back guarantee gets activated immediately after a user purchases it. For a cohort of users that moneyback is offered - CampusCrave will inform the users about the money-back activation through an email post a CampusCrave One purchase.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1536,7 +1524,7 @@ export const support_data = [
         title:
           "Will Dineout, Instamart & Genie savings also be included while calculating the total savings?",
         description:
-          "Yes. The savings cover the monetary discounts or offers through all CHEF-2-DOOR One enlisted benefits that the user signed up for while they were purchasing the membership.",
+          "Yes. The savings cover the monetary discounts or offers through all CampusCrave One enlisted benefits that the user signed up for while they were purchasing the membership.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1568,7 +1556,7 @@ export const support_data = [
         title:
           "If my savings are lesser than the subscription price paid, how & when will I be able to avail my money back?",
         description:
-          "We will credit back the money directly via CHEF-2-DOOR Money within 7 business days after membership expiry.  ",
+          "We will credit back the money directly via CampusCrave Money within 7 business days after membership expiry.  ",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1583,14 +1571,14 @@ export const support_data = [
   },
   {
     type: "foodvilla_money_faq",
-    title: "CHEF-2-DOOR Money FAQs",
-    description: "FAQs regarding CHEF-2-DOOR money",
+    title: "CampusCrave Money FAQs",
+    description: "FAQs regarding CampusCrave money",
     data: [
       {
         id: 100505,
-        title: "How do I add CHEF-2-DOOR Money balance in my account?",
+        title: "How do I add CampusCrave Money balance in my account?",
         description:
-          "You can claim the CHEF-2-DOOR Money vouchers purchased from 3rd party apps or received from your friends, employers etc. on CHEF-2-DOOR app (CHEF-2-DOOR -> Accounts -> CHEF-2-DOOR Money). You can also opt in for refunds in CHEF-2-DOOR Money",
+          "You can claim the CampusCrave Money vouchers purchased from 3rd party apps or received from your friends, employers etc. on CampusCrave app (CampusCrave -> Accounts -> CampusCrave Money). You can also opt in for refunds in CampusCrave Money",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1603,9 +1591,9 @@ export const support_data = [
       },
       {
         id: 100506,
-        title: "How do I add CHEF-2-DOOR Gift Card balance to my account?",
+        title: "How do I add CampusCrave Gift Card balance to my account?",
         description:
-          "You can enter the 16-digit code and 4 digit PIN received in email or SMS on CHEF-2-DOOR Money page after logging in to the CHEF-2-DOOR app.",
+          "You can enter the 16-digit code and 4 digit PIN received in email or SMS on CampusCrave Money page after logging in to the CampusCrave app.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1618,9 +1606,9 @@ export const support_data = [
       },
       {
         id: 100507,
-        title: "Where can I use CHEF-2-DOOR Money balance?",
+        title: "Where can I use CampusCrave Money balance?",
         description:
-          "CHEF-2-DOOR Money can be used to pay for the orders across different categories on CHEF-2-DOOR (Food, Instamart, DineOut, Genie etc.). Choose the CHEF-2-DOOR Money option on CHEF-2-DOOR payments page to use the balance.",
+          "CampusCrave Money can be used to pay for the orders across different categories on CampusCrave (Food, Instamart, DineOut, Genie etc.). Choose the CampusCrave Money option on CampusCrave payments page to use the balance.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1633,9 +1621,9 @@ export const support_data = [
       },
       {
         id: 100509,
-        title: "Is my money safe with CHEF-2-DOOR Money?",
+        title: "Is my money safe with CampusCrave Money?",
         description:
-          "Yes, CHEF-2-DOOR Money is powered by Razorpay and us a fully RBI compliant Semi-closed Prepaid Payment Instrument (PPI).",
+          "Yes, CampusCrave Money is powered by Razorpay and us a fully RBI compliant Semi-closed Prepaid Payment Instrument (PPI).",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1649,9 +1637,9 @@ export const support_data = [
       {
         id: 100510,
         title:
-          "Do I need to upload any documents in order to use CHEF-2-DOOR Money?",
+          "Do I need to upload any documents in order to use CampusCrave Money?",
         description:
-          "No. You can start using CHEF-2-DOOR Money just by logging in to CHEF-2-DOOR and claiming your CHEF-2-DOOR Money vouchers.",
+          "No. You can start using CampusCrave Money just by logging in to CampusCrave and claiming your CampusCrave Money vouchers.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1664,9 +1652,9 @@ export const support_data = [
       },
       {
         id: 100511,
-        title: "Are there any transaction limits in CHEF-2-DOOR Money?",
+        title: "Are there any transaction limits in CampusCrave Money?",
         description:
-          "Starting July’23, there won’t be any limit on each transaction amount. Till the month of Jun’23, you might see a restriction using of INR 10,000 per month (CHEF-2-DOOR is gradually moving users to the new experience - see latest updates on CHEF-2-DOOR Money page)",
+          "Starting July’23, there won’t be any limit on each transaction amount. Till the month of Jun’23, you might see a restriction using of INR 10,000 per month (CampusCrave is gradually moving users to the new experience - see latest updates on CampusCrave Money page)",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1679,9 +1667,9 @@ export const support_data = [
       },
       {
         id: 100512,
-        title: "Can I transfer my CHEF-2-DOOR Money balance to my bank account?",
+        title: "Can I transfer my CampusCrave Money balance to my bank account?",
         description:
-          "No, you cannot transfer your CHEF-2-DOOR Money balance to your bank account.",
+          "No, you cannot transfer your CampusCrave Money balance to your bank account.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1694,9 +1682,9 @@ export const support_data = [
       },
       {
         id: 100513,
-        title: "Where can I view my CHEF-2-DOOR Money transactions?",
+        title: "Where can I view my CampusCrave Money transactions?",
         description:
-          "You can access CHEF-2-DOOR Money from the ‘My Account’ screen. You can view your transaction history details by clicking on the ‘FoodVilla Money’ section.",
+          "You can access CampusCrave Money from the ‘My Account’ screen. You can view your transaction history details by clicking on the ‘FoodVilla Money’ section.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1709,9 +1697,9 @@ export const support_data = [
       },
       {
         id: 100514,
-        title: "Does CHEF-2-DOOR Money expire?",
+        title: "Does CampusCrave Money expire?",
         description:
-          "Starting July’23, all CHEF-2-DOOR Money credits will carry a validity of 365 days from the day you add balance on the CHEF-2-DOOR app. However, you can request for extension of the expiry from the app. For credits older than July’23, some might not have any validity. You can check the validity against each transaction on CHEF-2-DOOR Money page.",
+          "Starting July’23, all CampusCrave Money credits will carry a validity of 365 days from the day you add balance on the CampusCrave app. However, you can request for extension of the expiry from the app. For credits older than July’23, some might not have any validity. You can check the validity against each transaction on CampusCrave Money page.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1724,7 +1712,7 @@ export const support_data = [
       },
       {
         id: 100515,
-        title: "Can I close my CHEF-2-DOOR Money account?",
+        title: "Can I close my CampusCrave Money account?",
         description:
           "No. But as per RBI regulations, you can disable or block your account from further use. Please get in touch with our Customer Care team in case you wish to do so.",
         conversationId: null,
@@ -1740,7 +1728,7 @@ export const support_data = [
       {
         id: 100516,
         title:
-          "Someone misused my CHEF-2-DOOR Money balance. How do I report it?",
+          "Someone misused my CampusCrave Money balance. How do I report it?",
         description:
           "Please get in touch with our Customer Care team who will record your complaint and block your account. We will then follow the RBI mandated redressal mechanism to resolve your queries.",
         conversationId: null,
@@ -1756,9 +1744,9 @@ export const support_data = [
       {
         id: 100517,
         title:
-          "I changed my mind, I don’t want my refund to go to my CHEF-2-DOOR Money.",
+          "I changed my mind, I don’t want my refund to go to my CampusCrave Money.",
         description:
-          "Sorry, once your refund has gone to your CHEF-2-DOOR Money, it cannot be undone. However, you can use the amount in the wallet for your next order on CHEF-2-DOOR.",
+          "Sorry, once your refund has gone to your CampusCrave Money, it cannot be undone. However, you can use the amount in the wallet for your next order on CampusCrave.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1772,7 +1760,7 @@ export const support_data = [
       {
         id: 100518,
         title:
-          "Can I transfer my CHEF-2-DOOR Money balance to another CHEF-2-DOOR Money?",
+          "Can I transfer my CampusCrave Money balance to another CampusCrave Money?",
         description: "As of now we do not support this functionality.",
         conversationId: null,
         layerConversationId: null,
@@ -1787,7 +1775,7 @@ export const support_data = [
       {
         id: 100519,
         title:
-          "I opted for a refund to my CHEF-2-DOOR Money account, but it is not credited.",
+          "I opted for a refund to my CampusCrave Money account, but it is not credited.",
         description:
           "We are extremely sorry for the inconvenience. Please reach out to our Customer Care team for a swift resolution.",
         conversationId: null,
@@ -1803,7 +1791,7 @@ export const support_data = [
       {
         id: 100520,
         title:
-          "I am not able to pay using CHEF-2-DOOR Money even after claiming the voucher.",
+          "I am not able to pay using CampusCrave Money even after claiming the voucher.",
         description:
           "Please reach out to our Customer Care team for a swift resolution.",
         conversationId: null,
@@ -1819,9 +1807,9 @@ export const support_data = [
       {
         id: 100521,
         title:
-          "Can I pay for an order using CHEF-2-DOOR Money and other payment methods?",
+          "Can I pay for an order using CampusCrave Money and other payment methods?",
         description:
-          "Yes. You can use CHEF-2-DOOR Money along with another payment instrument to pay for an order,  provided the amount available in CHEF-2-DOOR Money is lower than the order value.",
+          "Yes. You can use CampusCrave Money along with another payment instrument to pay for an order,  provided the amount available in CampusCrave Money is lower than the order value.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1835,7 +1823,7 @@ export const support_data = [
       {
         id: 100522,
         title:
-          "My order transaction failed but money was deducted from my CHEF-2-DOOR Money",
+          "My order transaction failed but money was deducted from my CampusCrave Money",
         description:
           "We are sorry if you faced this issue. Please get in touch with our Customer Care team for a swift resolution.",
         conversationId: null,
@@ -1852,14 +1840,14 @@ export const support_data = [
   },
   {
     type: "dineout",
-    title: "CHEF-2-DOOR Dineout FAQs",
+    title: "CampusCrave Dineout FAQs",
     description: "This issue type deals with FAQ related to dineout",
     data: [
       {
         id: 100242,
-        title: "What is CHEF-2-DOOR Dineout?",
+        title: "What is CampusCrave Dineout?",
         description:
-          "CHEF-2-DOOR Dineout helps its users discover the best restaurants with exclusive offers near them. All users can avail special restaurant discounts of up to 40% and additional card benefits when paying their restaurant bills via CHEF-2-DOOR Dineout.",
+          "CampusCrave Dineout helps its users discover the best restaurants with exclusive offers near them. All users can avail special restaurant discounts of up to 40% and additional card benefits when paying their restaurant bills via CampusCrave Dineout.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1874,7 +1862,7 @@ export const support_data = [
         id: 100246,
         title: "How do I claim a offer?",
         description:
-          'To avail a CHEF-2-DOOR Dineout offer, you would need to pay your dining bill at the restaurant using the CHEF-2-DOOR app. This can be done by searching for that restaurant on the app and tapping the "PAY BILL TO GET OFFER" button. Please note that the relevant offer, depending on the day and time of your visit, will be auto-applied at the time of checkout.',
+          'To avail a CampusCrave Dineout offer, you would need to pay your dining bill at the restaurant using the CampusCrave app. This can be done by searching for that restaurant on the app and tapping the "PAY BILL TO GET OFFER" button. Please note that the relevant offer, depending on the day and time of your visit, will be auto-applied at the time of checkout.',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1888,9 +1876,9 @@ export const support_data = [
       {
         id: 100417,
         title:
-          "What is the maximum bill amount that I can pay via CHEF-2-DOOR Dineout at a restaurant in a single transaction?",
+          "What is the maximum bill amount that I can pay via CampusCrave Dineout at a restaurant in a single transaction?",
         description:
-          "You can pay up to Rs. 50,000 per transaction via CHEF-2-DOOR Dineout at a restaurant. ",
+          "You can pay up to Rs. 50,000 per transaction via CampusCrave Dineout at a restaurant. ",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1905,7 +1893,7 @@ export const support_data = [
         id: 100441,
         title: "What is GIRF?",
         description:
-          "Great Indian Restaurant Festival (GIRF) is India's largest dining out festival and CHEF-2-DOOR Dineout is back with its 7th edition from 12th April 2023. Buy any of the limited GIRF Deals on the CHEF-2-DOOR app to unlock the most exclusive offers on your favourite restaurants. Make sure to show the deal confirmation SMS at the restaurant before you order. Pay using CHEF-2-DOOR Dineout and save on your bill like never before!",
+          "Great Indian Restaurant Festival (GIRF) is India's largest dining out festival and CampusCrave Dineout is back with its 7th edition from 12th April 2025. Buy any of the limited GIRF Deals on the CampusCrave app to unlock the most exclusive offers on your favourite restaurants. Make sure to show the deal confirmation SMS at the restaurant before you order. Pay using CampusCrave Dineout and save on your bill like never before!",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1920,7 +1908,7 @@ export const support_data = [
         id: 100442,
         title: "How can I purchase GIRF Deal?",
         description:
-          "You can purchase a GIRF deal on CHEF-2-DOOR Dineout by following the below steps: \n1. Open CHEF-2-DOOR Dineout and choose your favourite restaurant.\n2. Pick your preferred GIRF deal available on the restaurant page.\n3. Enter the number of guests, date, and time of your visit as per your preferences.\n4. Select a payment method to complete the payment.\nVoila! You should get a deal confirmation on the app as well as on your register phone number and email.",
+          "You can purchase a GIRF deal on CampusCrave Dineout by following the below steps: \n1. Open CampusCrave Dineout and choose your favourite restaurant.\n2. Pick your preferred GIRF deal available on the restaurant page.\n3. Enter the number of guests, date, and time of your visit as per your preferences.\n4. Select a payment method to complete the payment.\nVoila! You should get a deal confirmation on the app as well as on your register phone number and email.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1935,7 +1923,7 @@ export const support_data = [
         id: 100443,
         title: "What are the T&Cs for using the GIRF deal?",
         description:
-          'Once you select your preferred deal at your favourite restaurant, you can review all GIRF related T&C before making the payment. If you have already purchased a GIRF deal, you can view the T&Cs by going to the Dineout page on the CHEF-2-DOOR app. Tap on "View details" under the "My bookings" section.',
+          'Once you select your preferred deal at your favourite restaurant, you can review all GIRF related T&C before making the payment. If you have already purchased a GIRF deal, you can view the T&Cs by going to the Dineout page on the CampusCrave app. Tap on "View details" under the "My bookings" section.',
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1950,7 +1938,7 @@ export const support_data = [
         id: 100444,
         title: "Where can I check the deal status?",
         description:
-          "You will receive a deal confirmation on the CHEF-2-DOOR App and on your registered contact details through an SMS/email after successful purchasing your GIRF deal. The deal status and details will also be available to you on the Dineout page on the CHEF-2-DOOR app.",
+          "You will receive a deal confirmation on the CampusCrave App and on your registered contact details through an SMS/email after successful purchasing your GIRF deal. The deal status and details will also be available to you on the Dineout page on the CampusCrave app.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -1995,7 +1983,7 @@ export const support_data = [
         id: 100448,
         title: "Can bank & wallet offers be clubbed with GIRF Deals?",
         description:
-          "Yes. Bank offers can be used along with the GIRF deal discounts. Simply enter the bill amount on the restaurant's payments page on the CHEF-2-DOOR app, and ensure you're selecting your preferred bank offer in the additional offers section before you make the payment. \nHDFC discount is subject to offer T&Cs.",
+          "Yes. Bank offers can be used along with the GIRF deal discounts. Simply enter the bill amount on the restaurant's payments page on the CampusCrave app, and ensure you're selecting your preferred bank offer in the additional offers section before you make the payment. \nHDFC discount is subject to offer T&Cs.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -2011,7 +1999,7 @@ export const support_data = [
         title:
           "Can regular discounts or offers on Dineout be clubbed with GIRF Deals?",
         description:
-          "You can use your CHEF-2-DOOR Money wallet to get restaurant specific discounts on the app. However, you cannot club any GIRF Deals/coupons with any other existing offers on CHEF-2-DOOR or at the restaurant or with any other non-partner third party offers.",
+          "You can use your CampusCrave Money wallet to get restaurant specific discounts on the app. However, you cannot club any GIRF Deals/coupons with any other existing offers on CampusCrave or at the restaurant or with any other non-partner third party offers.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -2026,7 +2014,7 @@ export const support_data = [
         id: 100450,
         title: "How do I redeem/avail the deal that I have purchased?",
         description:
-          "You can redeem a GIRF deal by following the below steps: \n1. Ensure to arrive at the restaurant within your booked time slot.\n2. Show your GIRF deal details to the restaurant before you order.\n3. Enjoy your delicious meal.\n4. Pay the bill within 2 hours of your booked slot using CHEF-2-DOOR Dineout. Your deal will get auto-applied and you're done!",
+          "You can redeem a GIRF deal by following the below steps: \n1. Ensure to arrive at the restaurant within your booked time slot.\n2. Show your GIRF deal details to the restaurant before you order.\n3. Enjoy your delicious meal.\n4. Pay the bill within 2 hours of your booked slot using CampusCrave Dineout. Your deal will get auto-applied and you're done!",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -2057,7 +2045,7 @@ export const support_data = [
         title:
           "What do I do if the restaurant refuses to accept/honor my GIRF Deal?",
         description:
-          "We assure you that this will not happen. In case a restaurant does refuse to acknowledge your GIRF Deal, please reach out to us on the CHEF-2-DOOR Dineout helpcenter and we will resolve this for you.",
+          "We assure you that this will not happen. In case a restaurant does refuse to acknowledge your GIRF Deal, please reach out to us on the CampusCrave Dineout helpcenter and we will resolve this for you.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,
@@ -2072,7 +2060,7 @@ export const support_data = [
         id: 100453,
         title: "Is there any kids or stag policy for GIRF?",
         description:
-          "Terms and Conditions for kids/stags policy may vary from restaurant to restaurant. Please make sure you check the restaurant detail page for specific terms and conditions before buying your deal. In case of specific questions, feel free to call the restaurant and clarify the terms. The restaurant can be contacted via the phone number on the restaurant detail page on the CHEF-2-DOOR App.",
+          "Terms and Conditions for kids/stags policy may vary from restaurant to restaurant. Please make sure you check the restaurant detail page for specific terms and conditions before buying your deal. In case of specific questions, feel free to call the restaurant and clarify the terms. The restaurant can be contacted via the phone number on the restaurant detail page on the CampusCrave App.",
         conversationId: null,
         layerConversationId: null,
         ackText: null,

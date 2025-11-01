@@ -2,7 +2,7 @@ import React from "react";
 import { RES_CARD_IMG_CDN_URL } from "../helpers/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const RestaurantCard = ({
   id,
@@ -16,10 +16,18 @@ const RestaurantCard = ({
   cuisines,
   locationSearchVisibility,
 }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (isOpen) {
+      navigate("/restaurant/" + id);
+    }
+  };
+
   return (
     <div key={id} className={`${locationSearchVisibility ? "-z-10" : ""}`}>
-      <Link
-        to={isOpen ? "/restaurant/" + id : ""}
+      <div
+        onClick={handleClick}
         key={id}
         className={`grid grid-flow-row justify-stretch h-auto transition-all ease-in delay-100 hover:scale-95 hover:origin-center ${
           isOpen ? "cursor-pointer" : "cursor-not-allowed"
@@ -64,7 +72,7 @@ const RestaurantCard = ({
             <p>{cuisines.join(", ")}</p>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };

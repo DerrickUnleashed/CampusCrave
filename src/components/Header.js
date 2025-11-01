@@ -82,19 +82,7 @@ const Header = () => {
             className="cursor-pointer flex justify-center items-center gap-2 truncate self-center text-[#3d4152]"
             onClick={() => handleLocationClick()}
           >
-            <h2
-              className="text-lg truncate"
-              title={area + ", " + city + ", " + state}
-            >
-              <span className="text-md mr-1 leading tracking-tight font-bold border-b border-black hover:text-[#f75500]">
-                Other
-              </span>
-              {area + ", " + city + ", " + state}
-            </h2>
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              className="text-[#f75500] text-xs"
-            />
+  
           </div>
         </div>
         <>

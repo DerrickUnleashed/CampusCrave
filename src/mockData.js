@@ -6,7 +6,7 @@ import northsq from "./assets/northsq.jpg";
 import dominos from "./assets/dominos.jpg";
 import gymkhana from "./assets/gymkhana.jpg";
 import logoPng from "./assets/logo.png";
-import landing from "./assets/chef2doorlandingpage.png";
+import landing from "./assets/campuscravelandingpage.png";
 
 export const mockUsers = [
   {
@@ -16,7 +16,7 @@ export const mockUsers = [
     role: "Student",
     vCoins: 150,
     profilePic: "https://via.placeholder.com/100",
-    joinedDate: "2023-01-15",
+    joinedDate: "2025-01-15",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const mockUsers = [
     role: "Runner",
     vCoins: 200,
     profilePic: "https://via.placeholder.com/100",
-    joinedDate: "2023-03-10",
+    joinedDate: "2025-03-10",
   },
   {
     id: 4,
@@ -622,12 +622,12 @@ export const mockRestaurants = [
 
 export const mockMenus = {
   "1": {
-    // Campus Cafe menu
+    // Gazebo C1 menu
     menu: [
       {
         id: "101",
         name: "Burger Combo",
-        price: 150,
+        price: 15000,
         description: "Juicy burger with fries and drink",
         imageId: "mock-burger",
         category: "Main Course",
@@ -641,7 +641,7 @@ export const mockMenus = {
           },
         },
         customizations: [
-          { name: "Extra Cheese", price: 20 },
+          { name: "Extra Cheese", price: 2000 },
           { name: "No Onions", price: 0 },
         ],
         vCoinValue: 15,
@@ -649,7 +649,7 @@ export const mockMenus = {
       {
         id: "102",
         name: "Veggie Pizza",
-        price: 200,
+        price: 20000,
         description: "Fresh veggies on thin crust",
         imageId: "mock-pizza",
         category: "Main Course",
@@ -663,20 +663,178 @@ export const mockMenus = {
           },
         },
         customizations: [
-          { name: "Extra Toppings", price: 30 },
+          { name: "Extra Toppings", price: 3000 },
           { name: "Thin Crust", price: 0 },
         ],
         vCoinValue: 20,
       },
+      {
+        id: "103",
+        name: "Chicken Nuggets",
+        price: 12000,
+        description: "Crispy chicken nuggets with dip",
+        imageId: "mock-nuggets",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "60+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 10,
+      },
+      {
+        id: "104",
+        name: "Caesar Salad",
+        price: 18000,
+        description: "Fresh salad with caesar dressing",
+        imageId: "mock-salad",
+        category: "Salads",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "50+",
+          },
+        },
+        customizations: [
+          { name: "Add Chicken", price: 5000 },
+        ],
+        vCoinValue: 18,
+      },
+      {
+        id: "105",
+        name: "French Fries",
+        price: 8000,
+        description: "Golden crispy fries",
+        imageId: "mock-fries",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.1",
+            ratingCount: "90+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+      {
+        id: "106",
+        name: "Chocolate Shake",
+        price: 10000,
+        description: "Rich chocolate milkshake",
+        imageId: "mock-shake",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "70+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+      {
+        id: "107",
+        name: "Grilled Chicken",
+        price: 22000,
+        description: "Tender grilled chicken",
+        imageId: "mock-chicken",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.7",
+            ratingCount: "40+",
+          },
+        },
+        customizations: [
+          { name: "Spicy", price: 1000 },
+        ],
+        vCoinValue: 22,
+      },
+      {
+        id: "108",
+        name: "Pasta Alfredo",
+        price: 19000,
+        description: "Creamy pasta with alfredo sauce",
+        imageId: "mock-pasta",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "55+",
+          },
+        },
+        customizations: [
+          { name: "Add Mushrooms", price: 2000 },
+        ],
+        vCoinValue: 19,
+      },
+      {
+        id: "109",
+        name: "Onion Rings",
+        price: 9000,
+        description: "Crispy onion rings",
+        imageId: "mock-rings",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.0",
+            ratingCount: "65+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 9,
+      },
+      {
+        id: "110",
+        name: "Ice Cream Sundae",
+        price: 13000,
+        description: "Delicious ice cream sundae",
+        imageId: "mock-sundae",
+        category: "Desserts",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "75+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 13,
+      },
     ],
   },
   "2": {
-    // Dormitory Dining menu
+    // Gazebo C2 menu
     menu: [
       {
         id: "201",
         name: "Chicken Biryani",
-        price: 120,
+        price: 12000,
         description: "Aromatic rice with tender chicken",
         imageId: "mock-biryani",
         category: "Main Course",
@@ -690,14 +848,1133 @@ export const mockMenus = {
           },
         },
         customizations: [
-          { name: "Extra Spice", price: 10 },
-          { name: "Boiled Egg", price: 15 },
+          { name: "Extra Spice", price: 1000 },
+          { name: "Boiled Egg", price: 1500 },
         ],
         vCoinValue: 12,
       },
+      {
+        id: "202",
+        name: "Paneer Tikka",
+        price: 16000,
+        description: "Grilled paneer cubes",
+        imageId: "mock-paneer",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "120+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 16,
+      },
+      {
+        id: "203",
+        name: "Butter Chicken",
+        price: 25000,
+        description: "Rich butter chicken curry",
+        imageId: "mock-butter-chicken",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.8",
+            ratingCount: "200+",
+          },
+        },
+        customizations: [
+          { name: "Extra Butter", price: 2000 },
+        ],
+        vCoinValue: 25,
+      },
+      {
+        id: "204",
+        name: "Dal Makhani",
+        price: 14000,
+        description: "Creamy lentil curry",
+        imageId: "mock-dal",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "100+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 14,
+      },
+      {
+        id: "205",
+        name: "Naan",
+        price: 4000,
+        description: "Soft Indian bread",
+        imageId: "mock-naan",
+        category: "Breads",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "80+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 4,
+      },
+      {
+        id: "206",
+        name: "Lassi",
+        price: 6000,
+        description: "Sweet yogurt drink",
+        imageId: "mock-lassi",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "90+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 6,
+      },
+      {
+        id: "207",
+        name: "Chili Chicken",
+        price: 18000,
+        description: "Spicy chili chicken",
+        imageId: "mock-chili-chicken",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.7",
+            ratingCount: "110+",
+          },
+        },
+        customizations: [
+          { name: "Extra Spicy", price: 1000 },
+        ],
+        vCoinValue: 18,
+      },
+      {
+        id: "208",
+        name: "Rajma",
+        price: 13000,
+        description: "Kidney bean curry",
+        imageId: "mock-rajma",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.1",
+            ratingCount: "70+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 13,
+      },
+      {
+        id: "209",
+        name: "Samosa",
+        price: 5000,
+        description: "Crispy potato filled pastry",
+        imageId: "mock-samosa",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "130+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 5,
+      },
+      {
+        id: "210",
+        name: "Ras Malai",
+        price: 8000,
+        description: "Sweet cheese dumplings",
+        imageId: "mock-ras-malai",
+        category: "Desserts",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "95+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
     ],
   },
-};
+  "3": {
+    // Gazebo C3 menu
+    menu: [
+      {
+        id: "301",
+        name: "Veggie Wrap",
+        price: 10000,
+        description: "Healthy veggie wrap",
+        imageId: "mock-wrap",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "60+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 10,
+      },
+      {
+        id: "302",
+        name: "Fruit Salad",
+        price: 9000,
+        description: "Fresh fruit mix",
+        imageId: "mock-fruit-salad",
+        category: "Salads",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "50+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 9,
+      },
+      {
+        id: "303",
+        name: "Smoothie Bowl",
+        price: 15000,
+        description: "Nutritious smoothie bowl",
+        imageId: "mock-smoothie",
+        category: "Healthy",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "40+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 15,
+      },
+      {
+        id: "304",
+        name: "Quinoa Salad",
+        price: 14000,
+        description: "Quinoa with veggies",
+        imageId: "mock-quinoa",
+        category: "Salads",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "35+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 14,
+      },
+      {
+        id: "305",
+        name: "Green Tea",
+        price: 5000,
+        description: "Refreshing green tea",
+        imageId: "mock-tea",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.1",
+            ratingCount: "45+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 5,
+      },
+      {
+        id: "306",
+        name: "Avocado Toast",
+        price: 12000,
+        description: "Toast with avocado",
+        imageId: "mock-avocado",
+        category: "Breakfast",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "55+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+      {
+        id: "307",
+        name: "Protein Shake",
+        price: 11000,
+        description: "High protein shake",
+        imageId: "mock-protein",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "50+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 11,
+      },
+      {
+        id: "308",
+        name: "Veggie Burger",
+        price: 13000,
+        description: "Plant-based burger",
+        imageId: "mock-veggie-burger",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "65+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 13,
+      },
+      {
+        id: "309",
+        name: "Chia Pudding",
+        price: 10000,
+        description: "Healthy chia pudding",
+        imageId: "mock-chia",
+        category: "Desserts",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "40+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 10,
+      },
+      {
+        id: "310",
+        name: "Herbal Juice",
+        price: 8000,
+        description: "Natural herbal juice",
+        imageId: "mock-juice",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.0",
+            ratingCount: "30+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+    ],
+  },
+  "4": {
+    // Gazebo C4 menu
+    menu: [
+      {
+        id: "401",
+        name: "Margherita Pizza",
+        price: 18000,
+        description: "Classic margherita pizza",
+        imageId: "mock-margherita",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "120+",
+          },
+        },
+        customizations: [
+          { name: "Extra Cheese", price: 2000 },
+        ],
+        vCoinValue: 18,
+      },
+      {
+        id: "402",
+        name: "Pepperoni Pizza",
+        price: 22000,
+        description: "Pizza with pepperoni",
+        imageId: "mock-pepperoni",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.7",
+            ratingCount: "100+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 22,
+      },
+      {
+        id: "403",
+        name: "Garlic Bread",
+        price: 8000,
+        description: "Toasted garlic bread",
+        imageId: "mock-garlic-bread",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "80+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+      {
+        id: "404",
+        name: "Pasta Carbonara",
+        price: 20000,
+        description: "Creamy carbonara pasta",
+        imageId: "mock-carbonara",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "90+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 20,
+      },
+      {
+        id: "405",
+        name: "Tiramisu",
+        price: 12000,
+        description: "Classic Italian dessert",
+        imageId: "mock-tiramisu",
+        category: "Desserts",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.8",
+            ratingCount: "70+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+      {
+        id: "406",
+        name: "Caprese Salad",
+        price: 15000,
+        description: "Tomato and mozzarella salad",
+        imageId: "mock-caprese",
+        category: "Salads",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "60+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 15,
+      },
+      {
+        id: "407",
+        name: "Lasagna",
+        price: 25000,
+        description: "Layered pasta dish",
+        imageId: "mock-lasagna",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "85+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 25,
+      },
+      {
+        id: "408",
+        name: "Bruschetta",
+        price: 10000,
+        description: "Toasted bread with toppings",
+        imageId: "mock-bruschetta",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "75+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 10,
+      },
+      {
+        id: "409",
+        name: "Gelato",
+        price: 9000,
+        description: "Italian ice cream",
+        imageId: "mock-gelato",
+        category: "Desserts",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "95+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 9,
+      },
+      {
+        id: "410",
+        name: "Espresso",
+        price: 6000,
+        description: "Strong coffee",
+        imageId: "mock-espresso",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.1",
+            ratingCount: "50+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 6,
+      },
+    ],
+  },
+  "5": {
+    // Gymkhana menu
+    menu: [
+      {
+        id: "501",
+        name: "Steak",
+        price: 35000,
+        description: "Grilled beef steak",
+        imageId: "mock-steak",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.8",
+            ratingCount: "150+",
+          },
+        },
+        customizations: [
+          { name: "Rare", price: 0 },
+          { name: "Well Done", price: 0 },
+        ],
+        vCoinValue: 35,
+      },
+      {
+        id: "502",
+        name: "Lobster Tail",
+        price: 45000,
+        description: "Grilled lobster tail",
+        imageId: "mock-lobster",
+        category: "Seafood",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.9",
+            ratingCount: "80+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 45,
+      },
+      {
+        id: "503",
+        name: "Truffle Risotto",
+        price: 30000,
+        description: "Risotto with truffle",
+        imageId: "mock-risotto",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.7",
+            ratingCount: "100+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 30,
+      },
+      {
+        id: "504",
+        name: "Foie Gras",
+        price: 40000,
+        description: "Duck liver pate",
+        imageId: "mock-foie",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "60+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 40,
+      },
+      {
+        id: "505",
+        name: "Caviar",
+        price: 50000,
+        description: "Premium caviar",
+        imageId: "mock-caviar",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "5.0",
+            ratingCount: "40+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 50,
+      },
+      {
+        id: "506",
+        name: "Champagne",
+        price: 20000,
+        description: "Fine champagne",
+        imageId: "mock-champagne",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.8",
+            ratingCount: "70+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 20,
+      },
+      {
+        id: "507",
+        name: "Wagyu Beef",
+        price: 55000,
+        description: "Premium wagyu beef",
+        imageId: "mock-wagyu",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.9",
+            ratingCount: "50+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 55,
+      },
+      {
+        id: "508",
+        name: "Saffron Ice Cream",
+        price: 15000,
+        description: "Luxurious saffron ice cream",
+        imageId: "mock-saffron-ice",
+        category: "Desserts",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.7",
+            ratingCount: "65+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 15,
+      },
+      {
+        id: "509",
+        name: "Oysters",
+        price: 25000,
+        description: "Fresh oysters",
+        imageId: "mock-oysters",
+        category: "Seafood",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "55+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 25,
+      },
+      {
+        id: "510",
+        name: "Gold Leaf Chocolate",
+        price: 18000,
+        description: "Chocolate with gold leaf",
+        imageId: "mock-gold-choco",
+        category: "Desserts",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "45+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 18,
+      },
+    ],
+  },
+  "6": {
+    // NorthSquare C1 menu
+    menu: [
+      {
+        id: "601",
+        name: "Chole Bhature",
+        price: 12000,
+        description: "Chickpea curry with fried bread",
+        imageId: "mock-chole",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "200+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+      {
+        id: "602",
+        name: "Pani Puri",
+        price: 6000,
+        description: "Street food favorite",
+        imageId: "mock-pani-puri",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "300+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 6,
+      },
+      {
+        id: "603",
+        name: "Aloo Tikki",
+        price: 8000,
+        description: "Potato patties",
+        imageId: "mock-tikki",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "150+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+      {
+        id: "604",
+        name: "Raj Kachori",
+        price: 10000,
+        description: "Stuffed kachori",
+        imageId: "mock-kachori",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "180+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 10,
+      },
+      {
+        id: "605",
+        name: "Dahi Bhalla",
+        price: 9000,
+        description: "Yogurt dumplings",
+        imageId: "mock-dahi-bhalla",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "120+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 9,
+      },
+      {
+        id: "606",
+        name: "Bhelpuri",
+        price: 7000,
+        description: "Mixed puffed rice snack",
+        imageId: "mock-bhelpuri",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "250+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 7,
+      },
+      {
+        id: "607",
+        name: "Sev Puri",
+        price: 8000,
+        description: "Crispy sev on puri",
+        imageId: "mock-sev-puri",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "160+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+      {
+        id: "608",
+        name: "Pav Bhaji",
+        price: 11000,
+        description: "Spicy vegetable mash with bread",
+        imageId: "mock-pav-bhaji",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "220+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 11,
+      },
+      {
+        id: "609",
+        name: "Vada Pav",
+        price: 5000,
+        description: "Spicy potato fritter in bread",
+        imageId: "mock-vada-pav",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "280+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 5,
+      },
+      {
+        id: "610",
+        name: "Misal Pav",
+        price: 13000,
+        description: "Sprouted lentils curry with bread",
+        imageId: "mock-misal-pav",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "140+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 13,
+      },
+    ],
+  },
+  "7": {
+    // NorthSquare C2 menu
+    menu: [
+      {
+        id: "701",
+        name: "Masala Dosa",
+        price: 10000,
+        description: "Crispy dosa with potato filling",
+        imageId: "mock-dosa",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "300+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 10,
+      },
+      {
+        id: "702",
+        name: "Idli Sambar",
+        price: 8000,
+        description: "Steamed rice cakes with lentil soup",
+        imageId: "mock-idli",
+        category: "Breakfast",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "250+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+      {
+        id: "703",
+        name: "Vada",
+        price: 6000,
+        description: "Lentil fritters",
+        imageId: "mock-vada",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "200+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 6,
+      },
+      {
+        id: "704",
+        name: "Uttapam",
+        price: 12000,
+        description: "Thick pancake with toppings",
+        imageId: "mock-uttapam",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "180+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+      {
+        id: "705",
+        name: "Pongal",
+        price: 9000,
+        description: "Rice and lentil dish",
+        imageId: "mock-pongal",
+        category: "Breakfast",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "150+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 9,
+      },
+      {
+        id: "706",
+        name: "Rasam",
+        price: 7000,
+        description: "Spicy tamarind soup",
+        imageId: "mock-rasam",
+        category: "Soups",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "120+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 7,
+      },
+      {
+        id: "707",
+        name: "Appam",
+        price: 11000,
+        description: "Fermented rice pancakes",
+        imageId: "mock-appam",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "160+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 11,
+      },
+      {
+        id: "708",
+        name: "Kerala Parotta",
+        price: 13000,
+        description: "Flaky layered bread",
+        imageId: "mock-parotta",
+        category: "Breads",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "140+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 11,
+      }
+    ]
+  }
+}
+
+
 
 export const mockVCoins = {
   transactions: [

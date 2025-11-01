@@ -37,7 +37,6 @@ const Footer = ({ footerCities }) => {
                 }}
               />
             </div>
-            <h1 className="truncate">© 2024 Bundl Technologies Pvt. Ltd</h1>
           </div>
           {footer_content.map((x, index) => (
             <div key={index} className={`${index === 2 ? "col-start-3 " : ""}`}>
@@ -97,7 +96,7 @@ const Footer = ({ footerCities }) => {
       </div>
       <div className="flex flex-col w-full items-center justify-center bg-[#110705] text-white ">
         <p className="py-2">
-          Made with 💓 by Divu, Let's connect beyond the Plate
+          Made by Derrick Richard, Let's connect beyond the Plate
         </p>
         <div className="flex justify-between items-center gap-8 py-4">
           <a>
@@ -118,7 +117,7 @@ const Footer = ({ footerCities }) => {
         </div>
         <div className="flex justify-center items-center py-2 mb-12 gap-2">
           <FaRegCopyright />
-          <p>2023 CampusCrave</p>
+          <p>2025 CampusCrave</p>
         </div>
       </div>
     </>

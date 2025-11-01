@@ -1,5 +1,6 @@
 import React from "react";
 import { MENU_OFFERS_CDN_URL } from "../helpers/Constant";
+import offerlogo from '../assets/offer.webp';
 
 const OfferCard = ({ offerLogo, header, couponCode }) => {
   return (
@@ -8,7 +9,7 @@ const OfferCard = ({ offerLogo, header, couponCode }) => {
         <img
           className="w-12 h-12"
           alt="offerLogo"
-          src={MENU_OFFERS_CDN_URL + offerLogo}
+          src={offerlogo}
         />
       </div>
       <div className="flex flex-col flex-grow ">

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
 import useRestaurantMenu from "../Hooks/useRestaurantMenu";
 import { useParams, Link } from "react-router-dom";
+import offerlogo from "../assets/offer.webp";
 import {
   DELIVERY_DISTANCE_IMG,
   MENU_OFFERS_CDN_URL,
@@ -167,7 +168,7 @@ const RestaurantMenu = () => {
                 {resOffers.map((offer, index) => (
                   <OfferCard
                     key={index} // It's better to use a unique key for each item in the array
-                    offerLogo={offer.offerLogo}
+                    offerLogo={offerlogo}
                     header={offer.header}
                     couponCode={offer.couponCode}
                   />
