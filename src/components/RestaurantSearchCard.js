@@ -17,11 +17,7 @@ const RestaurantSearchCard = ({ cloudinaryImageId, id, isOpen, name }) => {
         {cloudinaryImageId ? (
           <img
             className="p-3 w-24 h-full aspect-auto object-cover"
-            src={
-              isOpen === true
-                ? RES_CARD_IMG_CDN_URL + cloudinaryImageId
-                : RES_CARD_IMG_CDN_URL_GREY + cloudinaryImageId
-            }
+            src={cloudinaryImageId}
           />
         ) : (
           <></>
