@@ -10,6 +10,7 @@ const Dashboard = () => {
 
   const renderStudentDashboard = () => (
     <div className="pt-28 px-8">
+      <br />
       <h1 className="text-3xl font-bold mb-6">Student Dashboard</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-md">
@@ -30,6 +31,7 @@ const Dashboard = () => {
 
   const renderVendorDashboard = () => (
     <div className="pt-28 px-8">
+      <br />
       <h1 className="text-3xl font-bold mb-6">Vendor Dashboard</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-md">
@@ -50,6 +52,7 @@ const Dashboard = () => {
 
   const renderRunnerDashboard = () => (
     <div className="pt-28 px-8">
+      <br />
       <h1 className="text-3xl font-bold mb-6">Runner Dashboard</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-md">
@@ -70,6 +73,7 @@ const Dashboard = () => {
 
   const renderAdminDashboard = () => (
     <div className="pt-28 px-8">
+      <br />
       <h1 className="text-3xl font-bold mb-6">Admin Dashboard</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-md">
