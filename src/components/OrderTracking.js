@@ -1,32 +1,58 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import { updateDeliveryStatus } from "../Utils/deliverySlice";
 
 const OrderTracking = () => {
   const { orderId } = useParams();
   const deliveries = useSelector((store) => store.delivery.deliveries);
+  const dispatch = useDispatch();
   const [currentLocation, setCurrentLocation] = useState(null);
   const [eta, setEta] = useState(null);
+  const [statusTimer, setStatusTimer] = useState(null);
 
   const delivery = deliveries.find(d => d.orderId === orderId);
 
   useEffect(() => {
-    if (delivery && delivery.status === 'in_transit') {
-      // Simulate real-time location updates
-      const interval = setInterval(() => {
-        // Mock location update - in real app, this would come from GPS
-        setCurrentLocation({
-          lat: delivery.pickupCoords.lat + Math.random() * 0.01,
-          lng: delivery.pickupCoords.lng + Math.random() * 0.01
-        });
-        // Calculate ETA based on distance
-        const distance = calculateDistance(currentLocation, delivery.deliveryCoords);
-        setEta(Math.ceil(distance * 10)); // Rough ETA calculation
-      }, 5000);
+    if (delivery) {
+      let timer;
+      if (delivery.status === 'pending') {
+        timer = setTimeout(() => {
+          dispatch(updateDeliveryStatus({ id: delivery.id, status: 'assigned' }));
+        }, 10000); // 10 seconds
+      } else if (delivery.status === 'assigned') {
+        timer = setTimeout(() => {
+          dispatch(updateDeliveryStatus({ id: delivery.id, status: 'picked_up' }));
+        }, 10000); // 10 seconds
+      } else if (delivery.status === 'picked_up') {
+        timer = setTimeout(() => {
+          dispatch(updateDeliveryStatus({ id: delivery.id, status: 'in_transit' }));
+        }, 10000); // 10 seconds
+      } else if (delivery.status === 'in_transit') {
+        // Simulate real-time location updates
+        const interval = setInterval(() => {
+          // Mock location update - in real app, this would come from GPS
+          setCurrentLocation({
+            lat: delivery.pickupCoords.lat + Math.random() * 0.01,
+            lng: delivery.pickupCoords.lng + Math.random() * 0.01
+          });
+          // Calculate ETA based on distance
+          const distance = calculateDistance(currentLocation, delivery.deliveryCoords);
+          setEta(Math.ceil(distance * 10)); // Rough ETA calculation
+        }, 5000);
 
-      return () => clearInterval(interval);
+        timer = setTimeout(() => {
+          dispatch(updateDeliveryStatus({ id: delivery.id, status: 'delivered' }));
+        }, 30000); // 30 seconds for transit
+
+        return () => clearInterval(interval);
+      }
+      setStatusTimer(timer);
+      return () => clearTimeout(timer);
     }
-  }, [delivery, currentLocation]);
+  }, [delivery, dispatch, currentLocation]);
 
   const calculateDistance = (point1, point2) => {
     if (!point1 || !point2) return 0;
@@ -131,19 +157,37 @@ const OrderTracking = () => {
         </div>
       </div>
 
-      {/* Map Placeholder */}
+      {/* Map */}
       {delivery.status === 'in_transit' && (
         <div className="bg-white p-6 rounded-lg shadow-md mt-6">
           <h2 className="text-xl font-semibold mb-4">Live Location</h2>
-          <div className="bg-gray-100 h-64 rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-4xl mb-2">🗺️</div>
-              <p className="text-gray-600">Map integration would go here</p>
-              <p className="text-sm text-gray-500 mt-2">
-                Current Location: {currentLocation ? `${currentLocation.lat.toFixed(4)}, ${currentLocation.lng.toFixed(4)}` : 'Updating...'}
-              </p>
-            </div>
+          <div className="h-64 rounded-lg overflow-hidden">
+            <MapContainer
+              center={[delivery.pickupCoords.lat, delivery.pickupCoords.lng]}
+              zoom={15}
+              style={{ height: '100%', width: '100%' }}
+            >
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              />
+              {currentLocation && (
+                <Marker position={[currentLocation.lat, currentLocation.lng]}>
+                  <Popup>
+                    Delivery Runner's Current Location
+                  </Popup>
+                </Marker>
+              )}
+              <Marker position={[delivery.deliveryCoords.lat, delivery.deliveryCoords.lng]}>
+                <Popup>
+                  Delivery Destination
+                </Popup>
+              </Marker>
+            </MapContainer>
           </div>
+          <p className="text-sm text-gray-500 mt-2">
+            Current Location: {currentLocation ? `${currentLocation.lat.toFixed(4)}, ${currentLocation.lng.toFixed(4)}` : 'Updating...'}
+          </p>
         </div>
       )}
     </div>

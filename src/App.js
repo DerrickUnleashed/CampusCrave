@@ -23,6 +23,7 @@ import Notifications from "./components/Notifications";
 import OrderHistory from "./components/OrderHistory";
 import CommunityUpdates from "./components/CommunityUpdates";
 import OrderTracking from "./components/OrderTracking";
+import Success from "./components/Success";
 const Help = lazy(() => import("./components/Help"));
 const AppLayout = () => {
   return (
@@ -130,6 +131,10 @@ const appRouter = createBrowserRouter([
       {
         path: "track-order/:orderId",
         element: <OrderTracking />,
+      },
+      {
+        path: "success",
+        element: <Success />,
       },
     ],
   },
