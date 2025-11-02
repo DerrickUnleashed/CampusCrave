@@ -118,7 +118,7 @@ const VendorDashboard = () => {
                         : "bg-gray-300 text-gray-700 hover:bg-gray-400"
                     }`}
                   >
-                    {item.offer ? "Deactivate Offer" : "Activate Offer"}
+                    {item.offer ? "Deactivate Food Item" : "Activate Food Item"}
                   </button>
                   <button
                     onClick={() => handleRemoveItem(item.id)}

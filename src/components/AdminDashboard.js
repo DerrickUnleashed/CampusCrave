@@ -53,6 +53,24 @@ const AdminDashboard = () => {
     status: 'Active'
   }));
 
+  // State for restricting users, runners, and vendors
+  const [restrictedUsers, setRestrictedUsers] = useState(new Array(mockUsers.length).fill(false));
+  const [restrictedRunners, setRestrictedRunners] = useState(new Array(mockRunners.length).fill(false));
+  const [restrictedVendors, setRestrictedVendors] = useState(new Array(mockVendors.length).fill(false));
+
+  // Toggle functions
+  const toggleUserRestrict = (index) => {
+    setRestrictedUsers(prev => prev.map((val, i) => i === index ? !val : val));
+  };
+
+  const toggleRunnerRestrict = (index) => {
+    setRestrictedRunners(prev => prev.map((val, i) => i === index ? !val : val));
+  };
+
+  const toggleVendorRestrict = (index) => {
+    setRestrictedVendors(prev => prev.map((val, i) => i === index ? !val : val));
+  };
+
   // Generate random analytics data for each vendor
   const generateRandomData = () => {
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
@@ -132,10 +150,12 @@ const AdminDashboard = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-lg font-semibold mb-4">Users</h3>
             <ul className="space-y-2">
-              {mockUsers.map(user => (
+              {mockUsers.map((user, index) => (
                 <li key={user.id} className="flex justify-between items-center">
                   <span>{user.name} ({user.email})</span>
-                  <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Restrict</button>
+                  <button onClick={() => toggleUserRestrict(index)} className={`px-3 py-1 rounded text-white ${restrictedUsers[index] ? 'bg-gray-500 hover:bg-gray-600' : 'bg-red-500 hover:bg-red-600'}`}>
+                    {restrictedUsers[index] ? 'Restricted' : 'Restrict'}
+                  </button>
                 </li>
               ))}
             </ul>
@@ -143,10 +163,12 @@ const AdminDashboard = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-lg font-semibold mb-4">Runners</h3>
             <ul className="space-y-2">
-              {mockRunners.map(runner => (
+              {mockRunners.map((runner, index) => (
                 <li key={runner.id} className="flex justify-between items-center">
                   <span>{runner.name} ({runner.email})</span>
-                  <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Restrict</button>
+                  <button onClick={() => toggleRunnerRestrict(index)} className={`px-3 py-1 rounded text-white ${restrictedRunners[index] ? 'bg-gray-500 hover:bg-gray-600' : 'bg-red-500 hover:bg-red-600'}`}>
+                    {restrictedRunners[index] ? 'Restricted' : 'Restrict'}
+                  </button>
                 </li>
               ))}
             </ul>
@@ -154,10 +176,12 @@ const AdminDashboard = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-lg font-semibold mb-4">Vendors</h3>
             <ul className="space-y-2">
-              {mockVendors.map(vendor => (
+              {mockVendors.map((vendor, index) => (
                 <li key={vendor.id} className="flex justify-between items-center">
                   <span>{vendor.name}</span>
-                  <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Restrict</button>
+                  <button onClick={() => toggleVendorRestrict(index)} className={`px-3 py-1 rounded text-white ${restrictedVendors[index] ? 'bg-gray-500 hover:bg-gray-600' : 'bg-red-500 hover:bg-red-600'}`}>
+                    {restrictedVendors[index] ? 'Restricted' : 'Restrict'}
+                  </button>
                 </li>
               ))}
             </ul>
