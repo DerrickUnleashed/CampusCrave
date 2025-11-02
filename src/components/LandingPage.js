@@ -36,26 +36,26 @@ const LandingPage = () => {
             Why Choose CampusCrave?
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-center p-6 bg-orange-50 rounded-lg">
+            <div className="text-center p-6 bg-orange-50 rounded-lg hover:bg-orange-100 hover:scale-105 hover:shadow-lg transition-all duration-300">
               <h3 className="text-2xl font-semibold text-orange-600 mb-4">Easy Ordering</h3>
               <p className="text-gray-600">
                 Browse and order from a variety of campus eateries with just a few taps. Fast, convenient, and delicious!
               </p>
             </div>
-            <div className="text-center p-6 bg-blue-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-blue-600 mb-4">Runner Service</h3>
+            <div className="text-center p-6 bg-orange-50 rounded-lg hover:bg-orange-100 hover:scale-105 hover:shadow-lg transition-all duration-300">
+              <h3 className="text-2xl font-semibold text-orange-600 mb-4">Runner Service</h3>
               <p className="text-gray-600">
                 Become a runner and deliver orders across campus. Earn money and stay active while helping your community!
               </p>
             </div>
-            <div className="text-center p-6 bg-purple-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-purple-600 mb-4">Vendor Portal</h3>
+            <div className="text-center p-6 bg-orange-50 rounded-lg hover:bg-orange-100 hover:scale-105 hover:shadow-lg transition-all duration-300">
+              <h3 className="text-2xl font-semibold text-orange-600 mb-4">Vendor Portal</h3>
               <p className="text-gray-600">
                 Manage your eatery, update menus, and track orders effortlessly. Grow your business on campus!
               </p>
             </div>
-            <div className="text-center p-6 bg-yellow-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-yellow-600 mb-4">Rewards & VCoins</h3>
+            <div className="text-center p-6 bg-orange-50 rounded-lg hover:bg-orange-100 hover:scale-105 hover:shadow-lg transition-all duration-300">
+              <h3 className="text-2xl font-semibold text-orange-600 mb-4">Rewards & VCoins</h3>
               <p className="text-gray-600">
                 Earn VCoins through orders. Redeem them for discounts and exclusive perks!
               </p>
