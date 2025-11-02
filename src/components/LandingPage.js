@@ -80,7 +80,7 @@ const LandingPage = () => {
 
       {/* Footer */}
       <footer className="py-8 px-8 bg-gray-800 text-white text-center">
-        <p>&copy; 2023 CampusCrave. All rights reserved.</p>
+        <p>&copy; 2025 CampusCrave. All rights reserved.</p>
       </footer>
       </div>
     </>

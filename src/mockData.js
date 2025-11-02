@@ -564,7 +564,7 @@ export const mockRestaurants = [
   {
     info: {
       id: "10",
-      name: "Dominoes",
+      name: "Dominos",
       cloudinaryImageId: dominos,
       locality: "Food Court",
       areaName: "East Campus",

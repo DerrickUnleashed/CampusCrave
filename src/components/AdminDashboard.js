@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell } from 'recharts';
+import { mockRestaurants } from '../mockData';
 
 const AdminDashboard = () => {
   const mealShares = useSelector((store) => store.mealShare.shares);
+  const [selectedVendor, setSelectedVendor] = useState('Gazebo C1');
 
   // Sample data for charts
   const revenueData = [
@@ -30,6 +32,45 @@ const AdminDashboard = () => {
     { name: 'Cancelled', value: 100, color: '#FFBB28' },
     { name: 'In Transit', value: 200, color: '#FF8042' },
   ];
+
+  // Mock data for user management
+  const mockUsers = [
+    { id: 1, name: 'John Doe', email: 'john@example.com', role: 'User' },
+    { id: 2, name: 'Jane Smith', email: 'jane@example.com', role: 'User' },
+    { id: 3, name: 'Bob Johnson', email: 'bob@example.com', role: 'User' },
+  ];
+
+  const mockRunners = [
+    { id: 1, name: 'Alice Runner', email: 'alice@runner.com', status: 'Active' },
+    { id: 2, name: 'Charlie Speed', email: 'charlie@runner.com', status: 'Active' },
+  ];
+
+  // Use vendors from mockData.js
+  const mockVendors = mockRestaurants.map(restaurant => ({
+    id: restaurant.info.id,
+    name: restaurant.info.name,
+    email: `${restaurant.info.name.toLowerCase().replace(/\s+/g, '')}@example.com`,
+    status: 'Active'
+  }));
+
+  // Generate random analytics data for each vendor
+  const generateRandomData = () => {
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+    return months.map(month => ({
+      month,
+      revenue: Math.floor(Math.random() * 10000) + 2000, // Random revenue between 2000-12000
+      orders: Math.floor(Math.random() * 200) + 50, // Random orders between 50-250
+    }));
+  };
+
+  const vendorAnalyticsData = {};
+  mockVendors.forEach(vendor => {
+    const data = generateRandomData();
+    vendorAnalyticsData[vendor.name] = {
+      revenue: data.map(d => ({ month: d.month, revenue: d.revenue })),
+      orders: data.map(d => ({ month: d.month, orders: d.orders })),
+    };
+  });
 
   return (
     <div className="pt-28 px-8">
@@ -81,6 +122,134 @@ const AdminDashboard = () => {
               <Bar dataKey="users" fill="#82ca9d" />
             </BarChart>
           </ResponsiveContainer>
+        </div>
+      </div>
+
+      {/* User Management Section */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">User Management</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-semibold mb-4">Users</h3>
+            <ul className="space-y-2">
+              {mockUsers.map(user => (
+                <li key={user.id} className="flex justify-between items-center">
+                  <span>{user.name} ({user.email})</span>
+                  <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Restrict</button>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-semibold mb-4">Runners</h3>
+            <ul className="space-y-2">
+              {mockRunners.map(runner => (
+                <li key={runner.id} className="flex justify-between items-center">
+                  <span>{runner.name} ({runner.email})</span>
+                  <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Restrict</button>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-semibold mb-4">Vendors</h3>
+            <ul className="space-y-2">
+              {mockVendors.map(vendor => (
+                <li key={vendor.id} className="flex justify-between items-center">
+                  <span>{vendor.name}</span>
+                  <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Restrict</button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Vendor Analytics Section */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Vendor Analytics</h2>
+        <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">Select Vendor:</label>
+          <select
+            value={selectedVendor}
+            onChange={(e) => setSelectedVendor(e.target.value)}
+            className="block w-full p-2 border border-gray-300 rounded-md"
+          >
+            {Object.keys(vendorAnalyticsData).map(vendor => (
+              <option key={vendor} value={vendor}>{vendor}</option>
+            ))}
+          </select>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">{selectedVendor} Revenue Trend</h3>
+            <ResponsiveContainer width="100%" height={300}>
+              <LineChart data={vendorAnalyticsData[selectedVendor].revenue}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="revenue" stroke="#8884d8" strokeWidth={2} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">{selectedVendor} Orders Trend</h3>
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart data={vendorAnalyticsData[selectedVendor].orders}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="orders" fill="#82ca9d" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      </div>
+
+      {/* Runner Analytics Section */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Runner Analytics</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">Deliveries Completed</h3>
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart data={[
+                { name: 'Alice Runner', deliveries: Math.floor(Math.random() * 100) + 50 },
+                { name: 'Charlie Speed', deliveries: Math.floor(Math.random() * 100) + 50 },
+              ]}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="deliveries" fill="#ff7300" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">Average Delivery Time</h3>
+            <ResponsiveContainer width="100%" height={300}>
+              <LineChart data={[
+                { month: 'Jan', time: Math.floor(Math.random() * 20) + 10 },
+                { month: 'Feb', time: Math.floor(Math.random() * 20) + 10 },
+                { month: 'Mar', time: Math.floor(Math.random() * 20) + 10 },
+                { month: 'Apr', time: Math.floor(Math.random() * 20) + 10 },
+                { month: 'May', time: Math.floor(Math.random() * 20) + 10 },
+                { month: 'Jun', time: Math.floor(Math.random() * 20) + 10 },
+              ]}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="time" stroke="#ff0000" strokeWidth={2} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       </div>
 
