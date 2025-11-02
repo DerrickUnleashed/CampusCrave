@@ -18,7 +18,7 @@ const LandingPage = () => {
           <img
             src={campuscravelandingpage}
             alt="CampusCrave"
-            className="absolute inset-0 w-auto h-[80vh] mx-auto"
+            className="absolute top-[-15rem] left-1/2 transform -translate-x-1/2 w-auto h-[150vh] hover:scale-105 transition-all duration-300"
           />
         </div>
       </section>
