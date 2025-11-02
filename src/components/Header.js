@@ -107,10 +107,12 @@ const Header = () => {
             <li
               className="transition duration-250 ease-in-out m-3 pl-8 flex items-center justify-center text-[#303031] hover:text-[#f75500]"
               onMouseOver={(e) => {
-                e.currentTarget.querySelector("svg").style.fill = "#f3730a";
+                const svg = e.currentTarget.querySelector("svg");
+                if (svg) svg.style.fill = "#f3730a";
               }}
               onMouseOut={(e) => {
-                e.currentTarget.querySelector("svg").style.fill = "";
+                const svg = e.currentTarget.querySelector("svg");
+                if (svg) svg.style.fill = "";
               }}
             >
               <NavLink
@@ -128,10 +130,12 @@ const Header = () => {
             <li
               className="transition duration-250 ease-in-out m-3 pl-8 flex items-center justify-center text-[#303031] hover:text-[#f75500]"
               onMouseOver={(e) => {
-                e.currentTarget.querySelector("svg").style.fill = "#f3730a";
+                const svg = e.currentTarget.querySelector("svg");
+                if (svg) svg.style.fill = "#f3730a";
               }}
               onMouseOut={(e) => {
-                e.currentTarget.querySelector("svg").style.fill = "";
+                const svg = e.currentTarget.querySelector("svg");
+                if (svg) svg.style.fill = "";
               }}
             >
               <NavLink

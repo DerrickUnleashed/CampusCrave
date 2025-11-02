@@ -6,6 +6,7 @@ import { addItems, removeItems, clearCart } from "../Utils/cartSlice";
 import { redeemCoins } from "../Utils/vCoinSlice";
 import { addNotification } from "../Utils/notificationsSlice";
 import { addDelivery } from "../Utils/deliverySlice";
+import { updateLocation } from "../Utils/locationSlice";
 import Success from "./Success";
 import { RES_CARD_IMG_CDN_URL } from "../helpers/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,6 +30,49 @@ const Cart = () => {
   const [orderSuccess, setOrderSuccess] = useState(false);
   const [useVCoins, setUseVCoins] = useState(false);
   const vCoins = useSelector((store) => store.vCoins.balance);
+
+  // Function to get current location
+  const getCurrentLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          // Update location with current coordinates
+          dispatch(updateLocation([{
+            lat: latitude,
+            lng: longitude,
+            area: "Current Location",
+            district: "Chennai",
+            state: "Tamil Nadu",
+            pincode: 600127 // Default pincode for VIT Chennai area
+          }]));
+        },
+        (error) => {
+          console.error("Error getting location:", error);
+          // Fallback to default location: AB3 VIT Chennai
+          dispatch(updateLocation([{
+            lat: 12.9692, // Approximate lat for VIT Chennai
+            lng: 80.2432, // Approximate lng for VIT Chennai
+            area: "AB3 VIT Chennai",
+            district: "Chennai",
+            state: "Tamil Nadu",
+            pincode: 600127
+          }]));
+        }
+      );
+    } else {
+      // Fallback to default location if geolocation not supported
+      dispatch(updateLocation([{
+        lat: 12.9692,
+        lng: 80.2432,
+        area: "AB3 VIT Chennai",
+        district: "Chennai",
+        state: "Tamil Nadu",
+        pincode: 600127
+      }]));
+    }
+  };
+
   const handleConfirmAddress = () => {
     setConfirmAddress(!confirmAddress);
     setConfirmPayment(!confirmPayment);
@@ -85,7 +129,14 @@ const Cart = () => {
     dispatch(removeItems(x));
   };
   useEffect(() => {
-    if (locDetails[0]) {
+    // Set defaults first to prevent null errors
+    if (!locDetails || !locDetails[0] || locDetails[0].area === "Bazargate") {
+      // If still default location or no location, set to VIT Chennai and try to get current location
+      setArea("AB3 VIT Chennai");
+      setCityName("Chennai");
+      setState("Tamil Nadu");
+      getCurrentLocation();
+    } else {
       setArea(locDetails[0].area);
       setCityName(locDetails[0].district);
       setState(locDetails[0].state);
