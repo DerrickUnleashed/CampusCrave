@@ -1,39 +1,65 @@
 <div align="center" id="#readme-top">
-  <h1><b>CampusCrave - A Swiggy inspired food ordering platform</b></h3>
+  <img src="src/assets/logo.png" alt="CampusCrave Logo" width="200"/>
+  <h1><b>CampusCrave - A Food ordering platform for Colleges</b></h3>
 </div>
-
-<!-- TABLE OF CONTENTS -->
-
-- [About](#about)
-- [Tech Stack](#tech-stack)
-- [Key Features](#key-features)
-- [Live Demo](#live-demo)
-
-<!-- PROJECT DESCRIPTION -->
 
 # 🥘 CampusCrave <a name="about"></a>
 
-This is a Learning based project on React.js. This react app is built using the live Swiggy API's and various other trending technologies like Tailwind CSS as a Styling Framework, Redux for state management, React Router DOM for page navigation, Parcel as a bundler, Babel for transpiling code and many more.
+This is a Learning based project on React.js. This react app is built using various trending technologies like Tailwind CSS as a Styling Framework, Redux for state management, React Router DOM for page navigation, Parcel as a bundler, Babel for transpiling code and many more.
 
-### 💻 Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack"></a>
 
-- Parcel
-- Babel
+**Frontend:**
 - ReactJs
 - React Router
 - Redux
+- Tailwind CSS
+- Parcel
+- Babel
 
-<!-- Features -->
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
 
-### 🧿 Key Features <a name="key-features"></a>
+### Key Features <a name="key-features"></a>
 
-- Integration of Swiggy's Live API's
-- Config Driven UI
-- State Management using Redux
-- Code Splitting & Lazy Loading
-- Custom Hook
-- Shimmer UI
+1. **User Management**
+   - Role-based access: Student, Vendor, Runner, Admin
+   - Profile creation, login, and account management
 
-### 🚀 Live Demo <a name="live-demo"></a>
+2. **Restaurant & Menu Module**
+   - Browse on-campus restaurants and menus
+   - Filter items by cuisine, dietary needs, or price
+   - Add items to cart and customize orders
 
-- Live Website Preview : <a href="https://swiggy-clone-seven-red.vercel.app/" target="_blank">CampusCrave (Swiggy Clone)</a>
+3. **Ordering & Payment System**
+   - Place and confirm orders
+   - Real-time order tracking
+   - Multiple payment options including wallet and VCoins
+
+4. **VCoin Reward System**
+   - Earn VCoins on each purchase
+   - Redeem VCoins for discounts or charity donations
+   - View transaction and reward history
+
+5. **Crave Runner Delivery Network**
+   - Student runners accept and fulfill delivery tasks
+   - Track delivery status and completion
+
+6. **Campus Kitchen Collective**
+   - Students sell or pre-list home-cooked meals
+   - Pre-ordering and limited-time offers supported
+
+7. **Ratings & Reviews**
+   - Rate vendors, meals, and delivery experiences
+   - Display average ratings and feedback
+
+8. **Notifications & Community Feed**
+   - Alerts for order updates, shared meals, and offers
+   - Campus-wide announcements and food-related events
+
+9. **Admin Dashboard**
+   - Manage users, vendors, and analytics
+   - Monitor platform activity and reports
