@@ -117,7 +117,7 @@ const Item = ({
             <>
               <div className="relative flex flex-col items-center">
                 <img
-                  src={MENU_ITEM_CDN_URL + imageId}
+                  src={imageId}
                   alt={name}
                   className="w-40 h-36 rounded-2xl object-cover z-0"
                 />

@@ -123,8 +123,7 @@ const RestaurantMenu = () => {
                     </div>
                     <div>
                       <p className="font-semibold">
-                        {resDetails?.sla?.minDeliveryTime}-
-                        {resDetails?.sla?.maxDeliveryTime} mins
+                        10 - 15 mins
                       </p>
                     </div>
                   </div>
@@ -136,12 +135,7 @@ const RestaurantMenu = () => {
                     alt="DISTANCE"
                     className="w-5"
                   />
-                  <p
-                    className="font-[500] text-[#848484]"
-                    dangerouslySetInnerHTML={{
-                      __html: String(resDetails?.feeDetails?.message),
-                    }}
-                  ></p>
+                  <p className="text-[#777a7d]">Arrival On Time...</p>
                 </div>
               </div>
             </div>

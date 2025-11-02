@@ -669,7 +669,7 @@ export const mockMenus = {
         name: "Burger Combo",
         price: 15000,
         description: "Juicy burger with fries and drink",
-        imageId: "https://source.unsplash.com/random/200x200/?burger",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/400px-RedDot_Burger.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -691,7 +691,7 @@ export const mockMenus = {
         name: "Veggie Pizza",
         price: 20000,
         description: "Fresh veggies on thin crust",
-        imageId: "https://source.unsplash.com/random/200x200/?pizza",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/400px-Pizza-3007395.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -713,7 +713,7 @@ export const mockMenus = {
         name: "Chicken Nuggets",
         price: 12000,
         description: "Crispy chicken nuggets with dip",
-        imageId: "https://source.unsplash.com/random/200x200/?chicken-nuggets",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chicken_Nuggets.jpg/640px-Chicken_Nuggets.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -732,7 +732,7 @@ export const mockMenus = {
         name: "Caesar Salad",
         price: 18000,
         description: "Fresh salad with caesar dressing",
-        imageId: "https://source.unsplash.com/random/200x200/?salad",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/2/23/Caesar_salad_%282%29.jpg",
         category: "Salads",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -753,7 +753,7 @@ export const mockMenus = {
         name: "French Fries",
         price: 8000,
         description: "Golden crispy fries",
-        imageId: "https://source.unsplash.com/random/200x200/?fries",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Truffle_oil_french_fries_%2833024792848%29.jpg/640px-Truffle_oil_french_fries_%2833024792848%29.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -772,7 +772,7 @@ export const mockMenus = {
         name: "Chocolate Shake",
         price: 10000,
         description: "Rich chocolate milkshake",
-        imageId: "https://source.unsplash.com/random/200x200/?milkshake",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Chocolate_shake_from_St_Francis_Fountain.jpg/500px-Chocolate_shake_from_St_Francis_Fountain.jpg?20120603210018",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -791,7 +791,7 @@ export const mockMenus = {
         name: "Grilled Chicken",
         price: 22000,
         description: "Tender grilled chicken",
-        imageId: "https://source.unsplash.com/random/200x200/?grilled-chicken",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Grilled_chicken_2.jpg/640px-Grilled_chicken_2.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -812,7 +812,7 @@ export const mockMenus = {
         name: "Pasta Alfredo",
         price: 19000,
         description: "Creamy pasta with alfredo sauce",
-        imageId: "https://source.unsplash.com/random/200x200/?pasta",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chicken_fettuccine_alfredo.JPG/640px-Chicken_fettuccine_alfredo.JPG",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -833,7 +833,7 @@ export const mockMenus = {
         name: "Onion Rings",
         price: 9000,
         description: "Crispy onion rings",
-        imageId: "https://source.unsplash.com/random/200x200/?onion-rings",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Onion_Rings_-_Gourmet_Burger_Kitchen_2023-10-03.jpg/640px-Onion_Rings_-_Gourmet_Burger_Kitchen_2023-10-03.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -852,7 +852,7 @@ export const mockMenus = {
         name: "Ice Cream Sundae",
         price: 13000,
         description: "Delicious ice cream sundae",
-        imageId: "https://source.unsplash.com/random/200x200/?ice-cream",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg/400px-Strawberry_ice_cream_cone_%285076899310%29.jpg",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -876,7 +876,7 @@ export const mockMenus = {
         name: "Chicken Biryani",
         price: 12000,
         description: "Aromatic rice with tender chicken",
-        imageId: "mock-biryani",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Chicken_Biryani.jpg/400px-Chicken_Biryani.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -898,7 +898,7 @@ export const mockMenus = {
         name: "Paneer Tikka",
         price: 16000,
         description: "Grilled paneer cubes",
-        imageId: "mock-paneer",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Paneer_Tikka.jpg/400px-Paneer_Tikka.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -917,7 +917,7 @@ export const mockMenus = {
         name: "Butter Chicken",
         price: 25000,
         description: "Rich butter chicken curry",
-        imageId: "mock-butter-chicken",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Butter_chicken.jpg/400px-Butter_chicken.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -938,7 +938,7 @@ export const mockMenus = {
         name: "Dal Makhani",
         price: 14000,
         description: "Creamy lentil curry",
-        imageId: "mock-dal",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Dal_makhani.jpg/400px-Dal_makhani.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -957,7 +957,7 @@ export const mockMenus = {
         name: "Naan",
         price: 4000,
         description: "Soft Indian bread",
-        imageId: "mock-naan",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Naan.jpg/400px-Naan.jpg",
         category: "Breads",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -976,7 +976,7 @@ export const mockMenus = {
         name: "Lassi",
         price: 6000,
         description: "Sweet yogurt drink",
-        imageId: "mock-lassi",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Lassi.jpg/400px-Lassi.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -995,7 +995,7 @@ export const mockMenus = {
         name: "Chili Chicken",
         price: 18000,
         description: "Spicy chili chicken",
-        imageId: "mock-chili-chicken",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Chili_chicken.jpg/400px-Chili_chicken.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1016,7 +1016,7 @@ export const mockMenus = {
         name: "Rajma",
         price: 13000,
         description: "Kidney bean curry",
-        imageId: "mock-rajma",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Rajma.jpg/400px-Rajma.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1035,7 +1035,7 @@ export const mockMenus = {
         name: "Samosa",
         price: 5000,
         description: "Crispy potato filled pastry",
-        imageId: "mock-samosa",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Samosa_Dip.jpg/400px-Samosa_Dip.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1054,7 +1054,7 @@ export const mockMenus = {
         name: "Ras Malai",
         price: 8000,
         description: "Sweet cheese dumplings",
-        imageId: "mock-ras-malai",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ras_malai.jpg/400px-Ras_malai.jpg",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1078,7 +1078,7 @@ export const mockMenus = {
         name: "Veggie Wrap",
         price: 10000,
         description: "Healthy veggie wrap",
-        imageId: "mock-wrap",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Veggie_wrap.jpg/400px-Veggie_wrap.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1097,7 +1097,7 @@ export const mockMenus = {
         name: "Fruit Salad",
         price: 9000,
         description: "Fresh fruit mix",
-        imageId: "mock-fruit-salad",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fruit_salad.jpg/400px-Fruit_salad.jpg",
         category: "Salads",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1116,7 +1116,7 @@ export const mockMenus = {
         name: "Smoothie Bowl",
         price: 15000,
         description: "Nutritious smoothie bowl",
-        imageId: "mock-smoothie",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Smoothie_bowl.jpg/400px-Smoothie_bowl.jpg",
         category: "Healthy",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1135,7 +1135,7 @@ export const mockMenus = {
         name: "Quinoa Salad",
         price: 14000,
         description: "Quinoa with veggies",
-        imageId: "mock-quinoa",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Quinoa_salad.jpg/400px-Quinoa_salad.jpg",
         category: "Salads",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1154,7 +1154,7 @@ export const mockMenus = {
         name: "Green Tea",
         price: 5000,
         description: "Refreshing green tea",
-        imageId: "mock-tea",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Green_tea.jpg/400px-Green_tea.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1173,7 +1173,7 @@ export const mockMenus = {
         name: "Avocado Toast",
         price: 12000,
         description: "Toast with avocado",
-        imageId: "mock-avocado",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Avocado_toast.jpg/400px-Avocado_toast.jpg",
         category: "Breakfast",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1192,7 +1192,7 @@ export const mockMenus = {
         name: "Protein Shake",
         price: 11000,
         description: "High protein shake",
-        imageId: "mock-protein",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Protein_shake.jpg/400px-Protein_shake.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1211,7 +1211,7 @@ export const mockMenus = {
         name: "Veggie Burger",
         price: 13000,
         description: "Plant-based burger",
-        imageId: "mock-veggie-burger",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Veggie_burger.jpg/400px-Veggie_burger.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1230,7 +1230,7 @@ export const mockMenus = {
         name: "Chia Pudding",
         price: 10000,
         description: "Healthy chia pudding",
-        imageId: "mock-chia",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Chia_pudding.jpg/400px-Chia_pudding.jpg",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1249,7 +1249,7 @@ export const mockMenus = {
         name: "Herbal Juice",
         price: 8000,
         description: "Natural herbal juice",
-        imageId: "mock-juice",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Herbal_juice.jpg/400px-Herbal_juice.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1273,7 +1273,7 @@ export const mockMenus = {
         name: "Margherita Pizza",
         price: 18000,
         description: "Classic margherita pizza",
-        imageId: "mock-margherita",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/400px-Pizza-3007395.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1294,7 +1294,7 @@ export const mockMenus = {
         name: "Pepperoni Pizza",
         price: 22000,
         description: "Pizza with pepperoni",
-        imageId: "mock-pepperoni",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pepperoni_pizza.jpg/400px-Pepperoni_pizza.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1313,7 +1313,7 @@ export const mockMenus = {
         name: "Garlic Bread",
         price: 8000,
         description: "Toasted garlic bread",
-        imageId: "mock-garlic-bread",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Garlic_bread.jpg/400px-Garlic_bread.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1332,7 +1332,7 @@ export const mockMenus = {
         name: "Pasta Carbonara",
         price: 20000,
         description: "Creamy carbonara pasta",
-        imageId: "mock-carbonara",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fettuccine_Alfredo.jpg/400px-Fettuccine_Alfredo.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1351,7 +1351,7 @@ export const mockMenus = {
         name: "Tiramisu",
         price: 12000,
         description: "Classic Italian dessert",
-        imageId: "mock-tiramisu",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Tiramisu.jpg/400px-Tiramisu.jpg",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1370,7 +1370,7 @@ export const mockMenus = {
         name: "Caprese Salad",
         price: 15000,
         description: "Tomato and mozzarella salad",
-        imageId: "mock-caprese",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Caesar_salad_%281%29.jpg/400px-Caesar_salad_%281%29.jpg",
         category: "Salads",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1389,7 +1389,7 @@ export const mockMenus = {
         name: "Lasagna",
         price: 25000,
         description: "Layered pasta dish",
-        imageId: "mock-lasagna",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Lasagna.jpg/400px-Lasagna.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1408,7 +1408,7 @@ export const mockMenus = {
         name: "Bruschetta",
         price: 10000,
         description: "Toasted bread with toppings",
-        imageId: "mock-bruschetta",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bruschetta.jpg/400px-Bruschetta.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1427,7 +1427,7 @@ export const mockMenus = {
         name: "Gelato",
         price: 9000,
         description: "Italian ice cream",
-        imageId: "mock-gelato",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Gelato.jpg/400px-Gelato.jpg",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1446,7 +1446,7 @@ export const mockMenus = {
         name: "Espresso",
         price: 6000,
         description: "Strong coffee",
-        imageId: "mock-espresso",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Espresso.jpg/400px-Espresso.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1470,7 +1470,7 @@ export const mockMenus = {
         name: "Steak",
         price: 35000,
         description: "Grilled beef steak",
-        imageId: "mock-steak",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Steak.jpg/400px-Steak.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1492,7 +1492,7 @@ export const mockMenus = {
         name: "Lobster Tail",
         price: 45000,
         description: "Grilled lobster tail",
-        imageId: "mock-lobster",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Lobster_tail.jpg/400px-Lobster_tail.jpg",
         category: "Seafood",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1511,7 +1511,7 @@ export const mockMenus = {
         name: "Truffle Risotto",
         price: 30000,
         description: "Risotto with truffle",
-        imageId: "mock-risotto",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Risotto.jpg/400px-Risotto.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1530,7 +1530,7 @@ export const mockMenus = {
         name: "Foie Gras",
         price: 40000,
         description: "Duck liver pate",
-        imageId: "mock-foie",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Foie_gras.jpg/400px-Foie_gras.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1549,7 +1549,7 @@ export const mockMenus = {
         name: "Caviar",
         price: 50000,
         description: "Premium caviar",
-        imageId: "mock-caviar",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Caviar.jpg/400px-Caviar.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1568,7 +1568,7 @@ export const mockMenus = {
         name: "Champagne",
         price: 20000,
         description: "Fine champagne",
-        imageId: "mock-champagne",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Champagne.jpg/400px-Champagne.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1587,7 +1587,7 @@ export const mockMenus = {
         name: "Wagyu Beef",
         price: 55000,
         description: "Premium wagyu beef",
-        imageId: "mock-wagyu",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Wagyu.jpg/400px-Wagyu.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1606,7 +1606,7 @@ export const mockMenus = {
         name: "Saffron Ice Cream",
         price: 15000,
         description: "Luxurious saffron ice cream",
-        imageId: "mock-saffron-ice",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ice_cream.jpg/400px-Ice_cream.jpg",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1625,7 +1625,7 @@ export const mockMenus = {
         name: "Oysters",
         price: 25000,
         description: "Fresh oysters",
-        imageId: "mock-oysters",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Oysters.jpg/400px-Oysters.jpg",
         category: "Seafood",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -1644,7 +1644,7 @@ export const mockMenus = {
         name: "Gold Leaf Chocolate",
         price: 18000,
         description: "Chocolate with gold leaf",
-        imageId: "mock-gold-choco",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chocolate.jpg/400px-Chocolate.jpg",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1668,7 +1668,7 @@ export const mockMenus = {
         name: "Chole Bhature",
         price: 12000,
         description: "Chickpea curry with fried bread",
-        imageId: "mock-chole",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chole_bhature.jpg/400px-Chole_bhature.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1687,7 +1687,7 @@ export const mockMenus = {
         name: "Pani Puri",
         price: 6000,
         description: "Street food favorite",
-        imageId: "mock-pani-puri",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pani_puri.jpg/400px-Pani_puri.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1706,7 +1706,7 @@ export const mockMenus = {
         name: "Aloo Tikki",
         price: 8000,
         description: "Potato patties",
-        imageId: "mock-tikki",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Aloo_tikki.jpg/400px-Aloo_tikki.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1725,7 +1725,7 @@ export const mockMenus = {
         name: "Raj Kachori",
         price: 10000,
         description: "Stuffed kachori",
-        imageId: "mock-kachori",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Raj_kachori.jpg/400px-Raj_kachori.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1744,7 +1744,7 @@ export const mockMenus = {
         name: "Dahi Bhalla",
         price: 9000,
         description: "Yogurt dumplings",
-        imageId: "mock-dahi-bhalla",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Dahi_bhalla.jpg/400px-Dahi_bhalla.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1763,7 +1763,7 @@ export const mockMenus = {
         name: "Bhelpuri",
         price: 7000,
         description: "Mixed puffed rice snack",
-        imageId: "mock-bhelpuri",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bhelpuri.jpg/400px-Bhelpuri.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1782,7 +1782,7 @@ export const mockMenus = {
         name: "Sev Puri",
         price: 8000,
         description: "Crispy sev on puri",
-        imageId: "mock-sev-puri",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sev_puri.jpg/400px-Sev_puri.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1801,7 +1801,7 @@ export const mockMenus = {
         name: "Pav Bhaji",
         price: 11000,
         description: "Spicy vegetable mash with bread",
-        imageId: "mock-pav-bhaji",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pav_bhaji.jpg/400px-Pav_bhaji.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1820,7 +1820,7 @@ export const mockMenus = {
         name: "Vada Pav",
         price: 5000,
         description: "Spicy potato fritter in bread",
-        imageId: "mock-vada-pav",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Vada_pav.jpg/400px-Vada_pav.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1839,7 +1839,7 @@ export const mockMenus = {
         name: "Misal Pav",
         price: 13000,
         description: "Sprouted lentils curry with bread",
-        imageId: "mock-misal-pav",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Misal_pav.jpg/400px-Misal_pav.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1863,7 +1863,7 @@ export const mockMenus = {
         name: "Masala Dosa",
         price: 10000,
         description: "Crispy dosa with potato filling",
-        imageId: "mock-dosa",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Masala_dosa.jpg/400px-Masala_dosa.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1882,7 +1882,7 @@ export const mockMenus = {
         name: "Idli Sambar",
         price: 8000,
         description: "Steamed rice cakes with lentil soup",
-        imageId: "mock-idli",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Idli.jpg/400px-Idli.jpg",
         category: "Breakfast",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1901,7 +1901,7 @@ export const mockMenus = {
         name: "Vada",
         price: 6000,
         description: "Lentil fritters",
-        imageId: "mock-vada",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Vada.jpg/400px-Vada.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1920,7 +1920,7 @@ export const mockMenus = {
         name: "Uttapam",
         price: 12000,
         description: "Thick pancake with toppings",
-        imageId: "mock-uttapam",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Uttapam.jpg/400px-Uttapam.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1939,7 +1939,7 @@ export const mockMenus = {
         name: "Pongal",
         price: 9000,
         description: "Rice and lentil dish",
-        imageId: "mock-pongal",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pongal.jpg/400px-Pongal.jpg",
         category: "Breakfast",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1958,7 +1958,7 @@ export const mockMenus = {
         name: "Rasam",
         price: 7000,
         description: "Spicy tamarind soup",
-        imageId: "mock-rasam",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rasam.jpg/400px-Rasam.jpg",
         category: "Soups",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1977,7 +1977,7 @@ export const mockMenus = {
         name: "Appam",
         price: 11000,
         description: "Fermented rice pancakes",
-        imageId: "mock-appam",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Appam.jpg/400px-Appam.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1996,7 +1996,7 @@ export const mockMenus = {
         name: "Kerala Parotta",
         price: 13000,
         description: "Flaky layered bread",
-        imageId: "mock-parotta",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Parotta.jpg/400px-Parotta.jpg",
         category: "Breads",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2020,7 +2020,7 @@ export const mockMenus = {
         name: "Chow Mein",
         price: 12000,
         description: "Stir-fried noodles with vegetables",
-        imageId: "mock-chow-mein",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chow_mein.jpg/400px-Chow_mein.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2039,7 +2039,7 @@ export const mockMenus = {
         name: "Fried Rice",
         price: 11000,
         description: "Rice stir-fried with veggies",
-        imageId: "mock-fried-rice",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fried_rice.jpg/400px-Fried_rice.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2058,7 +2058,7 @@ export const mockMenus = {
         name: "Vegetable Momos",
         price: 10000,
         description: "Steamed dumplings with veggies",
-        imageId: "mock-veg-momos",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Momos.jpg/400px-Momos.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2077,7 +2077,7 @@ export const mockMenus = {
         name: "Chicken Momos",
         price: 13000,
         description: "Steamed dumplings with chicken",
-        imageId: "mock-chicken-momos",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Momos.jpg/400px-Momos.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2096,7 +2096,7 @@ export const mockMenus = {
         name: "Spring Rolls",
         price: 9000,
         description: "Crispy vegetable spring rolls",
-        imageId: "mock-spring-rolls",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Spring_rolls.jpg/400px-Spring_rolls.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2115,7 +2115,7 @@ export const mockMenus = {
         name: "Manchurian",
         price: 14000,
         description: "Vegetable balls in spicy sauce",
-        imageId: "mock-manchurian",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Manchurian.jpg/400px-Manchurian.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2134,7 +2134,7 @@ export const mockMenus = {
         name: "Hakka Noodles",
         price: 11500,
         description: "Stir-fried noodles",
-        imageId: "mock-hakka-noodles",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hakka_noodles.jpg/400px-Hakka_noodles.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2153,7 +2153,7 @@ export const mockMenus = {
         name: "Dumplings",
         price: 12500,
         description: "Pan-fried dumplings",
-        imageId: "mock-dumplings",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dumplings.jpg/400px-Dumplings.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2172,7 +2172,7 @@ export const mockMenus = {
         name: "Hot and Sour Soup",
         price: 8000,
         description: "Spicy and tangy soup",
-        imageId: "mock-hot-sour-soup",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hot_and_sour_soup.jpg/400px-Hot_and_sour_soup.jpg",
         category: "Soups",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2191,7 +2191,7 @@ export const mockMenus = {
         name: "Egg Fried Rice",
         price: 12000,
         description: "Fried rice with egg",
-        imageId: "mock-egg-fried-rice",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Egg_fried_rice.jpg/400px-Egg_fried_rice.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2215,7 +2215,7 @@ export const mockMenus = {
         name: "Cheeseburger",
         price: 15000,
         description: "Burger with cheese and toppings",
-        imageId: "mock-cheeseburger",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/400px-RedDot_Burger.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2255,7 +2255,7 @@ export const mockMenus = {
         name: "Chicken Nuggets",
         price: 12000,
         description: "Crispy chicken nuggets",
-        imageId: "mock-nuggets",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Chicken_nuggets.jpg/400px-Chicken_nuggets.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2274,7 +2274,7 @@ export const mockMenus = {
         name: "Onion Rings",
         price: 9000,
         description: "Crispy onion rings",
-        imageId: "mock-onion-rings",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Onion_rings.jpg/400px-Onion_rings.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2293,7 +2293,7 @@ export const mockMenus = {
         name: "Milkshake",
         price: 10000,
         description: "Thick chocolate milkshake",
-        imageId: "mock-milkshake",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Strawberry_Milkshake.jpg/400px-Strawberry_Milkshake.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2312,7 +2312,7 @@ export const mockMenus = {
         name: "Hot Dog",
         price: 11000,
         description: "Classic hot dog with toppings",
-        imageId: "mock-hot-dog",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hot_dog.jpg/400px-Hot_dog.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2331,7 +2331,7 @@ export const mockMenus = {
         name: "Chicken Wings",
         price: 16000,
         description: "Spicy chicken wings",
-        imageId: "mock-wings",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chicken_wings.jpg/400px-Chicken_wings.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2350,7 +2350,7 @@ export const mockMenus = {
         name: "Mozzarella Sticks",
         price: 13000,
         description: "Cheesy fried sticks",
-        imageId: "mock-mozzarella",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mozzarella_sticks.jpg/400px-Mozzarella_sticks.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2369,7 +2369,7 @@ export const mockMenus = {
         name: "Hash Browns",
         price: 7000,
         description: "Crispy potato hash",
-        imageId: "mock-hash-browns",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Hash_browns.jpg/400px-Hash_browns.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2388,7 +2388,7 @@ export const mockMenus = {
         name: "Soft Drink",
         price: 6000,
         description: "Refreshing soda",
-        imageId: "mock-soda",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Soda.jpg/400px-Soda.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2412,7 +2412,7 @@ export const mockMenus = {
         name: "Margherita Pizza",
         price: 18000,
         description: "Classic cheese pizza",
-        imageId: "mock-margherita",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/400px-Pizza-3007395.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2433,7 +2433,7 @@ export const mockMenus = {
         name: "Pepperoni Pizza",
         price: 22000,
         description: "Pizza with pepperoni",
-        imageId: "mock-pepperoni",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pepperoni_pizza.jpg/400px-Pepperoni_pizza.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2452,7 +2452,7 @@ export const mockMenus = {
         name: "Veggie Pizza",
         price: 20000,
         description: "Loaded with vegetables",
-        imageId: "mock-veggie-pizza",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/400px-Pizza-3007395.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2471,7 +2471,7 @@ export const mockMenus = {
         name: "BBQ Chicken Pizza",
         price: 24000,
         description: "Chicken with BBQ sauce",
-        imageId: "mock-bbq-chicken",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/BBQ_chicken_pizza.jpg/400px-BBQ_chicken_pizza.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2490,7 +2490,7 @@ export const mockMenus = {
         name: "Garlic Bread",
         price: 8000,
         description: "Toasted garlic bread",
-        imageId: "mock-garlic-bread",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Garlic_bread.jpg/400px-Garlic_bread.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2509,7 +2509,7 @@ export const mockMenus = {
         name: "Chicken Wings",
         price: 16000,
         description: "Spicy chicken wings",
-        imageId: "mock-wings",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chicken_wings.jpg/400px-Chicken_wings.jpg",
         category: "Starters",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -2528,7 +2528,7 @@ export const mockMenus = {
         name: "Pasta Alfredo",
         price: 19000,
         description: "Creamy pasta",
-        imageId: "mock-pasta",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fettuccine_Alfredo.jpg/400px-Fettuccine_Alfredo.jpg",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2547,7 +2547,7 @@ export const mockMenus = {
         name: "Dessert Pizza",
         price: 15000,
         description: "Sweet pizza with toppings",
-        imageId: "mock-dessert-pizza",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dessert_pizza.jpg/400px-Dessert_pizza.jpg",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2566,7 +2566,7 @@ export const mockMenus = {
         name: "Coke",
         price: 6000,
         description: "Refreshing cola",
-        imageId: "mock-coke",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Coke.jpg/400px-Coke.jpg",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -2585,7 +2585,7 @@ export const mockMenus = {
         name: "Fries",
         price: 9000,
         description: "Crispy potato fries",
-        imageId: "mock-fries",
+        imageId: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/French_fries.jpg/400px-French_fries.jpg",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",

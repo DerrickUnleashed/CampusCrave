@@ -278,7 +278,7 @@ const Cart = () => {
                       </h2>
                     </div>
                     <h2 className="text-base text-[#282c3f] font-semibold mb-1">
-                      Home
+                      Ground Floor
                     </h2>
                     <h2 className="text-sm text-[#7f828f] font-medium tracking-tight leading-3 mb-6">
                       {area}, {cityName} {state}
@@ -482,13 +482,7 @@ const Cart = () => {
               to={`/restaurant/${cartDetails[0]?.resDetailsData?.id}`}
               className="flex mx-6 pt-6 pb-2"
             >
-              <img
-                className="w-14 h-14 mr-3 object-cover"
-                src={
-                  RES_CARD_IMG_CDN_URL +
-                  cartDetails[0].resDetailsData?.cloudinaryImageId
-                }
-              />
+              
               <div className="flex flex-col text-start justify-between w-full truncate">
                 <div>
                   <h2 className="text-sm font-semibold text-[#282c3f]">
