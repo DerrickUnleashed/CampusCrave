@@ -10,21 +10,15 @@ const LandingPage = () => {
       <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white pt-20">
       {/* Hero Section */}
       <section className="pt-20 pb-16 px-8 text-center">
-        <img
-          src={campuscravelandingpage}
-          alt="CampusCrave"
-          className="w-auto h-[40vh] mx-auto mb-8"
-        />
-        <h1 className="text-5xl font-bold text-gray-800 mb-4">
-          Welcome to CampusCrave
-        </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-          Your ultimate campus food companion. Order delicious meals, earn rewards, and connect with your community!
-        </p>
-        <div className="flex justify-center">
+        <div className="relative flex justify-center">
           <Spline
             scene="https://prod.spline.design/Hrbf0AN7sZrwfZNf/scene.splinecode"
             style={{ pointerEvents: 'none' }}
+          />
+          <img
+            src={campuscravelandingpage}
+            alt="CampusCrave"
+            className="absolute inset-0 w-auto h-[80vh] mx-auto"
           />
         </div>
       </section>
