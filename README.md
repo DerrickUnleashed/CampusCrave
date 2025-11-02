@@ -1,4 +1,6 @@
-<img src="src/assets/logo.png" alt="CampusCrave Logo" width="200"/>
+<div align="center" id="#readme-top">
+  <img src="src/assets/logo.png" alt="CampusCrave Logo" width="200" style="background-color: orange; padding: 20px; border-radius: 10px;"/>
+</div>
 
 # 🥘 CampusCrave - A Food ordering platform for Colleges<a name="about"></a>
 
