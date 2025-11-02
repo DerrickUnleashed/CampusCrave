@@ -1,9 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import campuscravelandingpage from "../assets/campuscravelandingpage.png";
-import biriyaniImg from "../assets/food1.jpg";
-import pizzaImg from "../assets/food2.jpeg";
-import chickenImg from "../assets/food3.jpeg";
+import Spline from '@splinetool/react-spline';
 
 const LandingPage = () => {
   return (
@@ -21,12 +19,13 @@ const LandingPage = () => {
           Welcome to CampusCrave
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-          Your ultimate campus food companion. Order delicious meals, share surplus food, earn rewards, and connect with your community!
+          Your ultimate campus food companion. Order delicious meals, earn rewards, and connect with your community!
         </p>
-        <div className="flex justify-center space-x-4">
-          <img src={biriyaniImg} alt="Biryani" className="w-24 h-24 rounded-full object-cover" />
-          <img src={pizzaImg} alt="Pizza" className="w-24 h-24 rounded-full object-cover" />
-          <img src={chickenImg} alt="Chicken" className="w-24 h-24 rounded-full object-cover" />
+        <div className="flex justify-center">
+          <Spline
+            scene="https://prod.spline.design/Hrbf0AN7sZrwfZNf/scene.splinecode"
+            style={{ pointerEvents: 'none' }}
+          />
         </div>
       </section>
 
@@ -36,41 +35,29 @@ const LandingPage = () => {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
             Why Choose CampusCrave?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center p-6 bg-orange-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-orange-600 mb-4">🍽️ Easy Ordering</h3>
+              <h3 className="text-2xl font-semibold text-orange-600 mb-4">Easy Ordering</h3>
               <p className="text-gray-600">
                 Browse and order from a variety of campus eateries with just a few taps. Fast, convenient, and delicious!
               </p>
             </div>
-            <div className="text-center p-6 bg-green-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-green-600 mb-4">♻️ Food Sharing</h3>
-              <p className="text-gray-600">
-                Share surplus food with fellow students and reduce waste while helping others. Earn VCoins for your generosity!
-              </p>
-            </div>
             <div className="text-center p-6 bg-blue-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-blue-600 mb-4">🏃‍♂️ Runner Service</h3>
+              <h3 className="text-2xl font-semibold text-blue-600 mb-4">Runner Service</h3>
               <p className="text-gray-600">
                 Become a runner and deliver orders across campus. Earn money and stay active while helping your community!
               </p>
             </div>
             <div className="text-center p-6 bg-purple-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-purple-600 mb-4">🏪 Vendor Portal</h3>
+              <h3 className="text-2xl font-semibold text-purple-600 mb-4">Vendor Portal</h3>
               <p className="text-gray-600">
                 Manage your eatery, update menus, and track orders effortlessly. Grow your business on campus!
               </p>
             </div>
             <div className="text-center p-6 bg-yellow-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-yellow-600 mb-4">👑 Admin Control</h3>
+              <h3 className="text-2xl font-semibold text-yellow-600 mb-4">Rewards & VCoins</h3>
               <p className="text-gray-600">
-                Oversee the platform, manage users, and analyze performance with powerful admin tools.
-              </p>
-            </div>
-            <div className="text-center p-6 bg-red-50 rounded-lg">
-              <h3 className="text-2xl font-semibold text-red-600 mb-4">🎁 Rewards & VCoins</h3>
-              <p className="text-gray-600">
-                Earn VCoins through sharing and orders. Redeem them for discounts and exclusive perks!
+                Earn VCoins through orders. Redeem them for discounts and exclusive perks!
               </p>
             </div>
           </div>
