@@ -6,6 +6,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import markerIcon from "../assets/marker.png";
 import { updateDeliveryStatus } from "../Utils/deliverySlice";
+import { mockMenus, mockRestaurants } from "../mockData";
 
 const customIcon = L.icon({
   iconUrl: markerIcon,
@@ -22,6 +23,22 @@ const OrderTracking = () => {
   const [eta, setEta] = useState(null);
 
   const delivery = deliveries.find((d) => d.orderId === orderId);
+
+  // Extract restaurant ID from orderId (assuming format like ORD001 where 001 is restaurant ID)
+  const restaurantId = orderId.replace('ORD', '');
+  const restaurant = mockRestaurants.find(r => r.info.id === restaurantId);
+  const pickupCoords = restaurant ? restaurant.info.location : null;
+
+  // Store pickupCoords in localStorage for persistence
+  useEffect(() => {
+    if (pickupCoords) {
+      localStorage.setItem(`pickupCoords_${orderId}`, JSON.stringify(pickupCoords));
+    }
+  }, [pickupCoords, orderId]);
+
+  // Retrieve pickupCoords from localStorage if not available
+  const storedPickupCoords = localStorage.getItem(`pickupCoords_${orderId}`);
+  const finalPickupCoords = pickupCoords || (storedPickupCoords ? JSON.parse(storedPickupCoords) : null);
 
   // Haversine distance formula (in km)
   const calculateDistance = (a, b) => {
@@ -64,8 +81,8 @@ const OrderTracking = () => {
         break;
 
       case "in_transit":
-        if (delivery.pickupCoords && delivery.deliveryCoords) {
-          const pickup = delivery.pickupCoords;
+        if ((finalPickupCoords || delivery.pickupCoords) && delivery.deliveryCoords) {
+          const pickup = finalPickupCoords || delivery.pickupCoords;
           const drop = delivery.deliveryCoords;
 
           console.log("Pickup:", pickup, "Drop:", drop);
@@ -135,7 +152,7 @@ const OrderTracking = () => {
   const currentStep = steps.findIndex((s) => s.status === delivery.status);
   const defaultCoords = { lat: 12.843744, lng: 80.154570 };
 
-  const pickup = delivery.pickupCoords || defaultCoords;
+  const pickup = finalPickupCoords || delivery.pickupCoords || defaultCoords;
   const drop = delivery.deliveryCoords || defaultCoords;
   console.log("Pickup:", pickup, "Drop:", drop);
 
@@ -165,7 +182,7 @@ const OrderTracking = () => {
         <div className="grid md:grid-cols-2 gap-4 mb-6">
           <div>
             <h3 className="font-medium text-gray-700">Pickup Location</h3>
-            <p className="text-gray-600">{delivery.pickupLocation || "N/A"}</p>
+            <p className="text-gray-600">{restaurant ? restaurant.info.name : delivery.pickupLocation || "N/A"}</p>
           </div>
           <div>
             <h3 className="font-medium text-gray-700">Delivery Location</h3>
@@ -242,7 +259,7 @@ const OrderTracking = () => {
                 attribution='&copy; OpenStreetMap contributors'
               />
               <Marker position={[pickup.lat, pickup.lng]} icon={customIcon}>
-                <Popup>Pickup Location</Popup>
+                <Popup>{restaurant ? restaurant.info.name : "Pickup Location"}</Popup>
               </Marker>
               {currentLocation && (
                 <Marker position={[currentLocation.lat, currentLocation.lng]} icon={customIcon}>
