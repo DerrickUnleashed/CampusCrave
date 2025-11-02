@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Search from "./components/Search";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
+import LandingPage from "./components/LandingPage";
 import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
 import MenuSearch from "./components/MenuSearch";
@@ -34,10 +35,14 @@ const AppLayout = () => {
 const appRouter = createBrowserRouter([
   {
     path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/",
     element: <AppLayout />,
     children: [
       {
-        path: "/",
+        path: "login",
         element: <SignIn />,
       },
       {

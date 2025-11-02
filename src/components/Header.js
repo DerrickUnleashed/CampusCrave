@@ -100,7 +100,7 @@ const Header = () => {
               className="transition duration-250 ease-in-out m-3 flex items-center justify-center text-[#303031] hover:text-[#f75500]"
             >
               <button
-                onClick={isLoggedIn ? handleLogout : () => navigate("/")}
+                onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
                 className="flex items-center justify-center truncate"
               >
                 <svg

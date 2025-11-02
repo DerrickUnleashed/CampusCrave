@@ -37,7 +37,7 @@ const SignUp = () => {
       setSelectedRole(role);
       dispatch(setRole(role));
       // After registration, redirect to login
-      navigate("/");
+      navigate("/login");
     }
   };
 
@@ -122,7 +122,7 @@ const SignUp = () => {
 
       <p className="text-base pt-3 text-[#60606e] tracking-tighter leading-5 text-center max-w-md">
         Already have an account?{" "}
-        <a href="/" className="text-[#f3730a] hover:underline">
+        <a href="/login" className="text-[#f3730a] hover:underline">
           Login here
         </a>
       </p>

@@ -112,6 +112,14 @@ const SignIn = () => {
       <p className="text-base pt-3 text-[#60606e] tracking-tighter leading-5 text-center max-w-md">
         Join our campus food community. Order delicious meals, share surplus food, and earn rewards!
       </p>
+      <div className="flex items-center justify-center p-4">
+        <a
+          href="/"
+          className="px-5 py-3 bg-[#f3730a] text-white font-medium mb-4 shadow-sm hover:shadow-md rounded"
+        >
+          Go Back to Landing Page
+        </a>
+      </div>
     </div>
   );
 };
