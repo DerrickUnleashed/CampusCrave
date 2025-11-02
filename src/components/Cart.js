@@ -12,6 +12,10 @@ import { RES_CARD_IMG_CDN_URL } from "../helpers/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faPlay } from "@fortawesome/free-solid-svg-icons";
 import qrImage from "../assets/qr.jpg";
+import useRestaurantMenu from "../Hooks/useRestaurantMenu";
+import offerlogo from "../assets/offer.webp";
+import OfferSlider from "./OfferSlider";
+import OfferCard from "./OfferCard";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -31,7 +35,22 @@ const Cart = () => {
   const [orderSuccess, setOrderSuccess] = useState(false);
   const [useVCoins, setUseVCoins] = useState(false);
   const [showQR, setShowQR] = useState(false);
+  const [selectedOffer, setSelectedOffer] = useState(null);
   const vCoins = useSelector((store) => store.vCoins.balance);
+  const restaurantId = cartDetails[0]?.resDetailsData?.id;
+  const [resDetails, resOffers] = useRestaurantMenu(restaurantId);
+
+  const getDeliveryFee = () => {
+    if (deliveryFee && !isNaN(Number(deliveryFee))) {
+      return Number(deliveryFee);
+    } else if (distance && typeof distance === 'string' && distance.includes(' ')) {
+      const distNum = Number(distance.split(" ")[0]);
+      if (!isNaN(distNum)) {
+        return distNum * 6.8;
+      }
+    }
+    return 0;
+  };
 
   // Function to get current location
   const getCurrentLocation = () => {
@@ -90,13 +109,11 @@ const Cart = () => {
   };
 
   const handlePaymentComplete = () => {
+    const deliveryFeeAmount = getDeliveryFee();
     // Calculate final total
     const finalTotal = (
       Number(itemTotal) +
-      Number(
-        Number(deliveryFee) ||
-          (Number(distance.split(" ")[0]) * 6.8).toFixed(2)
-      ) +
+      deliveryFeeAmount +
       3 +
       Number(0.18 * itemTotal)
     );
@@ -110,6 +127,19 @@ const Cart = () => {
       }));
     }
 
+    // Apply offer discount
+    let offerDiscount = 0;
+    if (selectedOffer) {
+      if (selectedOffer.header.includes("Free Delivery")) {
+        offerDiscount = deliveryFeeAmount;
+      } else {
+        const discountMatch = selectedOffer.header.match(/(\d+)%/);
+        if (discountMatch) {
+          offerDiscount = (parseInt(discountMatch[1]) / 100) * finalTotal;
+        }
+      }
+    }
+
     // Create delivery
     const restaurant = cartDetails[0]?.resDetailsData;
     const deliveryData = {
@@ -117,7 +147,7 @@ const Cart = () => {
       pickupLocation: restaurant?.areaName,
       deliveryLocation: `${area}, ${cityName}`,
       items: cartDetails.map(item => item.name),
-      total: finalTotal - discount,
+      total: finalTotal - discount - offerDiscount,
       pickupCoords: restaurant?.location ? {
         lat: restaurant.location.lat,
         lng: restaurant.location.lng
@@ -132,7 +162,7 @@ const Cart = () => {
     // Add notification
     dispatch(addNotification({
       title: "Order Confirmed!",
-      message: `Your order from ${cartDetails[0]?.resDetailsData?.name} is being prepared. ${discount > 0 ? `You saved ₹${discount} with VCoins!` : ''}`,
+      message: `Your order from ${cartDetails[0]?.resDetailsData?.name} is being prepared. ${discount > 0 ? `You saved ₹${discount} with VCoins!` : ''} ${offerDiscount > 0 ? `You saved ₹${offerDiscount.toFixed(2)} with offer!` : ''}`,
       type: "order",
       orderId: deliveryData.orderId
     }));
@@ -405,6 +435,37 @@ const Cart = () => {
         </div>
         {/* right side */}
         <div className="flex-col ml-5 my-4 max-w-[35%]">
+          {/* Offers Section */}
+          {resOffers && resOffers.length > 0 && (
+            <div className="flex-col pb-5 bg-white w-full h-fit mb-4">
+              <div className="flex justify-between items-center px-4 py-4">
+                <h2 className="font-bold text-xl leading-3 tracking-tight">
+                  Deals For You
+                </h2>
+                <OfferSlider
+                  className="offerSlider"
+                  key="offerSlider"
+                  amount={450}
+                />
+              </div>
+              <div className="offerSlider container-snap p-4 gap-x-8 flex mt-4 mb-2 overflow-x-auto">
+                {resOffers.map((offer, index) => (
+                  <div
+                    key={index}
+                    className={`cursor-pointer ${selectedOffer?.couponCode === offer.couponCode ? 'border-2 border-green-500' : ''}`}
+                    onClick={() => setSelectedOffer(offer)}
+                  >
+                    <OfferCard
+                      offerLogo={offerlogo}
+                      header={offer.header}
+                      couponCode={offer.couponCode}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="flex-col pb-5 bg-white w-full h-fit">
             <Link
               to={`/restaurant/${cartDetails[0]?.resDetailsData?.id}`}
@@ -522,9 +583,7 @@ const Cart = () => {
                     </div>
                   </div>
                   <h3 className="text-nowrap">
-                    ₹
-                    {Number(deliveryFee) ||
-                      (Number(distance.split(" ")[0]) * 6.8).toFixed(2)}
+                    ₹{getDeliveryFee().toFixed(2)}
                   </h3>
                 </div>
                 <div className="flex justify-between text-[#686b78] text-xs font-semibold pb-4">
@@ -538,6 +597,28 @@ const Cart = () => {
                     ₹{(Number(itemTotal) * 0.18).toFixed(2)}
                   </h3>
                 </div>
+                {selectedOffer && (
+                  <div className="flex justify-between text-green-600 text-xs font-semibold pb-4">
+                    <div className="flex items-end">
+                      Offer Discount ({selectedOffer.header})
+                    </div>
+                    <h3 className="text-nowrap">
+                      -₹{(() => {
+                        if (selectedOffer.header.includes("Free Delivery")) {
+                          return getDeliveryFee().toFixed(2);
+                        } else {
+                          const discountMatch = selectedOffer.header.match(/(\d+)%/);
+                          if (discountMatch) {
+                            const discountPercent = parseInt(discountMatch[1]);
+                            const totalBeforeOffer = Number(itemTotal) + getDeliveryFee() + 3 + Number(0.18 * itemTotal);
+                            return (discountPercent / 100 * totalBeforeOffer).toFixed(2);
+                          }
+                          return '0.00';
+                        }
+                      })()}
+                    </h3>
+                  </div>
+                )}
               </div>
             </div>
             <div className="flex justify-between text-[#282c3f] border-t-2 border-solid border-black text-md font-bold mx-6 px-2 pt-4 my-2">
@@ -545,47 +626,71 @@ const Cart = () => {
               <div className="text-right">
                 {useVCoins && vCoins >= 50 && (
                   <div className="text-sm text-green-600 line-through">
-                    ₹{(
-                      Number(itemTotal) +
-                      Number(
-                        Number(deliveryFee) ||
-                          (Number(distance.split(" ")[0]) * 6.8).toFixed(2)
-                      ) +
-                      3 +
-                      Number(0.18 * itemTotal)
-                    ).toFixed(2)}
+                    ₹{(() => {
+                      const deliveryFeeAmount = getDeliveryFee();
+                      return (Number(itemTotal) + deliveryFeeAmount + 3 + Number(0.18 * itemTotal)).toFixed(2);
+                    })()}
                   </div>
                 )}
                 <h3 className="text-nowrap">
                   ₹
                   {(() => {
+                    const deliveryFeeAmount = getDeliveryFee();
                     const originalTotal = Number(itemTotal) +
-                      Number(
-                        Number(deliveryFee) ||
-                          (Number(distance.split(" ")[0]) * 6.8).toFixed(2)
-                      ) +
+                      deliveryFeeAmount +
                       3 +
                       Number(0.18 * itemTotal);
 
+                    let total = originalTotal;
+                    let vCoinDiscount = 0;
+                    let offerDiscount = 0;
+
                     if (useVCoins && vCoins >= 50) {
-                      const discount = Math.min(50, originalTotal * 0.1);
-                      return (originalTotal - discount).toFixed(2);
+                      vCoinDiscount = Math.min(50, originalTotal * 0.1);
+                      total -= vCoinDiscount;
                     }
-                    return originalTotal.toFixed(2);
+
+                    if (selectedOffer) {
+                      if (selectedOffer.header.includes("Free Delivery")) {
+                        offerDiscount = deliveryFeeAmount;
+                        total -= offerDiscount;
+                      } else {
+                        const discountMatch = selectedOffer.header.match(/(\d+)%/);
+                        if (discountMatch) {
+                          offerDiscount = (parseInt(discountMatch[1]) / 100) * originalTotal;
+                          total -= offerDiscount;
+                        }
+                      }
+                    }
+
+                    return total.toFixed(2);
                   })()}
-                  {useVCoins && vCoins >= 50 && (
+                  {(useVCoins && vCoins >= 50) || selectedOffer ? (
                     <span className="text-sm text-green-600 ml-1">
-                      (Saved ₹{Math.min(50, (
-                        Number(itemTotal) +
-                        Number(
-                          Number(deliveryFee) ||
-                            (Number(distance.split(" ")[0]) * 6.8).toFixed(2)
-                        ) +
-                        3 +
-                        Number(0.18 * itemTotal)
-                      ) * 0.1).toFixed(2)})
+                      (Saved ₹{(() => {
+                        const deliveryFeeAmount = getDeliveryFee();
+                        const originalTotal = Number(itemTotal) +
+                          deliveryFeeAmount +
+                          3 +
+                          Number(0.18 * itemTotal);
+                        let savings = 0;
+                        if (useVCoins && vCoins >= 50) {
+                          savings += Math.min(50, originalTotal * 0.1);
+                        }
+                        if (selectedOffer) {
+                          if (selectedOffer.header.includes("Free Delivery")) {
+                            savings += deliveryFeeAmount;
+                          } else {
+                            const discountMatch = selectedOffer.header.match(/(\d+)%/);
+                            if (discountMatch) {
+                              savings += (parseInt(discountMatch[1]) / 100) * originalTotal;
+                            }
+                          }
+                        }
+                        return savings.toFixed(2);
+                      })()})
                     </span>
-                  )}
+                  ) : null}
                 </h3>
               </div>
             </div>

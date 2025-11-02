@@ -3,12 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
 import useRestaurantMenu from "../Hooks/useRestaurantMenu";
 import { useParams, Link } from "react-router-dom";
-import offerlogo from "../assets/offer.webp";
+
 import {
   DELIVERY_DISTANCE_IMG,
 } from "../helpers/Constant";
-import OfferSlider from "./OfferSlider";
-import OfferCard from "./OfferCard";
 import MenuCategory from "./MenuCategory";
 // import MenuSearch from "./MenuSearch";
 import { useSelector, useDispatch } from "react-redux";
@@ -148,31 +146,7 @@ const RestaurantMenu = () => {
               </div>
             </div>
           </div>
-          {resOffers && (
-            <>
-              <hr className="my-8"></hr>
-              <div className="flex justify-between items-center px-4">
-                <h2 className="font-bold text-2xl leading-3 tracking-tight">
-                  Deals For You
-                </h2>
-                <OfferSlider
-                  className="offerSlider"
-                  key="offerSlider"
-                  amount={450}
-                />
-              </div>
-              <div className="offerSlider container-snap p-4 gap-x-8 flex mt-4 mb-2 overflow-x-auto">
-                {resOffers.map((offer, index) => (
-                  <OfferCard
-                    key={index} // It's better to use a unique key for each item in the array
-                    offerLogo={offerlogo}
-                    header={offer.header}
-                    couponCode={offer.couponCode}
-                  />
-                ))}
-              </div>
-            </>
-          )}
+
           <p className="py-4 text-center leading-loose">M E N U</p>
 
           {/* VCoin Banner */}
