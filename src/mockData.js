@@ -2738,7 +2738,7 @@ export const mockExploreRestaurants = [
 export const mockNotServicable = [];
 
 export const deliveryAddresses = [
-  { name: "AB3", lat: 12.843674116906302, lng: 80.15454066345887 },
+  { name: "AB3", lat: 12.843674116906302, lng: 80.15454066345887 }, , 
   { name: "AB2", lat: 12.842896494563089, lng: 80.15651073042048 },
   { name: "AB1", lat: 12.843560464682763, lng: 80.15304404214189 },
   { name: "AB4", lat: 12.84337843815955, lng: 80.15551926905485 },
