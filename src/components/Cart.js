@@ -111,12 +111,21 @@ const Cart = () => {
     }
 
     // Create delivery
+    const restaurant = cartDetails[0]?.resDetailsData;
     const deliveryData = {
       orderId: `ORD${Date.now()}`,
-      pickupLocation: cartDetails[0]?.resDetailsData?.areaName,
+      pickupLocation: restaurant?.areaName,
       deliveryLocation: `${area}, ${cityName}`,
       items: cartDetails.map(item => item.name),
       total: finalTotal - discount,
+      pickupCoords: restaurant?.location ? {
+        lat: restaurant.location.lat,
+        lng: restaurant.location.lng
+      } : null,
+      deliveryCoords: {
+        lat: locDetails[0]?.lat || 12.843687187497949,
+        lng: locDetails[0]?.lng || 80.15451785651514
+      },
     };
     dispatch(addDelivery(deliveryData));
 
@@ -124,7 +133,8 @@ const Cart = () => {
     dispatch(addNotification({
       title: "Order Confirmed!",
       message: `Your order from ${cartDetails[0]?.resDetailsData?.name} is being prepared. ${discount > 0 ? `You saved ₹${discount} with VCoins!` : ''}`,
-      type: "order"
+      type: "order",
+      orderId: deliveryData.orderId
     }));
 
     setShowQR(false);

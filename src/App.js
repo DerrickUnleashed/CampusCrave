@@ -22,6 +22,7 @@ import CraveRunners from "./components/CraveRunners";
 import Notifications from "./components/Notifications";
 import OrderHistory from "./components/OrderHistory";
 import CommunityUpdates from "./components/CommunityUpdates";
+import OrderTracking from "./components/OrderTracking";
 const Help = lazy(() => import("./components/Help"));
 const AppLayout = () => {
   return (
@@ -125,6 +126,10 @@ const appRouter = createBrowserRouter([
       {
         path: "community-updates",
         element: <CommunityUpdates />,
+      },
+      {
+        path: "track-order/:orderId",
+        element: <OrderTracking />,
       },
     ],
   },

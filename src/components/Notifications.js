@@ -1,10 +1,12 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { markAsRead, clearNotifications } from "../Utils/notificationsSlice";
+import { useNavigate } from "react-router-dom";
 
 const Notifications = () => {
   const dispatch = useDispatch();
   const notifications = useSelector((store) => store.notifications.notifications);
+  const navigate = useNavigate();
 
   const handleMarkAsRead = (id) => {
     dispatch(markAsRead(id));
@@ -12,6 +14,15 @@ const Notifications = () => {
 
   const handleClearAll = () => {
     dispatch(clearNotifications());
+  };
+
+  const handleNotificationClick = (notification) => {
+    if (notification.type === 'order' && notification.orderId) {
+      navigate(`/track-order/${notification.orderId}`);
+    }
+    if (!notification.read) {
+      dispatch(markAsRead(notification.id));
+    }
   };
 
   const unreadCount = notifications.filter(n => !n.read).length;
@@ -36,7 +47,8 @@ const Notifications = () => {
         {notifications.slice().reverse().map((notification) => (
           <div
             key={notification.id}
-            className={`p-4 rounded-lg shadow-md ${notification.read ? 'bg-gray-100' : 'bg-white border-l-4 border-orange-500'}`}
+            className={`p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow ${notification.read ? 'bg-gray-100' : 'bg-white border-l-4 border-orange-500'}`}
+            onClick={() => handleNotificationClick(notification)}
           >
             <div className="flex justify-between items-start">
               <div className="flex-1">
@@ -45,10 +57,16 @@ const Notifications = () => {
                 <p className="text-sm text-gray-500 mt-2">
                   {new Date(notification.date).toLocaleString()}
                 </p>
+                {notification.type === 'order' && notification.orderId && (
+                  <p className="text-sm text-blue-600 mt-1">Click to track order</p>
+                )}
               </div>
               {!notification.read && (
                 <button
-                  onClick={() => handleMarkAsRead(notification.id)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleMarkAsRead(notification.id);
+                  }}
                   className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 text-sm"
                 >
                   Mark Read
