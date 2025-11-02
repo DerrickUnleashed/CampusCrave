@@ -11,6 +11,7 @@ import Success from "./Success";
 import { RES_CARD_IMG_CDN_URL } from "../helpers/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faPlay } from "@fortawesome/free-solid-svg-icons";
+import qrImage from "../assets/qr.jpg";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -29,6 +30,7 @@ const Cart = () => {
   const [confirmPayment, setConfirmPayment] = useState(false);
   const [orderSuccess, setOrderSuccess] = useState(false);
   const [useVCoins, setUseVCoins] = useState(false);
+  const [showQR, setShowQR] = useState(false);
   const vCoins = useSelector((store) => store.vCoins.balance);
 
   // Function to get current location
@@ -83,6 +85,11 @@ const Cart = () => {
   };
 
   const handlePlaceOrder = () => {
+    // Show QR code for payment
+    setShowQR(true);
+  };
+
+  const handlePaymentComplete = () => {
     // Calculate final total
     const finalTotal = (
       Number(itemTotal) +
@@ -120,6 +127,7 @@ const Cart = () => {
       type: "order"
     }));
 
+    setShowQR(false);
     setOrderSuccess(true);
   };
   const handleIncreaseQuantity = (x) => {
@@ -347,6 +355,39 @@ const Cart = () => {
                   >
                     PLACE ORDER
                   </div>
+
+                  {/* QR Code Modal */}
+                  {showQR && (
+                    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                      <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
+                        <h3 className="text-lg font-bold text-center mb-4">Scan to Pay</h3>
+                        <div className="flex justify-center mb-4">
+                          <img
+                            src={qrImage}
+                            alt="Payment QR Code"
+                            className="w-48 h-48"
+                          />
+                        </div>
+                        <p className="text-sm text-gray-600 text-center mb-4">
+                          Scan this QR code with your UPI app to complete the payment.
+                        </p>
+                        <div className="flex justify-between">
+                          <button
+                            className="bg-gray-300 text-gray-700 px-4 py-2 rounded"
+                            onClick={() => setShowQR(false)}
+                          >
+                            Cancel
+                          </button>
+                          <button
+                            className="bg-[#60b246] text-white px-4 py-2 rounded"
+                            onClick={handlePaymentComplete}
+                          >
+                            Payment Done
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </>
               )}
             </div>
@@ -448,7 +489,7 @@ const Cart = () => {
                 <input
                   className="focus:outline-none w-full py-5 bg-[#f9f9f9] tracking-tighter text-sm"
                   type="text"
-                  placeholder="Any suggestions? We will pass it on..."
+                  placeholder="Any suggestions?"
                   value={suggestionText}
                   onChange={(e) => {
                     setSuggestionText(e.target.value);
