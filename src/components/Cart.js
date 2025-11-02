@@ -16,6 +16,7 @@ import useRestaurantMenu from "../Hooks/useRestaurantMenu";
 import offerlogo from "../assets/offer.webp";
 import OfferSlider from "./OfferSlider";
 import OfferCard from "./OfferCard";
+import { deliveryAddresses } from "../mockData";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -294,43 +295,53 @@ const Cart = () => {
                       Select a delivery address
                     </h2>
                     <h3 className="text-[#7e808c]">
-                      &nbsp; You have a saved address here
+                      &nbsp; Choose from available locations
                     </h3>
                   </div>
-                  <div className="border  border-dashed mt-6 w-80 h-fit px-4 pt-4 pb-2 cursor-pointer hover:shadow-[0px_2px_8px_#d4d5d9]">
-                    <div className="mr-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#282c3f"
-                      >
-                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                        <circle cx="12" cy="10" r="3" />
-                      </svg>
-                      <div className="relative flex -top-[1.6rem] -right-2 items-center justify-center rounded-full bg-[#60b246] w-3 h-3 text-white text-xs">
-                        +
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="font-medium text-base tracking-tight">
-                        Add new Address
-                      </h3>
-                      <h3 className="overflow-clip text-[#7f828f] text-sm">
-                        {area}, {cityName}, {state}
-                      </h3>
+                  <div className="mt-6 grid grid-cols-2 gap-4">
+                    {deliveryAddresses.map((address, index) => (
                       <div
-                        className="my-4 border border-[#60b246] border-solid bg-[#60b246] text-center pt-3 pb-1 px-4 w-fit"
+                        key={index}
+                        className="border border-dashed h-fit px-4 pt-4 pb-2 cursor-pointer hover:shadow-[0px_2px_8px_#d4d5d9] hover:border-solid"
                         onClick={() => {
+                          dispatch(updateLocation([{
+                            lat: address.lat,
+                            lng: address.lng,
+                            area: address.name,
+                            district: "Chennai",
+                            state: "Tamil Nadu",
+                            pincode: 600127
+                          }]));
                           handleConfirmAddress();
                         }}
                       >
-                        <h2 className="text-sm font-bold text-white">
-                          DELIVER HERE
-                        </h2>
+                        <div className="mr-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-5 h-5"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#282c3f"
+                          >
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                            <circle cx="12" cy="10" r="3" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h3 className="font-medium text-base tracking-tight">
+                            {address.name}
+                          </h3>
+                          <h3 className="overflow-clip text-[#7f828f] text-sm">
+                            Chennai, Tamil Nadu
+                          </h3>
+                          <div className="my-4 border border-[#60b246] border-solid bg-[#60b246] text-center pt-3 pb-1 px-4 w-fit">
+                            <h2 className="text-sm font-bold text-white">
+                              DELIVER HERE
+                            </h2>
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                    ))}
                   </div>
                 </>
               )}
