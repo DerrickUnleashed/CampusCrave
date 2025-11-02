@@ -4,13 +4,15 @@ import { useNavigate } from "react-router-dom";
 import { setRole } from "../Utils/userRoleSlice";
 import campuscravelandingpage from "../assets/campuscravelandingpage.png";
 
-const SignIn = () => {
+const SignUp = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [selectedRole, setSelectedRole] = useState("");
   const [formData, setFormData] = useState({
-    registrationNumber: "",
+    name: "",
+    email: "",
     password: "",
+    registrationNumber: "",
   });
   const [errors, setErrors] = useState({});
 
@@ -21,8 +23,11 @@ const SignIn = () => {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.registrationNumber.trim()) newErrors.registrationNumber = "Registration Number is required";
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Email is invalid";
     if (!formData.password.trim()) newErrors.password = "Password is required";
+    if (!formData.registrationNumber.trim()) newErrors.registrationNumber = "Registration Number is required";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -31,16 +36,8 @@ const SignIn = () => {
     if (validateForm()) {
       setSelectedRole(role);
       dispatch(setRole(role));
-      // Navigate based on role
-      if (role === "Student") {
-        navigate("/home");
-      } else if (role === "Runner") {
-        navigate("/runner-dashboard");
-      } else if (role === "Admin") {
-        navigate("/admin-dashboard");
-      } else if (role === "Vendor") {
-        navigate("/vendor-dashboard");
-      }
+      // After registration, redirect to login
+      navigate("/");
     }
   };
 
@@ -52,22 +49,32 @@ const SignIn = () => {
         className="w-auto mt-2 h-[40vh] mb-3"
       />
       <h1 className="text-[#282c3f] font-extrabold text-2xl tracking-tighter leading-7 mb-4">
-        Welcome to CampusCrave!
+        Register for CampusCrave!
       </h1>
 
       <div className="mb-6 w-full max-w-md">
         <form className="space-y-4">
-          
           <div>
-            <label className="block text-sm font-medium text-gray-700">Registration Number</label>
+            <label className="block text-sm font-medium text-gray-700">Name</label>
             <input
               type="text"
-              name="registrationNumber"
-              value={formData.registrationNumber}
+              name="name"
+              value={formData.name}
               onChange={handleInputChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
             />
-            {errors.registrationNumber && <p className="text-red-500 text-sm">{errors.registrationNumber}</p>}
+            {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+            />
+            {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700">Password</label>
@@ -80,7 +87,17 @@ const SignIn = () => {
             />
             {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
           </div>
-          
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Registration Number</label>
+            <input
+              type="text"
+              name="registrationNumber"
+              value={formData.registrationNumber}
+              onChange={handleInputChange}
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+            />
+            {errors.registrationNumber && <p className="text-red-500 text-sm">{errors.registrationNumber}</p>}
+          </div>
         </form>
       </div>
 
@@ -104,16 +121,13 @@ const SignIn = () => {
       </div>
 
       <p className="text-base pt-3 text-[#60606e] tracking-tighter leading-5 text-center max-w-md">
-        Don't have an account?{" "}
-        <a href="/signup" className="text-[#f3730a] hover:underline">
-          Sign up here
+        Already have an account?{" "}
+        <a href="/" className="text-[#f3730a] hover:underline">
+          Login here
         </a>
-      </p>
-      <p className="text-base pt-3 text-[#60606e] tracking-tighter leading-5 text-center max-w-md">
-        Join our campus food community. Order delicious meals, share surplus food, and earn rewards!
       </p>
     </div>
   );
 };
 
-export default SignIn;
+export default SignUp;

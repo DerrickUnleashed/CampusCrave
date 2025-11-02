@@ -7,10 +7,14 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Search from "./components/Search";
 import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
 import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
 import MenuSearch from "./components/MenuSearch";
 import Dashboard from "./components/Dashboard";
+import RunnerDashboard from "./components/RunnerDashboard";
+import VendorDashboard from "./components/VendorDashboard";
+import AdminDashboard from "./components/AdminDashboard";
 import VCoinWallet from "./components/VCoinWallet";
 import MealShare from "./components/MealShare";
 import CraveRunners from "./components/CraveRunners";
@@ -34,6 +38,14 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <SignIn />,
+      },
+      {
+        path: "signup",
+        element: <SignUp />,
+      },
+      {
+        path: "home",
         element: <Home />,
       },
       {
@@ -72,6 +84,18 @@ const appRouter = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "runner-dashboard",
+        element: <RunnerDashboard />,
+      },
+      {
+        path: "vendor-dashboard",
+        element: <VendorDashboard />,
+      },
+      {
+        path: "admin-dashboard",
+        element: <AdminDashboard />,
       },
       {
         path: "vcoin-wallet",
