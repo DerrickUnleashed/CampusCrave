@@ -55,7 +55,7 @@ export const mockRestaurants = [
       cloudinaryImageId: gazebo,
       locality: "Main Campus",
       areaName: "University Center",
-      costForTwo: "₹200 for two",
+      costForTwo: "20000",
       cuisines: ["American", "Fast Food", "Beverages"],
       avgRating: 4.2,
       parentId: "1",
@@ -112,7 +112,7 @@ export const mockRestaurants = [
       cloudinaryImageId: gazebo,
       locality: "Student Residences",
       areaName: "North Campus",
-      costForTwo: "₹150 for two",
+      costForTwo: "20000",
       cuisines: ["Indian", "Chinese", "Continental"],
       avgRating: 4.5,
       parentId: "2",
@@ -169,7 +169,7 @@ export const mockRestaurants = [
       cloudinaryImageId: gazebo,
       locality: "Central Library",
       areaName: "Academic Block",
-      costForTwo: "₹100 for two",
+      costForTwo: "20000", 
       cuisines: ["Snacks", "Beverages", "Healthy"],
       avgRating: 4.0,
       parentId: "3",
@@ -226,7 +226,7 @@ export const mockRestaurants = [
       cloudinaryImageId: gazebo,
       locality: "Sports Complex",
       areaName: "South Campus",
-      costForTwo: "₹180 for two",
+      costForTwo: "20000", 
       cuisines: ["Italian", "Pizza", "Pasta"],
       avgRating: 4.3,
       parentId: "4",
@@ -283,7 +283,7 @@ export const mockRestaurants = [
       cloudinaryImageId: gymkhana,
       locality: "Student Union",
       areaName: "Central Campus",
-      costForTwo: "₹250 for two",
+      costForTwo: "20000", 
       cuisines: ["Multi-cuisine", "Fine Dining", "Desserts"],
       avgRating: 4.7,
       parentId: "5",
@@ -340,7 +340,7 @@ export const mockRestaurants = [
       cloudinaryImageId: northsq,
       locality: "North Square",
       areaName: "North Campus",
-      costForTwo: "₹160 for two",
+      costForTwo: "20000", 
       cuisines: ["North Indian", "Thalis", "Street Food"],
       avgRating: 4.1,
       parentId: "6",
@@ -397,7 +397,7 @@ export const mockRestaurants = [
       cloudinaryImageId: northsq,
       locality: "North Square",
       areaName: "North Campus",
-      costForTwo: "₹140 for two",
+      costForTwo: "20000", 
       cuisines: ["South Indian", "Dosas", "Idlis"],
       avgRating: 4.4,
       parentId: "7",
@@ -454,7 +454,7 @@ export const mockRestaurants = [
       cloudinaryImageId: northsq,
       locality: "North Square",
       areaName: "North Campus",
-      costForTwo: "₹120 for two",
+      costForTwo: "20000",
       cuisines: ["Chinese", "Noodles", "Momos"],
       avgRating: 4.2,
       parentId: "8",
@@ -511,7 +511,7 @@ export const mockRestaurants = [
       cloudinaryImageId: northsq,
       locality: "North Square",
       areaName: "North Campus",
-      costForTwo: "₹130 for two",
+      costForTwo: "20000",
       cuisines: ["Fast Food", "Burgers", "Fries"],
       avgRating: 4.0,
       parentId: "9",
@@ -568,7 +568,7 @@ export const mockRestaurants = [
       cloudinaryImageId: dominos,
       locality: "Food Court",
       areaName: "East Campus",
-      costForTwo: "₹300 for two",
+      costForTwo: "20000",
       cuisines: ["Pizza", "Italian", "Fast Food"],
       avgRating: 4.1,
       parentId: "10",
@@ -629,7 +629,7 @@ export const mockMenus = {
         name: "Burger Combo",
         price: 15000,
         description: "Juicy burger with fries and drink",
-        imageId: "mock-burger",
+        imageId: "https://source.unsplash.com/random/200x200/?burger",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -651,7 +651,7 @@ export const mockMenus = {
         name: "Veggie Pizza",
         price: 20000,
         description: "Fresh veggies on thin crust",
-        imageId: "mock-pizza",
+        imageId: "https://source.unsplash.com/random/200x200/?pizza",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -673,7 +673,7 @@ export const mockMenus = {
         name: "Chicken Nuggets",
         price: 12000,
         description: "Crispy chicken nuggets with dip",
-        imageId: "mock-nuggets",
+        imageId: "https://source.unsplash.com/random/200x200/?chicken-nuggets",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -692,7 +692,7 @@ export const mockMenus = {
         name: "Caesar Salad",
         price: 18000,
         description: "Fresh salad with caesar dressing",
-        imageId: "mock-salad",
+        imageId: "https://source.unsplash.com/random/200x200/?salad",
         category: "Salads",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -713,7 +713,7 @@ export const mockMenus = {
         name: "French Fries",
         price: 8000,
         description: "Golden crispy fries",
-        imageId: "mock-fries",
+        imageId: "https://source.unsplash.com/random/200x200/?fries",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -732,7 +732,7 @@ export const mockMenus = {
         name: "Chocolate Shake",
         price: 10000,
         description: "Rich chocolate milkshake",
-        imageId: "mock-shake",
+        imageId: "https://source.unsplash.com/random/200x200/?milkshake",
         category: "Beverages",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -751,7 +751,7 @@ export const mockMenus = {
         name: "Grilled Chicken",
         price: 22000,
         description: "Tender grilled chicken",
-        imageId: "mock-chicken",
+        imageId: "https://source.unsplash.com/random/200x200/?grilled-chicken",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "NONVEG",
@@ -772,7 +772,7 @@ export const mockMenus = {
         name: "Pasta Alfredo",
         price: 19000,
         description: "Creamy pasta with alfredo sauce",
-        imageId: "mock-pasta",
+        imageId: "https://source.unsplash.com/random/200x200/?pasta",
         category: "Main Course",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -793,7 +793,7 @@ export const mockMenus = {
         name: "Onion Rings",
         price: 9000,
         description: "Crispy onion rings",
-        imageId: "mock-rings",
+        imageId: "https://source.unsplash.com/random/200x200/?onion-rings",
         category: "Snacks",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -812,7 +812,7 @@ export const mockMenus = {
         name: "Ice Cream Sundae",
         price: 13000,
         description: "Delicious ice cream sundae",
-        imageId: "mock-sundae",
+        imageId: "https://source.unsplash.com/random/200x200/?ice-cream",
         category: "Desserts",
         itemAttribute: {
           vegClassifier: "VEG",
@@ -1971,6 +1971,595 @@ export const mockMenus = {
         vCoinValue: 11,
       }
     ]
+  },
+  "8": {
+    // NorthSquare C3 menu
+    menu: [
+      {
+        id: "801",
+        name: "Chow Mein",
+        price: 12000,
+        description: "Stir-fried noodles with vegetables",
+        imageId: "mock-chow-mein",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "150+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+      {
+        id: "802",
+        name: "Fried Rice",
+        price: 11000,
+        description: "Rice stir-fried with veggies",
+        imageId: "mock-fried-rice",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "180+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 11,
+      },
+      {
+        id: "803",
+        name: "Vegetable Momos",
+        price: 10000,
+        description: "Steamed dumplings with veggies",
+        imageId: "mock-veg-momos",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "200+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 10,
+      },
+      {
+        id: "804",
+        name: "Chicken Momos",
+        price: 13000,
+        description: "Steamed dumplings with chicken",
+        imageId: "mock-chicken-momos",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "160+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 13,
+      },
+      {
+        id: "805",
+        name: "Spring Rolls",
+        price: 9000,
+        description: "Crispy vegetable spring rolls",
+        imageId: "mock-spring-rolls",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "120+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 9,
+      },
+      {
+        id: "806",
+        name: "Manchurian",
+        price: 14000,
+        description: "Vegetable balls in spicy sauce",
+        imageId: "mock-manchurian",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "140+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 14,
+      },
+      {
+        id: "807",
+        name: "Hakka Noodles",
+        price: 11500,
+        description: "Stir-fried noodles",
+        imageId: "mock-hakka-noodles",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "130+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+      {
+        id: "808",
+        name: "Dumplings",
+        price: 12500,
+        description: "Pan-fried dumplings",
+        imageId: "mock-dumplings",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "110+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 13,
+      },
+      {
+        id: "809",
+        name: "Hot and Sour Soup",
+        price: 8000,
+        description: "Spicy and tangy soup",
+        imageId: "mock-hot-sour-soup",
+        category: "Soups",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.1",
+            ratingCount: "100+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+      {
+        id: "810",
+        name: "Egg Fried Rice",
+        price: 12000,
+        description: "Fried rice with egg",
+        imageId: "mock-egg-fried-rice",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "170+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+    ],
+  },
+  "9": {
+    // NorthSquare C4 menu
+    menu: [
+      {
+        id: "901",
+        name: "Cheeseburger",
+        price: 15000,
+        description: "Burger with cheese and toppings",
+        imageId: "mock-cheeseburger",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "200+",
+          },
+        },
+        customizations: [
+          { name: "Extra Cheese", price: 2000 },
+        ],
+        vCoinValue: 15,
+      },
+      {
+        id: "902",
+        name: "French Fries",
+        price: 8000,
+        description: "Golden crispy fries",
+        imageId: "mock-fries",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "250+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+      {
+        id: "903",
+        name: "Chicken Nuggets",
+        price: 12000,
+        description: "Crispy chicken nuggets",
+        imageId: "mock-nuggets",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "180+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 12,
+      },
+      {
+        id: "904",
+        name: "Onion Rings",
+        price: 9000,
+        description: "Crispy onion rings",
+        imageId: "mock-onion-rings",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "150+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 9,
+      },
+      {
+        id: "905",
+        name: "Milkshake",
+        price: 10000,
+        description: "Thick chocolate milkshake",
+        imageId: "mock-milkshake",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "160+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 10,
+      },
+      {
+        id: "906",
+        name: "Hot Dog",
+        price: 11000,
+        description: "Classic hot dog with toppings",
+        imageId: "mock-hot-dog",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "140+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 11,
+      },
+      {
+        id: "907",
+        name: "Chicken Wings",
+        price: 16000,
+        description: "Spicy chicken wings",
+        imageId: "mock-wings",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "190+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 16,
+      },
+      {
+        id: "908",
+        name: "Mozzarella Sticks",
+        price: 13000,
+        description: "Cheesy fried sticks",
+        imageId: "mock-mozzarella",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "130+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 13,
+      },
+      {
+        id: "909",
+        name: "Hash Browns",
+        price: 7000,
+        description: "Crispy potato hash",
+        imageId: "mock-hash-browns",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.1",
+            ratingCount: "120+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 7,
+      },
+      {
+        id: "910",
+        name: "Soft Drink",
+        price: 6000,
+        description: "Refreshing soda",
+        imageId: "mock-soda",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.0",
+            ratingCount: "100+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 6,
+      },
+    ],
+  },
+  "10": {
+    // Dominos menu
+    menu: [
+      {
+        id: "1001",
+        name: "Margherita Pizza",
+        price: 18000,
+        description: "Classic cheese pizza",
+        imageId: "mock-margherita",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "300+",
+          },
+        },
+        customizations: [
+          { name: "Extra Cheese", price: 2000 },
+        ],
+        vCoinValue: 18,
+      },
+      {
+        id: "1002",
+        name: "Pepperoni Pizza",
+        price: 22000,
+        description: "Pizza with pepperoni",
+        imageId: "mock-pepperoni",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.7",
+            ratingCount: "250+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 22,
+      },
+      {
+        id: "1003",
+        name: "Veggie Pizza",
+        price: 20000,
+        description: "Loaded with vegetables",
+        imageId: "mock-veggie-pizza",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "220+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 20,
+      },
+      {
+        id: "1004",
+        name: "BBQ Chicken Pizza",
+        price: 24000,
+        description: "Chicken with BBQ sauce",
+        imageId: "mock-bbq-chicken",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.6",
+            ratingCount: "200+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 24,
+      },
+      {
+        id: "1005",
+        name: "Garlic Bread",
+        price: 8000,
+        description: "Toasted garlic bread",
+        imageId: "mock-garlic-bread",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.3",
+            ratingCount: "180+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 8,
+      },
+      {
+        id: "1006",
+        name: "Chicken Wings",
+        price: 16000,
+        description: "Spicy chicken wings",
+        imageId: "mock-wings",
+        category: "Starters",
+        itemAttribute: {
+          vegClassifier: "NONVEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.5",
+            ratingCount: "170+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 16,
+      },
+      {
+        id: "1007",
+        name: "Pasta Alfredo",
+        price: 19000,
+        description: "Creamy pasta",
+        imageId: "mock-pasta",
+        category: "Main Course",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.4",
+            ratingCount: "150+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 19,
+      },
+      {
+        id: "1008",
+        name: "Dessert Pizza",
+        price: 15000,
+        description: "Sweet pizza with toppings",
+        imageId: "mock-dessert-pizza",
+        category: "Desserts",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.2",
+            ratingCount: "120+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 15,
+      },
+      {
+        id: "1009",
+        name: "Coke",
+        price: 6000,
+        description: "Refreshing cola",
+        imageId: "mock-coke",
+        category: "Beverages",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.0",
+            ratingCount: "100+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 6,
+      },
+      {
+        id: "1010",
+        name: "Fries",
+        price: 9000,
+        description: "Crispy potato fries",
+        imageId: "mock-fries",
+        category: "Snacks",
+        itemAttribute: {
+          vegClassifier: "VEG",
+        },
+        ratings: {
+          aggregatedRating: {
+            rating: "4.1",
+            ratingCount: "140+",
+          },
+        },
+        customizations: [],
+        vCoinValue: 9,
+      },
+    ],
   }
 }
 

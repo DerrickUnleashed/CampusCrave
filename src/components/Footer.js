@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import footer_logo from "../assets/logo.jpeg";
 import { footer_content } from "../helpers/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

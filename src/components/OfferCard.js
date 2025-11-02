@@ -1,8 +1,6 @@
-import React from "react";
-import { MENU_OFFERS_CDN_URL } from "../helpers/Constant";
 import offerlogo from '../assets/offer.webp';
 
-const OfferCard = ({ offerLogo, header, couponCode }) => {
+const OfferCard = ({ header, couponCode }) => {
   return (
     <div className="flex xl:min-w-[21rem] gap-2 p-4 border border-gray-300 rounded-3xl">
       <div className="flex-shrink-0">

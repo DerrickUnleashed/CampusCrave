@@ -1,12 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { REST_API_MENU_URL } from "../helpers/Constant";
+import { useEffect, useState } from "react";
 import { mockMenus, mockRestaurants } from "../mockData";
 
 const useRestaurantMenu = (id) => {
-  const locDetails = useSelector((store) => store.location.locationDetails);
-  const [latitude, setLatitude] = useState(locDetails[0].lat);
-  const [longitude, setLongitude] = useState(locDetails[0].lng);
   const [resDetails, setResDetailse] = useState();
   const [resOffers, setResOffers] = useState([]);
   const [resMenu, setResMenu] = useState([]);

@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import emptyCart from "../assets/emptyCart.webp";
 import { Link } from "react-router-dom";
 import { addItems, removeItems, clearCart } from "../Utils/cartSlice";
-import { current } from "@reduxjs/toolkit";
 import { redeemCoins } from "../Utils/vCoinSlice";
 import { addNotification } from "../Utils/notificationsSlice";
 import { addDelivery } from "../Utils/deliverySlice";
@@ -25,7 +24,6 @@ const Cart = () => {
   const [cityName, setCityName] = useState("");
   const [state, setState] = useState("");
   const [suggestionText, setSuggestionText] = useState("");
-  const [isChecked, setIsChecked] = useState("");
   const [confirmAddress, setConfirmAddress] = useState(false);
   const [confirmPayment, setConfirmPayment] = useState(false);
   const [orderSuccess, setOrderSuccess] = useState(false);

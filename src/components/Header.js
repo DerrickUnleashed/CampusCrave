@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo.jpeg";
 import LocationSearch from "./LocationSearch";
 import { useDispatch, useSelector } from "react-redux";

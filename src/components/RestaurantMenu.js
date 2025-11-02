@@ -6,7 +6,6 @@ import { useParams, Link } from "react-router-dom";
 import offerlogo from "../assets/offer.webp";
 import {
   DELIVERY_DISTANCE_IMG,
-  MENU_OFFERS_CDN_URL,
 } from "../helpers/Constant";
 import OfferSlider from "./OfferSlider";
 import OfferCard from "./OfferCard";
@@ -94,10 +93,8 @@ const RestaurantMenu = () => {
     <MyContext.Provider value={contextValue}>
       <div className="flex justify-center pt-28 w-screen">
         <div className="container w-[50%]">
-          <h4 className="text-xs text-left text-[#93959f]">
-            Home/{city}/{resDetails?.name}
-          </h4>
           <div className="mx-3">
+            <br/>
             <h1 className="font-[700] pt-8 text-2xl">{resDetails?.name}</h1>
             <div className="mt-6 bg-gradient-to-b from-white to-[#dcdce3] p-4 rounded-3xl">
               <div className="flex flex-col mx-auto p-4 rounded-3xl bg-white">

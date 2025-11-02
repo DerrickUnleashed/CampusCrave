@@ -1,9 +1,4 @@
-import react from "react";
 import { Link } from "react-router-dom";
-import {
-  RES_CARD_IMG_CDN_URL,
-  RES_CARD_IMG_CDN_URL_GREY,
-} from "../helpers/Constant";
 const RestaurantSearchCard = ({ cloudinaryImageId, id, isOpen, name }) => {
   return (
     <div>

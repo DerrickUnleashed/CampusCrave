@@ -1,20 +1,14 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import useRestaurantData from "../Hooks/useRestaurantData";
 import { useSelector } from "react-redux";
-import { APP_IMG_CDN_URL, WOYM_CARD_IMG_CDN_URL } from "../helpers/Constant";
-import Slider from "./Slider";
+import { APP_IMG_CDN_URL } from "../helpers/Constant";
 import RestaurantCard from "./RestaurantCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter, faXmark } from "@fortawesome/free-solid-svg-icons";
 import orderBy from "lodash/orderBy";
-import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
-import { RiArrowDropUpLine } from "react-icons/ri";
 import Footer from "./Footer";
 import Unserviceable from "./Unserviceable";
 import HomeShimmer from "./HomeShimmer";
-import biriyaniImg from "../assets/food1.jpg";
-import pizzaImg from "../assets/food2.jpeg";
-import chickenImg from "../assets/food3.jpeg";
 
 const Home = () => {
   const [

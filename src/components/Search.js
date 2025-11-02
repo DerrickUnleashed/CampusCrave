@@ -1,15 +1,9 @@
-import React from "react";
 import { shimmer_display_count } from "../helpers/Constant";
-import SearchCuisineShimmer from "./SearchCuisineShimmer";
 import { useState, useEffect } from "react";
 import { faSearch, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useRestaurantsData from "../Hooks/useRestaurantData";
 import RestaurantSearchCard from "./RestaurantSearchCard";
-import usePopularCuisinesData from "../Hooks/usePopularCuisinesData";
-import { IMG_CDN_URL } from "../helpers/Constant";
-// import RestaurantSearchCard from "./RestaurantSearchCard";
-import RestaurantCard from "./RestaurantCard";
 
 const Search = () => {
   const [
