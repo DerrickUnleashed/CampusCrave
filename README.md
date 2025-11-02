@@ -1,9 +1,6 @@
-<div align="center" id="#readme-top">
-  <img src="src/assets/logo.png" alt="CampusCrave Logo" width="200"/>
-  <h1><b>CampusCrave - A Food ordering platform for Colleges</b></h3>
-</div>
+<img src="src/assets/logo.png" alt="CampusCrave Logo" width="200"/>
 
-# 🥘 CampusCrave <a name="about"></a>
+# 🥘 CampusCrave - A Food ordering platform for Colleges<a name="about"></a>
 
 This is a Learning based project on React.js. This react app is built using various trending technologies like Tailwind CSS as a Styling Framework, Redux for state management, React Router DOM for page navigation, Parcel as a bundler, Babel for transpiling code and many more.
 
