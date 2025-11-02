@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCrave Wireframes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .wireframes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .page-card {
+            background: white;
+            border: 2px solid #d0d0d0;
+            border-radius: 8px;
+            padding: 28px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .page-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+        
+        .page-subtitle {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 10px;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        
+        .page-elements {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .element {
+            background: #f8f8f8;
+            border: 1px solid #d0d0d0;
+            padding: 12px 14px;
+            font-size: 12px;
+            color: #666;
+            border-radius: 4px;
+        }
+        
+        .element.input {
+            background: white;
+            border: 1.5px solid #c0c0c0;
+            padding: 10px 14px;
+            color: #999;
+        }
+        
+        .element.button {
+            background: #3a3a3a;
+            border: none;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            padding: 12px 14px;
+        }
+        
+        .element.button.secondary {
+            background: white;
+            border: 1.5px solid #3a3a3a;
+            color: #3a3a3a;
+        }
+        
+        .element.card {
+            background: white;
+            border: 1.5px solid #e0e0e0;
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .card-img {
+            width: 50px;
+            height: 50px;
+            background: #e8e8e8;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+        
+        .card-content {
+            flex: 1;
+            font-size: 11px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .element.metric {
+            background: #f0f0f0;
+            border: 1px solid #d8d8d8;
+            font-weight: 600;
+            color: #444;
+        }
+        
+        .element.graph {
+            background: linear-gradient(to bottom, #f8f8f8 0%, #f0f0f0 100%);
+            border: 1px solid #d0d0d0;
+            height: 80px;
+            display: flex;
+            align-items: flex-end;
+            padding: 10px;
+            gap: 6px;
+        }
+        
+        .graph-bar {
+            flex: 1;
+            background: #c0c0c0;
+            border-radius: 2px 2px 0 0;
+        }
+        
+        .map-placeholder {
+            height: 100px;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+            border: 1px solid #d0d0d0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #999;
+        }
+        
+        .mini-button {
+            padding: 6px 12px;
+            font-size: 10px;
+            background: #3a3a3a;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .mini-button.secondary {
+            background: white;
+            border: 1.5px solid #3a3a3a;
+            color: #3a3a3a;
+        }
+        
+        .card-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        .link-text {
+            text-align: center;
+            font-size: 11px;
+            color: #666;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CampusCrave Wireframes</h1>
+        
+        <div class="wireframes-grid">
+            
+            <!-- Landing Page -->
+            <div class="page-card">
+                <div class="page-title">Landing Page</div>
+                <div class="page-subtitle">Gateway to CampusCrave ecosystem</div>
+                <div class="page-elements">
+                    <div class="element card">
+                        <div class="card-img"></div>
+                        <div class="card-content">
+                            <strong>Hero Section</strong><br>
+                            Platform introduction & welcome message
+                        </div>
+                    </div>
+                    <div class="element">🎯 Affordable campus ordering</div>
+                    <div class="element">🏃 Student-run deliveries</div>
+                    <div class="element">🪙 VCoin reward system</div>
+                    <div class="element button">Login</div>
+                    <div class="element button secondary">Sign Up</div>
+                    <div class="element button secondary">Help & Support</div>
+                </div>
+            </div>
+            
+            <!-- Registration Page -->
+            <div class="page-card">
+                <div class="page-title">Registration Page</div>
+                <div class="page-subtitle">Create your CampusCrave account</div>
+                <div class="page-elements">
+                    <div class="element input">Name</div>
+                    <div class="element input">Email Address</div>
+                    <div class="element input">Password</div>
+                    <div class="element input">Registration Number</div>
+                    <div class="element input">Select Role (Student / Vendor / Runner)</div>
+                    <div class="element button">Create Account</div>
+                    <div class="link-text">Already have an account? <strong>Login</strong></div>
+                </div>
+            </div>
+            
+            <!-- Login Page -->
+            <div class="page-card">
+                <div class="page-title">Login Page</div>
+                <div class="page-subtitle">Secure role-based authentication</div>
+                <div class="page-elements">
+                    <div class="element input">Registration Number</div>
+                    <div class="element input">Password</div>
+                    <div class="element input">Role Selector (Student / Vendor / Runner / Admin)</div>
+                    <div class="element">🔒 JWT Authentication</div>
+                    <div class="element button">Login Securely</div>
+                    <div class="link-text">New user? <strong>Sign Up</strong></div>
+                </div>
+            </div>
+            
+            <!-- Help Page -->
+            <div class="page-card">
+                <div class="page-title">Help Page</div>
+                <div class="page-subtitle">Assistance and guidance hub</div>
+                <div class="section">
+                    <div class="section-title">FAQ Categories</div>
+                    <div class="page-elements">
+                        <div class="element">📦 Ordering & Delivery</div>
+                        <div class="element">💳 Payments & Refunds</div>
+                        <div class="element">🪙 VCoins & Rewards</div>
+                        <div class="element">👤 Account Management</div>
+                    </div>
+                </div>
+                <div class="element button">Contact Support</div>
+                <div class="element button secondary">Live Chat</div>
+            </div>
+            
+            <!-- Customer Dashboard -->
+            <div class="page-card">
+                <div class="page-title">Customer Dashboard</div>
+                <div class="page-subtitle">Browse on-campus restaurants</div>
+                <div class="section">
+                    <div class="section-title">Search & Filter</div>
+                    <div class="page-elements">
+                        <div class="element input">🔍 Search restaurants...</div>
+                        <div class="element">Filter: Rating | Cost | Delivery Time | Offers</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Restaurant Cards</div>
+                    <div class="page-elements">
+                        <div class="element card">
+                            <div class="card-img"></div>
+                            <div class="card-content">
+                                <strong>Restaurant Name</strong><br>
+                                ⭐ 4.5 (234 reviews)<br>
+                                ⏱️ 25-30 min | 🏷️ 20% off
+                            </div>
+                        </div>
+                        <div class="element card">
+                            <div class="card-img"></div>
+                            <div class="card-content">
+                                <strong>Restaurant Name</strong><br>
+                                ⭐ 4.2 (180 reviews)<br>
+                                ⏱️ 30-35 min
+                            </div>
+                        </div>
+                        <div class="element card">
+                            <div class="card-img"></div>
+                            <div class="card-content">
+                                <strong>Restaurant Name</strong><br>
+                                ⭐ 4.7 (320 reviews)<br>
+                                ⏱️ 20-25 min | 🏷️ Free delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Page -->
+            <div class="page-card">
+                <div class="page-title">Menu Page</div>
+                <div class="page-subtitle">Complete restaurant menu & details</div>
+                <div class="section">
+                    <div class="section-title">Restaurant Info</div>
+                    <div class="page-elements">
+                        <div class="element"><strong>Restaurant Name</strong></div>
+                        <div class="element">🍽️ North Indian, Chinese | ₹₹ ₹300 for two</div>
+                        <div class="element">📍 1.2 km away | ⭐ 4.5 (234 reviews)</div>
+                        <div class="element">⏱️ On-time delivery: 95% orders delivered on time</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Menu Items</div>
+                    <div class="page-elements">
+                        <div class="element card">
+                            <div class="card-img"></div>
+                            <div class="card-content">
+                                <strong>Chicken Biryani</strong><br>
+                                Aromatic rice with tender chicken<br>
+                                <strong>₹150</strong>
+                            </div>
+                            <button class="mini-button">Add</button>
+                        </div>
+                        <div class="element card">
+                            <div class="card-img"></div>
+                            <div class="card-content">
+                                <strong>Paneer Butter Masala</strong><br>
+                                Creamy paneer curry<br>
+                                <strong>₹120</strong>
+                            </div>
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <button class="mini-button" style="padding: 4px 10px;">-</button>
+                                <span style="font-weight: 600;">2</span>
+                                <button class="mini-button" style="padding: 4px 10px;">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element metric">🪙 VCoins to earn from this order: 25</div>
+                <div class="element button">View Cart (3 items)</div>
+            </div>
+            
+            <!-- Cart Page -->
+            <div class="page-card">
+                <div class="page-title">Cart Page</div>
+                <div class="page-subtitle">Order summary before checkout</div>
+                <div class="section">
+                    <div class="section-title">Order Items</div>
+                    <div class="page-elements">
+                        <div class="element">Chicken Biryani x1 - ₹150</div>
+                        <div class="element">Paneer Butter Masala x2 - ₹240</div>
+                        <div class="element">Naan x2 - ₹40</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Bill Split-up</div>
+                    <div class="page-elements">
+                        <div class="element">Item Total: ₹430</div>
+                        <div class="element">Taxes & Charges: ₹30</div>
+                        <div class="element">Delivery Charges: ₹20</div>
+                        <div class="element metric">Total Amount: ₹480</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Offers & Discounts</div>
+                    <div class="page-elements">
+                        <div class="element input">Apply Promo Code</div>
+                        <div class="element">🏷️ FIRST50 - ₹50 off on orders above ₹400</div>
+                        <div class="element">🪙 Redeem 30 VCoins (-₹30)</div>
+                    </div>
+                </div>
+                <div class="element input">📍 Select Delivery Address (Hostel / Campus location)</div>
+                <div class="element metric" style="background: #e8f5e9; border-color: #4caf50; color: #2e7d32;">Final Payable: ₹400</div>
+                <div class="element button">Proceed to Payment Gateway</div>
+            </div>
+            
+            <!-- Order Tracking Page -->
+            <div class="page-card">
+                <div class="page-title">Order Tracking Page</div>
+                <div class="page-subtitle">Real-time delivery updates</div>
+                <div class="section">
+                    <div class="section-title">Order Details</div>
+                    <div class="page-elements">
+                        <div class="element metric">Order ID: #CCV12345</div>
+                        <div class="element">📍 Delivery Address: Boys Hostel Block A, Room 204</div>
+                        <div class="element">Items: Chicken Biryani x1, Paneer Butter Masala x2</div>
+                        <div class="element">💰 Amount Paid: ₹400</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Delivery Progress</div>
+                    <div class="page-elements">
+                        <div class="element" style="background: #e8f5e9; border-color: #4caf50;">✅ Order Prepared</div>
+                        <div class="element" style="background: #e8f5e9; border-color: #4caf50;">✅ Runner Assigned - Rahul K.</div>
+                        <div class="element" style="background: #e8f5e9; border-color: #4caf50;">✅ Picked Up from Restaurant</div>
+                        <div class="element metric" style="background: #fff3e0; border-color: #ff9800;">🚚 In Transit to Your Location</div>
+                        <div class="element" style="background: #f5f5f5;">⏳ Delivered Successfully</div>
+                    </div>
+                </div>
+                <div class="map-placeholder">🗺️</div>
+                <div style="text-align: center; font-size: 11px; color: #666; margin-top: 8px;">Live Runner Location</div>
+                <div class="element metric" style="margin-top: 16px;">⏱️ Estimated Time: 8 minutes</div>
+                <div class="element button">Rate Your Order</div>
+            </div>
+            
+            <!-- Runner Dashboard -->
+            <div class="page-card">
+                <div class="page-title">Runner Dashboard</div>
+                <div class="page-subtitle">Manage deliveries & track earnings</div>
+                <div class="section">
+                    <div class="section-title">Today's Stats</div>
+                    <div class="page-elements">
+                        <div class="element metric">💰 Total Earnings: ₹450</div>
+                        <div class="element metric">✅ Completed Deliveries: 8</div>
+                        <div class="element metric">🚚 Active Orders: 1</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Active Orders</div>
+                    <div class="page-elements">
+                        <div class="element card">
+                            <div class="card-content">
+                                <strong>Order #CCV12345</strong><br>
+                                📍 Canteen → Block B Hostel<br>
+                                💰 Delivery Fee: ₹25 | 📏 1.2 km
+                            </div>
+                            <div class="card-actions">
+                                <button class="mini-button">Update Status</button>
+                                <button class="mini-button secondary">Unaccept</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Available Orders</div>
+                    <div class="page-elements">
+                        <div class="element card">
+                            <div class="card-content">
+                                📍 <strong>Restaurant A → Girls Hostel</strong><br>
+                                💰 Earnings: ₹30 | 📏 1.5 km
+                            </div>
+                            <button class="mini-button">Accept</button>
+                        </div>
+                        <div class="element card">
+                            <div class="card-content">
+                                📍 <strong>Cafe B → Library Block</strong><br>
+                                💰 Earnings: ₹25 | 📏 0.8 km
+                            </div>
+                            <button class="mini-button">Accept</button>
+                        </div>
+                        <div class="element card">
+                            <div class="card-content">
+                                📍 <strong>Food Court → Academic Block</strong><br>
+                                💰 Earnings: ₹20 | 📏 0.5 km
+                            </div>
+                            <button class="mini-button">Accept</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vendor Dashboard -->
+            <div class="page-card">
+                <div class="page-title">Vendor Dashboard</div>
+                <div class="page-subtitle">Restaurant operations & analytics</div>
+                <div class="section">
+                    <div class="section-title">Today's Performance</div>
+                    <div class="page-elements">
+                        <div class="element metric">📦 Total Orders: 45</div>
+                        <div class="element metric">💰 Revenue Earned: ₹12,450</div>
+                        <div class="element metric">⏳ Pending Deliveries: 3</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Menu Management</div>
+                    <div class="page-elements">
+                        <div class="element card">
+                            <div class="card-img"></div>
+                            <div class="card-content">
+                                <strong>Chicken Biryani</strong><br>
+                                ₹150 | ✅ Available
+                            </div>
+                            <div class="card-actions">
+                                <button class="mini-button">Edit</button>
+                                <button class="mini-button secondary">Remove</button>
+                            </div>
+                        </div>
+                        <div class="element card">
+                            <div class="card-img"></div>
+                            <div class="card-content">
+                                <strong>Paneer Tikka</strong><br>
+                                ₹120 | ❌ Out of Stock
+                            </div>
+                            <div class="card-actions">
+                                <button class="mini-button">Edit</button>
+                                <button class="mini-button secondary">Remove</button>
+                            </div>
+                        </div>
+                        <div class="element button">+ Add New Menu Item</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Offers Management</div>
+                    <div class="page-elements">
+                        <div class="element">🏷️ 20% Off on orders above ₹300 - <strong>Active</strong></div>
+                        <div class="element">🏷️ Free delivery on first order - <strong>Inactive</strong></div>
+                        <div class="element button secondary">Create New Offer</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Admin Dashboard -->
+            <div class="page-card">
+                <div class="page-title">Admin Dashboard</div>
+                <div class="page-subtitle">Central monitoring & control hub</div>
+                <div class="section">
+                    <div class="section-title">Platform Metrics</div>
+                    <div class="page-elements">
+                        <div class="element metric">👥 Total Users: 1,234</div>
+                        <div class="element metric">📦 Active Orders: 28</div>
+                        <div class="element metric">💰 Monthly Revenue: ₹4,50,000</div>
+                        <div class="element metric">🍽️ Active Meal Shares: 15</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Analytics Graphs</div>
+                    <div class="page-elements">
+                        <div class="element graph">
+                            <div class="graph-bar" style="height: 35%;"></div>
+                            <div class="graph-bar" style="height: 50%;"></div>
+                            <div class="graph-bar" style="height: 68%;"></div>
+                            <div class="graph-bar" style="height: 85%;"></div>
+                            <div class="graph-bar" style="height: 72%;"></div>
+                            <div class="graph-bar" style="height: 90%;"></div>
+                        </div>
+                        <div style="font-size: 10px; color: #888; margin-top: 4px; text-align: center;">Revenue Growth Trend</div>
+                        <div class="element graph">
+                            <div class="graph-bar" style="height: 40%;"></div>
+                            <div class="graph-bar" style="height: 55%;"></div>
+                            <div class="graph-bar" style="height: 60%;"></div>
+                            <div class="graph-bar" style="height: 75%;"></div>
+                            <div class="graph-bar" style="height: 68%;"></div>
+                            <div class="graph-bar" style="height: 82%;"></div>
+                        </div>
+                        <div style="font-size: 10px; color: #888; margin-top: 4px; text-align: center;">User Growth Trend</div>
+                    </div>
+                </div>
+                <div class="element button">View Detailed Analytics</div>
+                <div class="element button secondary">Manage Users & Vendors</div>
+                <div class="element button secondary">View System Logs</div>
+            </div>
+            
+            <!-- Admin Logging Panel -->
+            <div class="page-card">
+                <div class="page-title">Admin Logging Panel</div>
+                <div class="page-subtitle">System activity & traceability</div>
+                <div class="section">
+                    <div class="section-title">Log Categories</div>
+                    <div class="page-elements">
+                        <div class="element">📝 System Logs</div>
+                        <div class="element">👤 User Activity Logs</div>
+                        <div class="element">💳 Transaction Logs</div>
+                        <div class="element">⚠️ Error Reports</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Recent Activity Feed</div>
+                    <div class="page-elements">
+                        <div class="element" style="font-size: 11px;">
+                            <strong>10:23 AM</strong> - New user login: student_12345
+                        </div>
+                        <div class="element" style="font-size: 11px;">
+                            <strong>10:18 AM</strong> - Order placed: #CCV12345 | ₹400
+                        </div>
+                        <div class="element" style="font-size: 11px;">
+                            <strong>10:12 AM</strong> - Payment successful: ₹390 to Restaurant A
+                        </div>
+                        <div class="element" style="font-size: 11px;">
+                            <strong>10:05 AM</strong> - Runner assigned: runner_789 to Order #CCV12344
+                        </div>
+                        <div class="element" style="font-size: 11px;">
+                            <strong>09:58 AM</strong> - Delivery completed: Order #CCV12343
+                        </div>
+                    </div>
+                </div>
+                <div class="element input">🔍 Filter logs by date, user, or event type</div>
+                <div class="element button secondary">Export Logs (CSV)</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
