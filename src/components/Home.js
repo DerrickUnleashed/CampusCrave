@@ -9,6 +9,8 @@ import orderBy from "lodash/orderBy";
 import Footer from "./Footer";
 import Unserviceable from "./Unserviceable";
 import HomeShimmer from "./HomeShimmer";
+import playstore from "../assets/playstore.jpg";
+import appstore from "../assets/appstore.png";
 
 const Home = () => {
   const [
@@ -222,12 +224,12 @@ const Home = () => {
 
               <div className="flex gap-8">
                 <img
-                  className="w-[12.5rem]"
-                  src={APP_IMG_CDN_URL + appInstallLinks.androidAppImage}
+                  className="w-[4rem] rounded-lg hover:scale-105 transition-all duration-200 cursor-pointer"
+                  src={playstore}
                 />
                 <img
-                  className="w-[12.5rem]"
-                  src={APP_IMG_CDN_URL + appInstallLinks.iosAppImage}
+                  className="w-[4rem] rounded-lg hover:scale-105 transition-all duration-200 cursor-pointer"
+                  src={appstore}
                 />
               </div>
             </div>
