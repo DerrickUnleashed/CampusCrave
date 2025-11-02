@@ -2,9 +2,17 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import markerIcon from "../assets/marker.png";
 import { updateDeliveryStatus } from "../Utils/deliverySlice";
 
+const customIcon = L.icon({
+  iconUrl: markerIcon,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+});
 const OrderTracking = () => {
   const { orderId } = useParams();
   const deliveries = useSelector((state) => state.delivery.deliveries);
@@ -233,15 +241,15 @@ const OrderTracking = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; OpenStreetMap contributors'
               />
-              <Marker position={[pickup.lat, pickup.lng]}>
+              <Marker position={[pickup.lat, pickup.lng]} icon={customIcon}>
                 <Popup>Pickup Location</Popup>
               </Marker>
               {currentLocation && (
-                <Marker position={[currentLocation.lat, currentLocation.lng]}>
+                <Marker position={[currentLocation.lat, currentLocation.lng]} icon={customIcon}>
                   <Popup>Runner’s Current Location</Popup>
                 </Marker>
               )}
-              <Marker position={[drop.lat, drop.lng]}>
+              <Marker position={[drop.lat, drop.lng]} icon={customIcon}>
                 <Popup>Delivery Destination</Popup>
               </Marker>
             </MapContainer>

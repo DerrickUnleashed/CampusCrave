@@ -160,6 +160,10 @@ export const mockRestaurants = [
       displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       restaurantOfferPresentationInfo: {},
       vCoinReward: 8,
+      location: {
+        lat: 12.84166255938762,
+        lng: 80.15455173160387,
+      },
     },
     cta: {
       link: "https://www.swiggy.com/restaurants/gazebo-c2-student-residences-north-campus-2",
@@ -217,6 +221,10 @@ export const mockRestaurants = [
       displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       restaurantOfferPresentationInfo: {},
       vCoinReward: 5,
+      location: {
+        lat: 12.84166255938762,
+        lng: 80.15455173160387,
+      },
     },
     cta: {
       link: "https://www.swiggy.com/restaurants/gazebo-c3-central-library-academic-block-3",
@@ -274,6 +282,10 @@ export const mockRestaurants = [
       displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       restaurantOfferPresentationInfo: {},
       vCoinReward: 12,
+      location: {
+        lat: 12.84166255938762,
+        lng: 80.15455173160387,
+      },
     },
     cta: {
       link: "https://www.swiggy.com/restaurants/gazebo-c4-sports-complex-south-campus-4",
@@ -392,6 +404,10 @@ export const mockRestaurants = [
       displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       restaurantOfferPresentationInfo: {},
       vCoinReward: 8,
+      location: {
+        lat: 12.844370364232228,
+        lng: 80.15455173160387,
+      }
     },
     cta: {
       link: "https://www.swiggy.com/restaurants/northsquare-c1-north-square-north-campus-6",
@@ -449,6 +465,10 @@ export const mockRestaurants = [
       displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       restaurantOfferPresentationInfo: {},
       vCoinReward: 7,
+      location: {
+        lat: 12.844370364232228,
+        lng: 80.15455173160387,
+      },
     },
     cta: {
       link: "https://www.swiggy.com/restaurants/northsquare-c2-north-square-north-campus-7",
@@ -506,6 +526,10 @@ export const mockRestaurants = [
       displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       restaurantOfferPresentationInfo: {},
       vCoinReward: 6,
+      location: {
+        lat: 12.844370364232228,
+        lng: 80.15455173160387,
+      },
     },
     cta: {
       link: "https://www.swiggy.com/restaurants/northsquare-c3-north-square-north-campus-8",
@@ -563,6 +587,10 @@ export const mockRestaurants = [
       displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       restaurantOfferPresentationInfo: {},
       vCoinReward: 7,
+      location: {
+        lat: 12.844370364232228,
+        lng: 80.15455173160387,
+      },
     },
     cta: {
       link: "https://www.swiggy.com/restaurants/northsquare-c4-north-square-north-campus-9",
