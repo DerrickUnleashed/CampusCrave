@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CampusCrave/static/css/main.8e8a27a5.css",
-    "main.js": "/CampusCrave/static/js/main.52d86411.js",
+    "main.css": "/CampusCrave/static/css/main.8e7d231c.css",
+    "main.js": "/CampusCrave/static/js/main.8a7dd342.js",
     "static/js/709.d571409e.chunk.js": "/CampusCrave/static/js/709.d571409e.chunk.js",
     "static/js/208.a6190f1f.chunk.js": "/CampusCrave/static/js/208.a6190f1f.chunk.js",
     "static/js/293.eb125163.chunk.js": "/CampusCrave/static/js/293.eb125163.chunk.js",
@@ -24,8 +24,8 @@
     "static/media/location_unserviceable.webp": "/CampusCrave/static/media/location_unserviceable.05253586790e040c70a9.webp",
     "static/media/emptyCart.webp": "/CampusCrave/static/media/emptyCart.0ade70c16682ac3badc0.webp",
     "index.html": "/CampusCrave/index.html",
-    "main.8e8a27a5.css.map": "/CampusCrave/static/css/main.8e8a27a5.css.map",
-    "main.52d86411.js.map": "/CampusCrave/static/js/main.52d86411.js.map",
+    "main.8e7d231c.css.map": "/CampusCrave/static/css/main.8e7d231c.css.map",
+    "main.8a7dd342.js.map": "/CampusCrave/static/js/main.8a7dd342.js.map",
     "709.d571409e.chunk.js.map": "/CampusCrave/static/js/709.d571409e.chunk.js.map",
     "208.a6190f1f.chunk.js.map": "/CampusCrave/static/js/208.a6190f1f.chunk.js.map",
     "293.eb125163.chunk.js.map": "/CampusCrave/static/js/293.eb125163.chunk.js.map",
@@ -37,7 +37,7 @@
     "23.a1e64458.chunk.js.map": "/CampusCrave/static/js/23.a1e64458.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e8a27a5.css",
-    "static/js/main.52d86411.js"
+    "static/css/main.8e7d231c.css",
+    "static/js/main.8a7dd342.js"
   ]
 }
