@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "./Header";
 import campuscravelandingpage from "../assets/campuscravelandingpage.png";
 import Spline from '@splinetool/react-spline';
 
 const LandingPage = () => {
   return (
-    <>
-      <Header />
-      <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white pt-20">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white pt-20">
       {/* Hero Section */}
       <section className="pt-20 pb-16 px-8 text-center">
         <img
@@ -82,8 +79,7 @@ const LandingPage = () => {
       <footer className="py-8 px-8 bg-gray-800 text-white text-center">
         <p>&copy; 2025 CampusCrave. All rights reserved.</p>
       </footer>
-      </div>
-    </>
+    </div>
   );
 };
 

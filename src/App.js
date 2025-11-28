@@ -24,6 +24,7 @@ import OrderHistory from "./components/OrderHistory";
 import CommunityUpdates from "./components/CommunityUpdates";
 import OrderTracking from "./components/OrderTracking";
 import Success from "./components/Success";
+import ErrorPage from "./components/ErrorPage";
 const Help = lazy(() => import("./components/Help"));
 const AppLayout = () => {
   return (
@@ -37,12 +38,13 @@ const AppLayout = () => {
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage />,
-  },
-  {
-    path: "/",
     element: <AppLayout />,
+    errorElement: <ErrorPage />,
     children: [
+      {
+        index: true,
+        element: <LandingPage />,
+      },
       {
         path: "login",
         element: <SignIn />,
