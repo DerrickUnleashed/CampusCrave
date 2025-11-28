@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/CampusCrave/static/css/main.8e8a27a5.css",
+    "main.js": "/CampusCrave/static/js/main.52d86411.js",
+    "static/js/709.d571409e.chunk.js": "/CampusCrave/static/js/709.d571409e.chunk.js",
+    "static/js/208.a6190f1f.chunk.js": "/CampusCrave/static/js/208.a6190f1f.chunk.js",
+    "static/js/293.eb125163.chunk.js": "/CampusCrave/static/js/293.eb125163.chunk.js",
+    "static/js/917.a72d3993.chunk.js": "/CampusCrave/static/js/917.a72d3993.chunk.js",
+    "static/js/516.5507c518.chunk.js": "/CampusCrave/static/js/516.5507c518.chunk.js",
+    "static/js/519.c0b90486.chunk.js": "/CampusCrave/static/js/519.c0b90486.chunk.js",
+    "static/js/946.c3322e02.chunk.js": "/CampusCrave/static/js/946.c3322e02.chunk.js",
+    "static/js/160.b1731958.chunk.js": "/CampusCrave/static/js/160.b1731958.chunk.js",
+    "static/js/23.a1e64458.chunk.js": "/CampusCrave/static/js/23.a1e64458.chunk.js",
+    "static/media/campuscravelandingpage.png": "/CampusCrave/static/media/campuscravelandingpage.ae2d952573559778399f.png",
+    "static/media/logo.jpeg": "/CampusCrave/static/media/logo.ae2d952573559778399f.jpeg",
+    "static/media/logo.png": "/CampusCrave/static/media/logo.ae2d952573559778399f.png",
+    "static/media/dominos.jpg": "/CampusCrave/static/media/dominos.7920cf25d5f46d5eb9fc.jpg",
+    "static/media/gymkhana.jpg": "/CampusCrave/static/media/gymkhana.ca83620f89eb53a1efb6.jpg",
+    "static/media/northsq.jpg": "/CampusCrave/static/media/northsq.71658645bb429ce7f092.jpg",
+    "static/media/appstore.png": "/CampusCrave/static/media/appstore.e0584ee5b6045cbbc117.png",
+    "static/media/gazebo.jpg": "/CampusCrave/static/media/gazebo.c11759b577c1c10598f8.jpg",
+    "static/media/marker.png": "/CampusCrave/static/media/marker.be10448301e22ff1e59e.png",
+    "static/media/offer.webp": "/CampusCrave/static/media/offer.ecb840b685175e54ba3d.webp",
+    "static/media/location_unserviceable.webp": "/CampusCrave/static/media/location_unserviceable.05253586790e040c70a9.webp",
+    "static/media/emptyCart.webp": "/CampusCrave/static/media/emptyCart.0ade70c16682ac3badc0.webp",
+    "index.html": "/CampusCrave/index.html",
+    "main.8e8a27a5.css.map": "/CampusCrave/static/css/main.8e8a27a5.css.map",
+    "main.52d86411.js.map": "/CampusCrave/static/js/main.52d86411.js.map",
+    "709.d571409e.chunk.js.map": "/CampusCrave/static/js/709.d571409e.chunk.js.map",
+    "208.a6190f1f.chunk.js.map": "/CampusCrave/static/js/208.a6190f1f.chunk.js.map",
+    "293.eb125163.chunk.js.map": "/CampusCrave/static/js/293.eb125163.chunk.js.map",
+    "917.a72d3993.chunk.js.map": "/CampusCrave/static/js/917.a72d3993.chunk.js.map",
+    "516.5507c518.chunk.js.map": "/CampusCrave/static/js/516.5507c518.chunk.js.map",
+    "519.c0b90486.chunk.js.map": "/CampusCrave/static/js/519.c0b90486.chunk.js.map",
+    "946.c3322e02.chunk.js.map": "/CampusCrave/static/js/946.c3322e02.chunk.js.map",
+    "160.b1731958.chunk.js.map": "/CampusCrave/static/js/160.b1731958.chunk.js.map",
+    "23.a1e64458.chunk.js.map": "/CampusCrave/static/js/23.a1e64458.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e8a27a5.css",
+    "static/js/main.52d86411.js"
+  ]
+}
