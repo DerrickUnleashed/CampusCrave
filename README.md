@@ -6,6 +6,8 @@
 
 This is a Learning based project on React.js. This react app is built using various trending technologies like Tailwind CSS as a Styling Framework, Redux for state management, React Router DOM for page navigation, Parcel as a bundler, Babel for transpiling code and many more.
 
+<img width="510" height="661" alt="image" src="https://github.com/user-attachments/assets/97a81374-5fa6-4ce3-a346-1542728fcef2" />
+
 ### Tech Stack <a name="tech-stack"></a>
 
 **Frontend:**
